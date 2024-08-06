@@ -6,15 +6,15 @@ import { BlogComponent } from '../../modules/blog/blog.component';
 import { ContactComponent } from '../../modules/contact/contact.component';
 
 export const routes: Routes = [
-  { path: '/about', component: AboutComponent },
+  { path: 'about', component: AboutComponent },
   {
-    path: '/resume',
+    path: 'resume',
     component: ResumeComponent,
   },
   {
-    path: '/portfolio',
+    path: 'portfolio',
     component: PortfolioComponent,
   },
-  { path: '/blog', component: BlogComponent },
-  { path: '/contact', component: ContactComponent },
+  { path: 'blog', component: BlogComponent },
+  { path: 'contact', component: ContactComponent },
 ];
