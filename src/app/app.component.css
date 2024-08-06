@@ -1,26 +1,50 @@
-/* app.component.css or your global stylesheet */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #111111;
+}
 
-/* Styling for the main container */
 .main {
+  max-width: 100%;
+  min-height: 100%;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  align-items: center;
+  padding: 2rem 0px;
+  box-sizing: inherit;
+  position: relative;
+  background-color: #111111;
 }
 
 .content {
   display: flex;
   width: 100%;
+  /* 100% equals to 800px */
+  justify-content: center;
+  max-width: 80%;
+  gap: 20px;
+  align-items: flex-start;
+  /* 80% equals to 640px */
 }
 
 .profileside {
-  width: 30%;
-  background-color: #f0f0f0;
+  background-color: #1e1e1e;
+  width: 15rem;
+  min-height: 80svh;
+  color: white;
   padding: 20px;
+  border-radius: 5px;
+  align-self: flex-start;
 }
 
 .infoside {
   background-color: #1c1c1c;
   color: white;
-  width: 70%;
+  min-height: 80svh;
+  width: 65%;
   padding: 20px;
+  border-radius: 5px;
 }
