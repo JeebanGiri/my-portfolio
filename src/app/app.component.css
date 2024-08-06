@@ -1,0 +1,26 @@
+/* app.component.css or your global stylesheet */
+
+/* Styling for the main container */
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+}
+
+.profileside {
+  width: 30%;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.infoside {
+  background-color: #1c1c1c;
+  color: white;
+  width: 70%;
+  padding: 20px;
+}
