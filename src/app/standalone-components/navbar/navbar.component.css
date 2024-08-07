@@ -1,6 +1,6 @@
 nav {
   background-color: #282828;
-  width: 32rem;
+  width: 35rem;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 0vw;
   float: right;
@@ -12,7 +12,7 @@ nav ul {
   margin: 0;
   display: flex;
   justify-content: flex-end;
-  gap: 30px;
+  gap: 40px;
   margin-right: 30px;
 }
 nav ul li {

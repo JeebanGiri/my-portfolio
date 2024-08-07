@@ -2,34 +2,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  min-height: 92vh;
-  max-width: 100%;
 }
 
+
 .main {
-  display: flex;
-  padding: 2rem 0px;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  position: relative;
+  max-width: 100%;
+  height: 98vh;
   background-color: #111111;
 }
 
 .content {
   display: flex;
-  width: 100%;
-  /* 100% equals to 800px */
   justify-content: center;
-  max-width: 80%;
+  padding: 2rem 0px;
+  /* width: 100%; */
+  /* max-width: 80%; */
+  /* 100% equals to 800px */
   gap: 20px;
   align-items: flex-start;
+  align-items: center;
   /* 80% equals to 640px */
 }
 
 .profileside {
   background-color: #1e1e1e;
-  width: 15rem;
+  width: 14rem;
   position: sticky;
   min-height: 80svh;
   color: white;
@@ -41,6 +38,7 @@
   background-color: #1c1c1c;
   color: white;
   min-height: 80svh;
-  width: 65%;
+  width: 55%;
   border-radius: 5px;
+  align-self: flex-start;
 }
