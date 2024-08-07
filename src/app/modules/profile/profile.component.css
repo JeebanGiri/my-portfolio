@@ -35,18 +35,46 @@
   margin-top: 20px;
   background-color: #3d3d3d;
 }
-
-.email {
-  display: flex;
+.contactinfo {
+  display: grid;
+  padding-top: 30px;
   gap: 20px;
-  padding: 0px 20px;
   justify-content: center;
   align-items: center;
 }
-.email-box {
+
+.email,
+.phone,
+.calender {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0px 0px 20px;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.email-content,
+.phone-content,
+.calender-content {
+  font-size: 12px;
+}
+/* .email-content,
+.phone-content,
+.calender-content p:first-child() {
+  font-weight: 200;
+} */
+
+.email-content p:first-of-type {
+  font-weight: 400;
+}
+.email-box,
+.phone-box,
+.calender-box {
   height: 35px;
   width: 35px;
   border-radius: 5px;
-  background-color: #3d3d3d;
+  background-color: #222122;
   position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
