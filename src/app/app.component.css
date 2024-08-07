@@ -2,19 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-body {
-  background-color: #111111;
+  min-height: 92vh;
+  max-width: 100%;
 }
 
 .main {
-  max-width: 100%;
-  min-height: 100%;
   display: flex;
+  padding: 2rem 0px;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0px;
-  box-sizing: inherit;
+  box-sizing: border-box;
   position: relative;
   background-color: #111111;
 }
@@ -33,9 +30,9 @@ body {
 .profileside {
   background-color: #1e1e1e;
   width: 15rem;
+  position: sticky;
   min-height: 80svh;
   color: white;
-  padding: 20px;
   border-radius: 5px;
   align-self: flex-start;
 }
