@@ -1,8 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .profile {
   display: grid;
-  /* display: flex;
-  flex-direction: column; */
+  justify-content: center;
   place-items: center;
+  padding-top: 50px;
 }
 .profile .box {
   background-color: #3d3d3d;
@@ -29,4 +34,19 @@
   height: 1px;
   margin-top: 20px;
   background-color: #3d3d3d;
+}
+
+.email {
+  display: flex;
+  gap: 20px;
+  padding: 0px 20px;
+  justify-content: center;
+  align-items: center;
+}
+.email-box {
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+  background-color: #3d3d3d;
+  position: relative;
 }
