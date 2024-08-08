@@ -26,7 +26,7 @@
 .profileside {
   background-color: #1e1e1e;
   width: 14rem;
-  /* position: sticky; */
+  position: sticky;
   min-height: 80svh;
   color: white;
   border-radius: 5px;
@@ -37,7 +37,7 @@
   background-color: #1c1c1c;
   color: white;
   min-height: 80svh;
-  width: 55%;
+  width: 50%;
   border-radius: 5px;
   align-self: flex-start;
 }
