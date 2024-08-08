@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.resume-page {
+  padding: 25px;
+}
+.resume-page > .title {
+  padding-top: 10px;
+}
+.title .line {
+  margin-top: 15px;
+  width: 30px;
+  height: 5px;
+  background-color: #d6bd62;
+  border: none;
+  border-radius: 2px;
+}

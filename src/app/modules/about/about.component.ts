@@ -12,7 +12,7 @@ export class AboutComponent {
   webalt: string = 'Web Design';
   devpath: string = '../../../assets/images/web-develop.png';
   devalt: string = 'Web Development';
-  apppath: string = '../../../assets/images/phone.png';
+  apppath: string = '../../../assets/images/phone1.png';
   appalt: string = 'Mobile App';
   camerapath: string = '../../../assets/images/camera.png';
   cameraalt: string = 'Camera';
