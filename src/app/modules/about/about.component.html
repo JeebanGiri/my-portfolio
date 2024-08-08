@@ -23,7 +23,6 @@
       <div class="task1">
         <div class="icon">
           <img [src]="webpath" [alt]="webalt" />
-          <!-- <img src="{{ path }}" alt="{{ alttext }}" /> -->
         </div>
         <div class="contents">
           <b>Web Design</b>
@@ -33,14 +32,18 @@
         </div>
       </div>
       <div class="task2">
-        <div class="icon"></div>
+        <div class="icon">
+          <img [src]="devpath" [alt]="devalt" />
+        </div>
         <div class="contents">
           <b>Web Development</b>
           <p>High quality development of sites made at a professional level</p>
         </div>
       </div>
       <div class="task3">
-        <div class="icon"></div>
+        <div class="icon">
+          <img [src]="apppath" [alt]="appalt" />
+        </div>
         <div class="contents">
           <b>Mobile Apps</b>
           <p>Professional development of application for iOS and Android.</p>
@@ -48,7 +51,8 @@
       </div>
       <div class="task4">
         <div class="icon">
-          <i class="fa fa-camera"></i>
+          <!-- <i class="fa fa-camera"></i> -->
+          <img [src]="camerapath" [alt]="cameraalt" />
         </div>
         <div class="contents">
           <b>Photography</b>
@@ -58,5 +62,8 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="testimonials">
+    <h4>Testimonials</h4>
   </div>
 </div>

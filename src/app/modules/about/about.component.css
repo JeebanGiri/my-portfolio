@@ -41,7 +41,33 @@
 .task3,
 .task4 {
   height: 7.5rem;
-  width: 24.5rem;
+  width: 24rem;
   border-radius: 5px;
   background-color: #222224;
+  padding: 25px;
+  display: flex;
+  gap: 10px;
+}
+.task1,
+.task2,
+.task3,
+.task4,
+.contents > b {
+  font-size: 15px;
+}
+.task1,
+.task2,
+.task3,
+.task4,
+.contents > p {
+  margin-top: 5px;
+}
+
+.icon img {
+  height: 40px;
+  width: 40px;
+}
+.testimonials h4 {
+  padding-top: 20px;
+  font-size: 19px;
 }
