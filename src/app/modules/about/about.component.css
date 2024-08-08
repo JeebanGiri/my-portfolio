@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.about-page {
+  padding: 25px;
+}
+.about-page > .title {
+  padding-top: 10px;
+}
+.title .line {
+  margin-top: 15px;
+  width: 30px;
+  height: 5px;
+  background-color: #d6bd62;
+  border: none;
+  border-radius: 2px;
+}
+.about-page > .content {
+  display: grid;
+  padding-top: 15px;
+  gap: 10px;
+  text-align: justify;
+}
+
+.about-page > .tasks > h4 {
+  padding-top: 20px;
+}
