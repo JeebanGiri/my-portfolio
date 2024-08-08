@@ -27,3 +27,21 @@
 .about-page > .tasks > h4 {
   padding-top: 20px;
 }
+.task-box {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-top: 15px;
+}
+.tasks h4 {
+  font-size: 19px;
+}
+.task1,
+.task2,
+.task3,
+.task4 {
+  height: 7.5rem;
+  width: 24.5rem;
+  border-radius: 5px;
+  background-color: #222224;
+}

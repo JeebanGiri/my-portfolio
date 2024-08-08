@@ -18,6 +18,18 @@ a {
   height: 100px;
   width: 110px;
   border-radius: 10px;
+  position: relative;
+}
+.profile .box img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+.box .image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .profile h4 {
   font-size: 18px;
