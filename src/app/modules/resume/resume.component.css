@@ -22,7 +22,17 @@
   display: flex;
   padding-top: 20px;
   place-items: center;
-  gap: 20px;
+  gap: 10px;
+  position: relative;
+}
+.education .book-box {
+  display: grid;
+  place-items: center;
+  height: 30px;
+  border-radius: 5px;
+  width: 30px;
+  margin-left: -5px;
+  background-color: #222021;
 }
 .education img {
   height: 15px;
@@ -71,24 +81,6 @@
       border: none;
     }
   }
-  /* Completed */
-  /* &.progress__item {
-    opacity: 0.6;
-    color: #fff;
-    &:after {
-      content: "\2713";
-      font-weight: 400;
-      background: #fff;
-      color: #392a60;
-    }
-  } */
-  /* &.progress__item {
-    &:after {
-      background: #fff;
-      color: #392a60;
-      background: #d6bd62;
-    }
-  } */
   &.progress__item {
     &:after {
       background: #fff;
