@@ -5,8 +5,9 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './resume.component.html',
-  styleUrl: './resume.component.css'
+  styleUrl: './resume.component.css',
 })
 export class ResumeComponent {
-
+  bookpath: string = '../../../assets/images/book.png';
+  bookalt: string = 'Book';
 }
