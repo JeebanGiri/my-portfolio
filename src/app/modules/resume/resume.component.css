@@ -25,7 +25,16 @@
   gap: 10px;
   position: relative;
 }
-.education .book-box {
+.exprience {
+  display: flex;
+  padding-top: 20px;
+  place-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.education .book-box,
+.exprience .exprience-box {
   display: grid;
   place-items: center;
   height: 30px;
@@ -34,9 +43,10 @@
   margin-left: -5px;
   background-color: #222021;
 }
-.education img {
-  height: 15px;
-  width: 15px;
+.education img,
+.exprience img {
+  height: 17px;
+  width: 17px;
 }
 
 .progress {
