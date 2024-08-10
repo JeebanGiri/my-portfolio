@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -132,4 +134,46 @@
   font-weight: 500;
   border-radius: 10px;
   gap: 15px;
+}
+.skills-container {
+  display: grid;
+  padding-top: 20px;
+  gap: 20px;
+}
+.skill-container > .content {
+  display: flex;
+  gap: 10px;
+}
+.bar {
+  padding-top: 10px;
+}
+.bar > .html {
+  width: 90%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #d6bd62;
+}
+.bar > .css {
+  width: 80%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #d6bd62;
+}
+.bar > .javascript {
+  width: 70%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #d6bd62;
+}
+.bar > .react {
+  width: 60%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #d6bd62;
+}
+.bar > .node {
+  width: 70%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #d6bd62;
 }
