@@ -5,10 +5,14 @@
   </div>
   <div class="content">
     <ul>
-      <li>AI</li>
-      <li>Web Design</li>
-      <li>Application</li>
-      <li>Web Development</li>
+      <li (click)="selectItem('ai')">AI</li>
+      <li (click)="selectItem('web-design')">Web Design</li>
+      <li (click)="selectItem('application')">Application</li>
+      <li (click)="selectItem('web-develpment')">Web Development</li>
     </ul>
   </div>
+  <div *ngIf="selectedItem === 'ai'"></div>
+  <div *ngIf="selectedItem === 'web-design'"></div>
+  <div *ngIf="selectedItem === 'application'"></div>
+  <div *ngIf="selectedItem === 'web-development'"></div>
 </div>
