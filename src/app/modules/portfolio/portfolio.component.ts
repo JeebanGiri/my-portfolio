@@ -15,8 +15,16 @@ export class PortfolioComponent {
   }
 
   aiProject = [
-    { title: 'Project 1', description: 'Description 1', image: '../../../assets/images/phone.png' },
-    { title: 'Project 2', description: 'Description 2', image: '../../../assets/images/phone.png' },
+    {
+      title: 'Project 1',
+      description: 'Description 1',
+      image: '../../../assets/images/project/ai/project1.jpg',
+    },
+    {
+      title: 'Project 2',
+      description: 'Description 2',
+      image: '../../../assets/images/project/ai/project1.jpg',
+    },
     // Add more projects as needed
   ];
 }
