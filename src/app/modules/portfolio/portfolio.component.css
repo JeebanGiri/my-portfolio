@@ -30,6 +30,10 @@
   list-style: none;
   font-size: 15px;
 }
+ul li.active {
+  color: #d6bd62; /* Adjust the color as needed */
+}
+
 .ai-projects {
   display: flex;
   gap: 25px;

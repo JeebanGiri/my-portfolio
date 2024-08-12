@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './portfolio.component.css',
 })
 export class PortfolioComponent {
-  selectedItem: string | null = null;
+  selectedItem: string | null = 'ai';
 
   selectItem(item: string) {
     this.selectedItem = item;
