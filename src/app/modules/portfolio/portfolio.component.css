@@ -30,7 +30,9 @@
   font-size: 15px;
 }
 ul li.active {
-  color: #d6bd62; /* Adjust the color as needed */
+  color: #d6bd62;
+  display: block;
+  animation: scaleUp 0.25s ease forwards;
 }
 
 .ai-projects,
@@ -55,4 +57,22 @@ ul li.active {
 }
 .project-box > p {
   padding-left: 8px;
+}
+
+.project-item.active {
+  display: block;
+  animation: scaleUp 0.25s ease forwards;
+}
+.project-box.active {
+  display: block;
+  animation: scaleUp 0.25s ease forwards;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

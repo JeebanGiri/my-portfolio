@@ -74,41 +74,91 @@ a {
 .email,
 .phone,
 .calender,
-.linkedin,
-.github {
+.address {
   display: flex;
   gap: 20px;
   padding: 20px 0px 0px 20px;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
+
 .email-content,
 .phone-content,
 .calender-content,
-.linkedin-content,
-.github-content {
-  font-size: 12px;
+.address-content {
+  max-width: calc(100% - 46px);
+  width: calc(100% - 46px);
 }
-/* .email-content,
-.phone-content,
-.calender-content p:first-child() {
-  font-weight: 200;
-} */
 
-.email-content p:first-of-type {
-  font-weight: 400;
+.email-content .contact-link,
+.phone-content .contact-link,
+.calender-content time,
+.address-content address {
+  color: var(--white-2);
+  font-size: var(--fs-7);
 }
-.email-box,
+
+.address-content address {
+  font-style: normal;
+}
+
+.email .email-content > p:first-child,
+.phone .phone-content > p:first-child,
+.calender .calender-content > p:first-child,
+.address .address-content > p:first-child {
+  color: var(--light-gray-70);
+  font-size: var(--fs-7);
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+/* .email-box,
 .phone-box,
 .calender-box,
-.linkedin-box,
-.github-box {
-  height: 35px;
-  width: 35px;
-  border-radius: 5px;
-  background-color: #222122;
+.address-box {
+  height: 48px;
+  width: 48px;
+  border-radius: 12px;
+  background: var(--bg-gradient-jet);
+  transition: var(--transition-1);
+  z-index: -1;
   position: relative;
   display: grid;
   justify-content: center;
   align-items: center;
+} */
+
+.icon-box {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: var(--orange-yellow-crayola);
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+
+.icon-box::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+  z-index: -1;
+}
+.social-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  color: #d6d6d6b3;
+  font-size: 18px;
+  padding-top: 20px;
+}
+.social-link:hover {
+  color: var(--light-gray);
+  color: hsl(0, 0%, 84%);
 }

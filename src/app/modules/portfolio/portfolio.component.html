@@ -5,22 +5,29 @@
   </div>
   <div class="content">
     <ul>
-      <li (click)="selectItem('ai')" [class.active]="selectedItem === 'ai'">
+      <li
+        class="project-item"
+        (click)="selectItem('ai')"
+        [class.active]="selectedItem === 'ai'"
+      >
         All
       </li>
       <li
+        class="project-item"
         (click)="selectItem('web-design')"
         [class.active]="selectedItem === 'web-design'"
       >
         Web Design
       </li>
       <li
+        class="project-item"
         (click)="selectItem('application')"
         [class.active]="selectedItem === 'application'"
       >
         Application
       </li>
       <li
+        class="project-item"
         (click)="selectItem('web-development')"
         [class.active]="selectedItem === 'web-development'"
       >
@@ -39,7 +46,7 @@
   </div>
   <div *ngIf="selectedItem === 'web-design'">
     <div class="web-projects">
-      <div class="project-box" *ngFor="let project of aiProject">
+      <div class="project-box" [class.active] *ngFor="let project of aiProject">
         <img [src]="project.image" alt="{{ project.title }}" />
         <h4>{{ project.title }}</h4>
         <p>{{ project.description }}</p>
@@ -48,7 +55,7 @@
   </div>
   <div *ngIf="selectedItem === 'application'">
     <div class="application-projects">
-      <div class="project-box" *ngFor="let project of aiProject">
+      <div class="project-box" [class.active] *ngFor="let project of aiProject">
         <img [src]="project.image" alt="{{ project.title }}" />
         <h4>{{ project.title }}</h4>
         <p>{{ project.description }}</p>
