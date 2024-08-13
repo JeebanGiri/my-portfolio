@@ -37,7 +37,11 @@
   </div>
   <div *ngIf="selectedItem === 'ai'">
     <div class="ai-projects">
-      <div class="project-box" *ngFor="let project of aiProject">
+      <div
+        class="project-box"
+        *ngFor="let project of aiProject"
+        [ngClass]="{ active: selectedItem === 'ai' }"
+      >
         <img [src]="project.image" alt="{{ project.title }}" />
         <h4>{{ project.title }}</h4>
         <p>{{ project.description }}</p>
@@ -46,7 +50,11 @@
   </div>
   <div *ngIf="selectedItem === 'web-design'">
     <div class="web-projects">
-      <div class="project-box" [class.active] *ngFor="let project of aiProject">
+      <div
+        class="project-box"
+        *ngFor="let project of aiProject"
+        [ngClass]="{ active: selectedItem === 'web-design' }"
+      >
         <img [src]="project.image" alt="{{ project.title }}" />
         <h4>{{ project.title }}</h4>
         <p>{{ project.description }}</p>
@@ -55,7 +63,11 @@
   </div>
   <div *ngIf="selectedItem === 'application'">
     <div class="application-projects">
-      <div class="project-box" [class.active] *ngFor="let project of aiProject">
+      <div
+        class="project-box"
+        *ngFor="let project of aiProject"
+        [ngClass]="{ active: selectedItem === 'application' }"
+      >
         <img [src]="project.image" alt="{{ project.title }}" />
         <h4>{{ project.title }}</h4>
         <p>{{ project.description }}</p>
@@ -64,7 +76,11 @@
   </div>
   <div *ngIf="selectedItem === 'web-development'">
     <div class="dev-projects">
-      <div class="project-box" *ngFor="let project of aiProject">
+      <div
+        class="project-box"
+        *ngFor="let project of aiProject"
+        [ngClass]="{ active: selectedItem === 'web-development' }"
+      >
         <img [src]="project.image" alt="{{ project.title }}" />
         <h4>{{ project.title }}</h4>
         <p>{{ project.description }}</p>

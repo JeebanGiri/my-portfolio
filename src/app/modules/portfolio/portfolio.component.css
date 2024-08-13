@@ -43,13 +43,13 @@ ul li.active {
   gap: 25px;
 }
 .project-box {
-  padding-top: 20px;
+  padding-top: 30px;
   display: grid;
 }
 .project-box img {
-  height: 150px;
-  width: 200px;
-  border-radius: 10px;
+  height: 200px;
+  width: 230px;
+  border-radius: 20px;
 }
 
 .project-box > h4 {
@@ -59,10 +59,26 @@ ul li.active {
   padding-left: 8px;
 }
 
-.project-item.active {
-  display: block;
-  animation: scaleUp 0.25s ease forwards;
+.project-box {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
+.project-box.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.project-box img {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-box img:hover {
+  transform: scale(1.1);
+}
+
 .project-box.active {
   display: block;
   animation: scaleUp 0.25s ease forwards;
