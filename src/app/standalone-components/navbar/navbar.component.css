@@ -23,6 +23,10 @@ nav ul li {
 nav ul li a:hover {
   color: #cccc87;
 }
+.navbar ul li a.active {
+  color: #d6bd62;
+  font-weight: 500;
+}
 
 nav ul li a:active {
   color: #cccc87;

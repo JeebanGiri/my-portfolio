@@ -4,7 +4,8 @@
       <li>
         <a
           routerLink="/"
-          routerActiveLink="active"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
           routerCurrentWhenActive="page"
           >About</a
         >
@@ -12,7 +13,7 @@
       <li>
         <a
           routerLink="/resume"
-          routerActiveLink="active"
+          routerLinkActive="active"
           routerCurrentWhenActive="page"
           >Resume</a
         >
@@ -20,7 +21,7 @@
       <li>
         <a
           routerLink="/portfolio"
-          routerActiveLink="active"
+          routerLinkActive="active"
           routerCurrentWhenActive="page"
           >Portfolio</a
         >
@@ -28,7 +29,7 @@
       <li>
         <a
           routerLink="/blog"
-          routerActiveLink="active"
+          routerLinkActive="active"
           routerCurrentWhenActive="page"
           >Blog</a
         >
@@ -36,7 +37,7 @@
       <li>
         <a
           routerLink="/contact"
-          routerActiveLink="active"
+          routerLinkActive="active"
           routerCurrentWhenActive="page"
           >Contact</a
         >
