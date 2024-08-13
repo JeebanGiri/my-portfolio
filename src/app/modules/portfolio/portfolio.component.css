@@ -34,7 +34,10 @@ ul li.active {
   color: #d6bd62; /* Adjust the color as needed */
 }
 
-.ai-projects {
+.ai-projects,
+.web-projects,
+.application-projects,
+.dev-projects {
   display: flex;
   gap: 25px;
 }
