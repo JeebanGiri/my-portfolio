@@ -6,11 +6,9 @@
   box-sizing: border-box;
 }
 .about-page {
-  padding: 25px;
+  padding: 30px;
 }
-.about-page > .title {
-  padding-top: 10px;
-}
+
 .title .line {
   margin-top: 15px;
   width: 30px;
@@ -26,36 +24,37 @@
   text-align: justify;
 }
 
-.about-page > .tasks > h4 {
+.about-page > .tasks > h3 {
   padding-top: 20px;
 }
 .task-box {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
   padding-top: 15px;
 }
-.tasks h4 {
+.tasks h3 {
   font-size: 19px;
 }
 .task1,
 .task2,
 .task3,
 .task4 {
-  height: 7.5rem;
-  width: 24rem;
-  border-radius: 5px;
+  height: 9rem;
+  width: 25.8rem;
+  border-radius: 20px;
   background-color: #222224;
-  padding: 25px;
+  padding: 20px;
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  z-index: 20;
 }
 .task1,
 .task2,
 .task3,
 .task4,
 .contents > b {
-  font-size: 15px;
+  font-size: var(--fs-3);
 }
 .task1,
 .task2,
@@ -63,6 +62,7 @@
 .task4,
 .contents > p {
   margin-top: 5px;
+  font-size: var(--fs-6);
 }
 
 .icon img {

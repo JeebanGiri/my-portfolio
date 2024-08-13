@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './profile.component.css',
 })
 export class ProfileComponent {
-  profilepath: string = '../../../assets/images/jeeban.jpg';
+  profilepath: string = '../../../assets/images/my-avatar.png';
   profilealt: string = 'Profile';
 }

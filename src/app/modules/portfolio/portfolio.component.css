@@ -27,7 +27,6 @@
   gap: 1.2rem;
 }
 .content ul li {
-  list-style: none;
   font-size: 15px;
 }
 ul li.active {
@@ -50,6 +49,7 @@ ul li.active {
   width: 200px;
   border-radius: 10px;
 }
+
 .project-box > h4 {
   padding: 10px 0 0 8px;
 }

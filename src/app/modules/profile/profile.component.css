@@ -15,36 +15,47 @@ a {
 }
 .profile .box {
   background-color: #3d3d3d;
-  height: 100px;
-  width: 110px;
-  border-radius: 10px;
+  height: 140px;
+  width: 150px;
+  border-radius: 25px;
   position: relative;
 }
 .profile .box img {
-  height: 50px;
-  width: 50px;
+  height: 140px;
+  width: 140px;
   border-radius: 10px;
 }
+
 .box .image {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.profile h4 {
-  font-size: 18px;
-  font-weight: 500;
+.info-content {
+  display: grid;
+  gap: 20px;
   padding-top: 20px;
-  margin-bottom: 14px;
 }
 
-.profile input {
-  background-color: #2b2b2b;
-  color: white;
-  border: none;
-  padding: 4px 7px;
-  border-radius: 3px;
+.info-content .name {
+  color: var(--white-2);
+  font-size: var(--fs-1);
+  font-weight: var(--fw-500);
+  letter-spacing: -0.25px;
 }
+
+.info-content .title {
+  color: var(--white-1);
+  background: var(--onyx);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  width: max-content;
+  padding: 3px 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
 .line-hr {
   border: 0;
   width: 12rem;
@@ -54,7 +65,7 @@ a {
 }
 .contactinfo {
   display: grid;
-  padding-top: 30px;
+  padding-top: 15px;
   gap: 20px;
   justify-content: center;
   align-items: center;
