@@ -17,7 +17,7 @@ export class PortfolioComponent {
   }
   selectedItem: string | null = 'ai';
 
-  selectItem(item: string) {
+  selectItem(item: string) { 
     this.selectedItem = item;
   }
 
