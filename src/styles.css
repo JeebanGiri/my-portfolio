@@ -1,20 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-html {
-  font-family: var(--ff-poppins);
-}
-
-body {
-  background: var(--smoky-black); /* As per your CSS */
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-  cursor: pointer;
-}
 
 /*-----------------------------------*\
   #style.css
@@ -137,4 +121,21 @@ li {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-family: var(--ff-poppins);
+}
+
+body {
+  background: var(--smoky-black); /* As per your CSS */
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
 }

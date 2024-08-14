@@ -1,13 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { IonIcon } from '@ionic/angular/standalone';
 import { CommonModule } from '@angular/common';
+import { addIcons } from 'ionicons';
+import { eye } from 'ionicons/icons';
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, IonIcon],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css',
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class PortfolioComponent {
+  constructor() {
+    addIcons({ eye });
+  }
   selectedItem: string | null = 'ai';
 
   selectItem(item: string) {
