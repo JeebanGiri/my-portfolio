@@ -2,7 +2,7 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { IonIcon } from '@ionic/angular/standalone';
 import { CommonModule } from '@angular/common';
 import { addIcons } from 'ionicons';
-import { eye } from 'ionicons/icons';
+import { eye, eyeOutline } from 'ionicons/icons';
 @Component({
   selector: 'app-portfolio',
   standalone: true,
@@ -13,11 +13,11 @@ import { eye } from 'ionicons/icons';
 })
 export class PortfolioComponent {
   constructor() {
-    addIcons({ eye });
+    addIcons({ 'eye-outline': eyeOutline });
   }
   selectedItem: string | null = 'ai';
 
-  selectItem(item: string) { 
+  selectItem(item: string) {
     this.selectedItem = item;
   }
 
