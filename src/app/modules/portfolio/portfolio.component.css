@@ -40,16 +40,12 @@ ul li.active {
 .application-projects,
 .dev-projects {
   display: flex;
-  gap: 25px;
+  gap: 10px;
 }
 .project-box {
   padding-top: 30px;
-  /* position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-  margin-bottom: 15px;
+  position: relative;
   object-fit: cover;
-  transition: var(--transition-1); */
 }
 
 .project-box > h4 {
@@ -64,13 +60,13 @@ ul li.active {
   transform: scale(1);
 }
 
-.project-box img {
+.project-img img {
   object-fit: cover;
   transition: transform 0.5s ease;
 }
 
 .project-img:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   opacity: 0.7;
 }
 
@@ -87,10 +83,13 @@ ul li.active {
     transform: scale(1);
   }
 }
+.project-box > a {
+  width: 100%;
+}
 
 .project-img {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 200px;
   border-radius: 16px;
   overflow: hidden;
