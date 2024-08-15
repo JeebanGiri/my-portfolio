@@ -46,6 +46,7 @@ ul li.active {
   padding-top: 30px;
   position: relative;
 }
+
 .project-title,
 .project-category {
   margin-left: 10px;
@@ -80,7 +81,7 @@ ul li.active {
 
 .project-box.active {
   display: block;
-  animation: scaleUp 0.25s ease forwards;
+  animation: scal2Up 0.25s ease forwards;
 }
 
 @keyframes scaleUp {
@@ -124,7 +125,7 @@ ul li.active {
 }
 
 .project-box > a:hover img {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .project-box > a:hover .project-img::before {
@@ -140,7 +141,7 @@ ul li.active {
   left: 50%;
   transform: translate(-50%, -50%) scale(var(--scale));
   font-size: 20px;
-  padding: 18px;
+  padding: 13px 18px;
   border-radius: 12px;
   opacity: 0;
   z-index: 1;
