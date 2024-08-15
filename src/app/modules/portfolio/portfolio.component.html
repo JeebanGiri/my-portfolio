@@ -42,7 +42,7 @@
         *ngFor="let project of aiProject"
         [ngClass]="{ active: selectedItem === 'ai' }"
       >
-        <a href="#">
+        <a href="#" (click)="$event.preventDefault()">
           <figure class="project-img">
             <div class="project-item-icon-box">
               <ion-icon name="eye-outline"></ion-icon>
@@ -62,7 +62,7 @@
         *ngFor="let project of aiProject"
         [ngClass]="{ active: selectedItem === 'web-design' }"
       >
-        <a href="#">
+        <a href="#" (click)="$event.preventDefault()">
           <figure class="project-img">
             <div class="project-item-icon-box">
               <ion-icon name="eye-outline"></ion-icon>
@@ -82,7 +82,7 @@
         *ngFor="let project of aiProject"
         [ngClass]="{ active: selectedItem === 'application' }"
       >
-        <a href="#">
+        <a href="#" (click)="$event.preventDefault()">
           <figure class="project-img">
             <div class="project-item-icon-box">
               <ion-icon name="eye-outline"></ion-icon>
@@ -102,7 +102,7 @@
         *ngFor="let project of aiProject"
         [ngClass]="{ active: selectedItem === 'web-development' }"
       >
-        <a href="#">
+        <a href="#" (click)="$event.preventDefault()">
           <figure class="project-img">
             <div class="project-item-icon-box">
               <ion-icon name="eye-outline"></ion-icon>
