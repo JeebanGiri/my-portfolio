@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contact-page {
+  padding: 30px;
+}
+
+.title .line {
+  margin-top: 15px;
+  width: 30px;
+  height: 5px;
+  background-color: #d6bd62;
+  border: none;
+  border-radius: 2px;
+}
+

@@ -1,1 +1,55 @@
-<p>contact works!</p>
+<div class="contact-page">
+  <div class="title">
+    <h2>Contact</h2>
+    <hr class="line" />
+  </div>
+  <section class="map-box">
+    <figure>
+      <iframe
+        width="600"
+        height="450"
+        style="border: 0"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=API_KEY
+      &q=Space+Needle,Seattle+WA"
+      >
+      </iframe>
+    </figure>
+  </section>
+  <section class="contact-form">
+    <h3>Contact Me</h3>
+    <form action="#">
+      <div class="input-wrapper">
+        <input
+          type="text"
+          name="fullname"
+          class="form-input"
+          placeholder="Full Name"
+          required
+          date-form-input
+        />
+        <input
+          type="text"
+          name="email"
+          class="form-input"
+          placeholder="Email Address"
+          required
+          date-form-input
+        />
+      </div>
+      <textarea
+        name="message"
+        class="form-input"
+        placeholder="Your Message"
+        required
+        data-form-input
+      ></textarea>
+      <button class="form-btn" type="submit">
+        <ion-icon name="paper-plane"></ion-icon>
+        <span>Send Message</span>
+      </button>
+    </form>
+  </section>
+</div>

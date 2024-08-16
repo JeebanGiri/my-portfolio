@@ -2,7 +2,7 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { IonIcon } from '@ionic/angular/standalone';
 import { CommonModule } from '@angular/common';
 import { addIcons } from 'ionicons';
-import { eye, eyeOutline } from 'ionicons/icons';
+import { eyeOutline } from 'ionicons/icons';
 @Component({
   selector: 'app-portfolio',
   standalone: true,
@@ -32,6 +32,5 @@ export class PortfolioComponent {
       description: 'Description 2',
       image: '../../../assets/images/project/ai/project1.jpg',
     },
-    // Add more projects as needed
   ];
 }
