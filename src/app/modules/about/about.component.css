@@ -8,6 +8,9 @@
 .about-page {
   padding: 30px;
 }
+.about-page > .title {
+  padding-top: 5px;
+}
 
 .title .line {
   margin-top: 15px;

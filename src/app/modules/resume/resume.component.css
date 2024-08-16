@@ -10,7 +10,7 @@
   padding: 30px;
 }
 .resume-page > .title {
-  padding-top: 10px;
+  padding-top: 5px;
 }
 .title .line {
   margin-top: 15px;
@@ -50,7 +50,6 @@
   height: 17px;
   width: 17px;
 }
-
 .progress {
   position: relative;
   margin: 1rem 0 0;
@@ -122,6 +121,7 @@
 .progress__info {
   font-size: 13px;
 }
+
 .skill-set h3 {
   padding-top: 10px;
 }

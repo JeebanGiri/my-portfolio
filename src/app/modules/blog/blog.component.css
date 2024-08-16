@@ -8,6 +8,9 @@
 .blog-page {
   padding: 30px;
 }
+.blog-page > .title {
+  padding-top: 5px;
+}
 .title .line {
   margin-top: 15px;
   width: 30px;
