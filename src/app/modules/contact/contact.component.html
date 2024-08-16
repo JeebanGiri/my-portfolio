@@ -5,17 +5,18 @@
   </div>
   <section class="map-box">
     <figure>
-      <iframe
+      <!-- <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5470.650018161864!2d87.3849654956481!3d26.667963972032915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef65f840c1eab1%3A0x39b3f89f4bf15bae!2sBiratchowk%2C%20Koshi%20Haraicha%2056600!5e1!3m2!1sen!2snp!4v1723822497650!5m2!1sen!2snp"
         width="400"
         height="350"
         style="border: 0"
+        allowfullscreen=""
         loading="lazy"
-        allowfullscreen
         referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps/embed/v1/place?key=API_KEY
-      &q=Space+Needle,Seattle+WA"
-      >
-      </iframe>
+      ></iframe> -->
+      <google-map [center]="center" [zoom]="zoom" height="350px" width="100%">
+        <map-marker [position]="center"></map-marker>
+      </google-map>
     </figure>
   </section>
   <section class="contact-form">
