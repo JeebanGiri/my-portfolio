@@ -19,6 +19,6 @@ export class ContactComponent {
 
   apiKey = environment.googleMapsApiKey;
 
-  center: google.maps.LatLngLiteral = { lat: 37.7749, lng: -122.4194 };
+  center: google.maps.LatLngLiteral = { lat: 26.6674487, lng: 87.3880129 };
   zoom = 12;
 }
