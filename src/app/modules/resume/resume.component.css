@@ -39,10 +39,10 @@
 .exprience .exprience-box {
   display: grid;
   place-items: center;
-  height: 30px;
+  height: 40px;
   border-radius: 5px;
-  width: 30px;
-  margin-left: -5px;
+  width: 40px;
+  margin-left: -10px;
   background-color: #222021;
 }
 .education img,
