@@ -45,6 +45,10 @@
   margin-left: -10px;
   background-color: #222021;
 }
+.education > h3,
+.exprience > h3 {
+  letter-spacing: 1px;
+}
 .education img,
 .exprience img {
   height: 17px;
@@ -106,20 +110,26 @@
 }
 .progress__item > .content p:first-child {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
 }
-.progress__item > .content p:nth-child(2) {
+.progress__item > .content span {
   padding-top: 5px;
+  font-size: var(--fs-6);
   padding-bottom: 2px;
-  color: #d6bd62;
+  color: var(--vegas-gold);
 }
-.progress__item > .content p:nth-child(2),
-.progress__item > .content p:nth-child(3) {
+.progress__item > .content .description {
   opacity: 0.7;
+  font-weight: var(--fw-4);
 }
 
 .progress__info {
   font-size: 13px;
+}
+.skills {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .skill-set h3 {
