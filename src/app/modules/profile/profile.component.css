@@ -25,6 +25,10 @@ a {
   width: 140px;
   border-radius: 10px;
 }
+.icon-box .icons {
+  color: var(--vegas-gold);
+  /* color: #ceb15a; */
+}
 
 .box .image {
   position: absolute;
