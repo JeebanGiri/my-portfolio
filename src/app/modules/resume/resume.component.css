@@ -121,7 +121,7 @@
 }
 .progress__item > .content .description {
   opacity: 0.7;
-  font-weight: var(--fw-4);
+  font-weight: var(--fw-300);
 }
 
 .progress__info {

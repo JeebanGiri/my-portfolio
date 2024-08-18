@@ -26,6 +26,10 @@
   gap: 10px;
   text-align: justify;
 }
+.content p {
+  opacity: 0.8;
+  font-weight: var(--fw-300);
+}
 
 .about-page > .tasks > h3 {
   padding-top: 20px;
