@@ -69,10 +69,16 @@ a {
 }
 .contactinfo {
   display: grid;
-  padding-top: 15px;
   gap: 20px;
+  box-sizing: border-box;
   justify-content: center;
   align-items: center;
+  max-width: calc(100% - 41px);
+  width: calc(100% - 41px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 20px 0px 0px 20px;
 }
 
 .email,
@@ -82,14 +88,14 @@ a {
   display: flex;
   gap: 20px;
   padding: 20px 0px 0px 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-
-.email-content,
-.phone-content,
-.calender-content,
-.address-content {
-  max-width: calc(100% - 46px);
-  width: calc(100% - 46px);
+.email-content {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .email-content .contact-link,
