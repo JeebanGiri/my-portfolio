@@ -70,6 +70,7 @@
 .contents > p {
   margin-top: 5px;
   font-size: var(--fs-6);
+  color: var(--light-gray);
 }
 
 .icon img {
