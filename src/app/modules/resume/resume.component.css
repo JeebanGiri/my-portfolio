@@ -43,16 +43,30 @@
   border-radius: 5px;
   width: 40px;
   margin-left: -10px;
-  background-color: #222021;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+  position: relative;
 }
+.education .book-box::before,
+.exprience .exprience-box::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+  z-index: -1;
+}
+
 .education > h3,
 .exprience > h3 {
   letter-spacing: 1px;
 }
 .education img,
 .exprience img {
-  height: 17px;
-  width: 17px;
+  height: 18px;
+  width: 18px;
 }
 .progress {
   position: relative;
@@ -79,16 +93,18 @@
     position: absolute;
     /* top: 0; */
     top: 1.2rem;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: #d6bd62;
+    width: 7px;
+    height: 7px;
+    left: 4px;
+    /* border-radius: 50%; */
+    border-radius: 7px;
+    background: var(--vegas-gold);
     color: #fff;
     font-weight: 400;
     font-size: 13px;
     line-height: 2rem;
     text-align: center;
-    border: 1px solid #fff;
+    box-shadow: var(--shadow-2);
   }
   /* Hide border for Last Step */
   &:last-child {
@@ -107,6 +123,8 @@
 .progress__item .content {
   padding-left: 30px;
   padding-top: 10px;
+  display: grid;
+  gap: 3px;
 }
 .progress__item > .content p:first-child {
   font-weight: 600;
