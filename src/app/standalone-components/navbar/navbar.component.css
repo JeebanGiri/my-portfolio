@@ -3,6 +3,7 @@ nav {
   width: 35rem;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 0vw;
+  border-top-right-radius: 20px;
   float: right;
 }
 
