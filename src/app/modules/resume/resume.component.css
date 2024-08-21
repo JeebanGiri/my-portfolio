@@ -5,13 +5,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .resume-page {
   padding: 30px;
 }
 .resume-page > .title {
   padding-top: 5px;
 }
+
 .title .line {
   margin-top: 15px;
   width: 30px;
