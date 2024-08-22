@@ -140,4 +140,28 @@ li {
   cursor: pointer;
 }
 
-/* Responsive CSS */
+/*-----------------------------------*\
+  #RESPONSIVE
+\*-----------------------------------*/
+
+/* Responsive larger than 580px */
+@media (min-width: 580px) {
+  /**
+   * CUSTOM PROPERTY
+   */
+  :root {
+    /**
+     * typography
+     */
+
+    --fs-1: 32px;
+    --fs-2: 24px;
+    --fs-3: 26px;
+    --fs-4: 18px;
+    z-index: 999;
+
+    --fs-6: 15px;
+    --fs-7: 15px;
+    --fs-8: 12px;
+  }
+}
