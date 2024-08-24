@@ -1,14 +1,20 @@
 <div class="profile">
-  <div class="box">
-    <figure class="image">
-      <img [src]="profilepath" [alt]="profilealt" />
-    </figure>
+  <div class="sidebar-info">
+    <div class="box">
+      <figure class="image">
+        <img [src]="profilepath" [alt]="profilealt" />
+      </figure>
+    </div>
+    <div class="info-content">
+      <h1 class="name" title=" Jeeban Giri">Jeeban Giri</h1>
+      <p class="title">Full Stack Developer</p>
+    </div>
+    <button class="info_more-btn" data-sidebar-btn>
+      <span>Show Contacts</span>
+      <ion-icon name="chevron-down"></ion-icon>
+    </button>
+    <hr class="line-hr" />
   </div>
-  <div class="info-content">
-    <h1 class="name" title=" Jeeban Giri">Jeeban Giri</h1>
-    <p class="title">Full Stack Developer</p>
-  </div>
-  <hr class="line-hr" />
   <div class="contactinfo">
     <div class="email">
       <div class="email-box">
