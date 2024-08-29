@@ -1,89 +1,87 @@
 <div class="profile">
-  <div class="sidebar-info">
-    <div class="box">
-      <figure class="image">
-        <img [src]="profilepath" [alt]="profilealt" />
-      </figure>
-    </div>
-    <div class="info-content">
-      <h1 class="name" title=" Jeeban Giri">Jeeban Giri</h1>
-      <p class="title">Full Stack Developer</p>
-    </div>
-    <button class="info_more-btn" data-sidebar-btn>
-      <span>Show Contacts</span>
-      <ion-icon name="chevron-down"></ion-icon>
-    </button>
-  </div>
-  <div class="contactinfo">
-    <hr class="line-hr" />
-    <div class="email">
-      <div class="email-box">
-        <div class="icon-box">
-          <i class="fa-regular fa-envelope icons"></i>
-        </div>
+  <div class="sidebar-container">
+    <div class="sidebar-info">
+      <div class="box">
+        <figure class="image">
+          <img [src]="profilepath" [alt]="profilealt" />
+        </figure>
       </div>
-      <div class="email-content">
-        <p>Email</p>
-        <a href="mailto:jeeban.giri5995@gmail.com" class="contact-link"
-          >jeeban.giri5995&#64;gmail.com</a
+      <div class="info-content">
+        <h1 class="name" title=" Jeeban Giri">Jeeban Giri</h1>
+        <p class="title">Full Stack Developer</p>
+      </div>
+      <button class="info_more-btn" data-sidebar-btn (click)="toggleInfo()">
+        <span>Show Contacts</span>
+        <ion-icon name="chevron-down"></ion-icon>
+      </button>
+    </div>
+    <div class="contactinfo" [class.expanded]="isExpanded">
+      <hr class="line-hr" />
+      <ul class="contacts-list">
+        <li class="contact-item">
+          <div class="icon-box">
+            <i class="fa-regular fa-envelope icons"></i>
+          </div>
+          <div class="email-content">
+            <p>Email</p>
+            <a href="mailto:jeeban.giri5995@gmail.com" class="contact-link"
+              >jeeban.giri5995&#64;gmail.com</a
+            >
+          </div>
+        </li>
+        <div class="contact-item">
+          <div class="icon-box">
+            <i class="fa fa-mobile-alt icons"></i>
+          </div>
+          <div class="phone-content">
+            <p>Phone</p>
+            <p>
+              <a href="tel:+977-9807099754" class="contact-link"
+                >+977-9807099754</a
+              >
+            </p>
+          </div>
+          <!-- <p>+977-9807099754</p> -->
+        </div>
+        <div class="contact-item">
+          <div class="icon-box">
+            <i class="fa-regular fa-calendar icons"></i>
+          </div>
+          <div class="calender-content">
+            <p>Birthday</p>
+            <time datetime="1982-06-23">22 Nov, 2001</time>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon-box">
+            <i class="fas fa-map-marker-alt icons"></i>
+          </div>
+          <div class="address-content">
+            <p>Location</p>
+            <address>Kathmandu, Nepal</address>
+          </div>
+        </div>
+      </ul>
+    </div>
+    <div class="social-link">
+      <div class="github">
+        <a href="https://github.com/JeebanGiri" target="'_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="linkedin">
+        <a
+          href="https://www.linkedin.com/in/jeeban-giri-1b7a98251/"
+          target="_blank"
         >
+          <i class="fab fa-linkedin"></i>
+        </a>
       </div>
-    </div>
-    <div class="phone">
-      <div class="phone-box">
-        <div class="icon-box">
-          <i class="fa fa-mobile-alt icons"></i>
-        </div>
+      <div class="twitter">
+        <a href="https://www.instagram.com/giri_jeeban/" target="_blank"
+          ><i class="fab fa-instagram"></i>
+        </a>
       </div>
-      <div class="phone-content">
-        <p>Phone</p>
-        <p>
-          <a href="tel:+977-9807099754" class="contact-link">+977-9807099754</a>
-        </p>
-      </div>
-      <!-- <p>+977-9807099754</p> -->
-    </div>
-    <div class="calender">
-      <div class="calender-box">
-        <div class="icon-box">
-          <i class="fa-regular fa-calendar icons"></i>
-        </div>
-      </div>
-      <div class="calender-content">
-        <p>Birthday</p>
-        <time datetime="1982-06-23">22 Nov, 2001</time>
-      </div>
-    </div>
-    <div class="address">
-      <div class="address-box">
-        <div class="icon-box">
-          <i class="fas fa-map-marker-alt icons"></i>
-        </div>
-      </div>
-      <div class="address-content">
-        <p>Location</p>
-        <address>Kathmandu, Nepal</address>
-      </div>
-    </div>
-  </div>
-  <div class="social-link">
-    <div class="github">
-      <a href="https://github.com/JeebanGiri" target="'_blank">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="linkedin">
-      <a
-        href="https://www.linkedin.com/in/jeeban-giri-1b7a98251/"
-        target="_blank"
-      >
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </div>
-    <div class="twitter">
-      <a href="https://www.instagram.com/giri_jeeban/" target="_blank"
-        ><i class="fab fa-instagram"></i>
-      </a>
     </div>
   </div>
 </div>

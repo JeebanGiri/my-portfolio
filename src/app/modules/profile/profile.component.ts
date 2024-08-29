@@ -15,4 +15,10 @@ export class ProfileComponent {
   }
   profilepath: string = '../../../assets/images/my-avatar.png';
   profilealt: string = 'Profile';
+
+  isExpanded = false;
+
+  toggleInfo() {
+    this.isExpanded = !this.isExpanded;
+  }
 }
