@@ -125,22 +125,6 @@ a {
   margin-bottom: 2px;
 }
 
-/* .email-box,
-.phone-box,
-.calender-box,
-.address-box {
-  height: 48px;
-  width: 48px;
-  border-radius: 12px;
-  background: var(--bg-gradient-jet);
-  transition: var(--transition-1);
-  z-index: -1;
-  position: relative;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-} */
-
 .icon-box {
   position: relative;
   background: var(--border-gradient-onyx);
@@ -177,6 +161,72 @@ a {
 }
 .social-link i:hover {
   color: hsl(0, 0%, 84%);
+}
+
+@media (min-width: 1240px) and (max-width: 1250px) {
+  .profile {
+    padding: 30px;
+  }
+  .sidebar-info {
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    padding-top: 0px;
+    height: max-content;
+  }
+  .profile .box {
+    background-color: #3d3d3d;
+    height: 120px;
+    width: 120px;
+    border-radius: 25px;
+    position: relative;
+  }
+  .profile .box img {
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+  }
+  .info-content .name {
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .info-content .title {
+    margin: auto;
+  }
+
+  .info_more-btn {
+    display: none;
+  }
+
+  .sidebar-info_more {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .contacts-list {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info :is(.contact-link) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .contact-info :is(.contact-link, time, address) {
+    --fs-7: 14px;
+    font-weight: var(--fw-300);
+  }
+
+  .separator:last-of-type {
+    margin: 15px 0;
+    opacity: 0;
+  }
+
+  .social-list {
+    justify-content: center;
+  }
 }
 
 /* @media (min-width: 580px) {
@@ -223,4 +273,20 @@ a {
   .line-hr {
     margin: 32px 0;
   }
+} */
+
+/* .email-box,
+.phone-box,
+.calender-box,
+.address-box {
+  height: 48px;
+  width: 48px;
+  border-radius: 12px;
+  background: var(--bg-gradient-jet);
+  transition: var(--transition-1);
+  z-index: -1;
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 } */

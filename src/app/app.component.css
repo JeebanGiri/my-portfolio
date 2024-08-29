@@ -27,7 +27,7 @@
 .profileside {
   position: sticky;
   top: 60px;
-  overflow: visible;
+  /* overflow: visible;   change here */
   z-index: 1000;
   background-color: #1e1e1e;
   width: 17rem;
@@ -46,8 +46,33 @@
   border-radius: 20px;
   align-self: flex-start;
 }
-/* .profile {
-  display: grid;
-  place-items: center;
-  padding-top: 50px;
-} */
+
+@media (min-width: 1240px) and (max-width: 1250px) {
+  main {
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .content {
+    display: grid;
+    place-items: center;
+  }
+
+  .profileside {
+    min-width: 75%;
+    width: 75%;
+    z-index: 1;
+  }
+
+  .infoside {
+    min-width: 75%;
+    width: 75%;
+    margin: 0;
+    z-index: 1;
+  }
+}
