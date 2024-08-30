@@ -7,6 +7,9 @@ a {
   text-decoration: none;
   color: white;
 }
+.profile {
+  position: relative;
+}
 .sidebar-info {
   display: grid;
   justify-content: center;
@@ -64,10 +67,6 @@ a {
 }
 
 .info_more-btn {
-  display: none;
-}
-
-.info_more-btn span {
   display: none;
 }
 
@@ -279,7 +278,6 @@ a {
   .profile {
     padding: 30px;
   }
-
   .sidebar-container {
     display: flex;
     flex-direction: column;
@@ -287,9 +285,7 @@ a {
     transition: height 0.3s ease;
     overflow: hidden;
   }
-  .profile {
-    padding: 30px;
-  }
+
   .sidebar-info {
     display: flex;
     justify-content: flex-start;
@@ -298,7 +294,6 @@ a {
     padding-top: 0px;
     height: auto;
   }
-
   .separator:last-of-type {
     margin: 15px 0;
     opacity: 0;
@@ -337,15 +332,12 @@ a {
     width: 120px;
     border-radius: 10px;
   }
+
   .info_more-btn {
     display: block;
   }
-
   .info_more-btn span {
     display: block;
-  }
-  .info_more-btn ion-icon {
-    display: none;
   }
 
   .info-content .name {

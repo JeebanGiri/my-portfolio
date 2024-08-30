@@ -67,6 +67,8 @@
     min-width: 75%;
     width: 75%;
     z-index: 1;
+    position: relative;
+    top: 0px;
   }
 
   .infoside {

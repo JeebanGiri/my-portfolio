@@ -10,9 +10,9 @@
         <h1 class="name" title=" Jeeban Giri">Jeeban Giri</h1>
         <p class="title">Full Stack Developer</p>
       </div>
-      <button class="info_more-btn" data-sidebar-btn (click)="toggleInfo()">
-        <span>Show Contacts</span>
-        <ion-icon name="chevron-down"></ion-icon>
+      <button data-sidebar-btn (click)="toggleInfo()">
+        <span class="info_more-btn">Show Contacts</span>
+        <!-- <ion-icon name="chevron-down"></ion-icon> -->
       </button>
     </div>
     <div class="contactinfo" [class.expanded]="isExpanded">
