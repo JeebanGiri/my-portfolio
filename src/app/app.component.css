@@ -28,10 +28,10 @@
   position: sticky;
   top: 60px;
   /* overflow: visible;   change here */
-  z-index: 1000;
+  z-index: 1;
   background-color: #1e1e1e;
   width: 17rem;
-  min-height: 75svh;
+  /* min-height: 75h; */
   color: white;
   border-radius: 20px;
   align-self: flex-start;
