@@ -69,6 +69,8 @@
     z-index: 1;
     position: relative;
     top: 0px;
+    box-shadow: var(--shadow-5);
+    min-height: 180px;
   }
 
   .infoside {

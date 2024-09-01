@@ -9,6 +9,7 @@ a {
 }
 .profile {
   position: relative;
+  height: auto;
 }
 .sidebar-container {
   display: grid;
@@ -103,7 +104,6 @@ button[data-sidebar-btn] {
   width: 100%;
   height: 1px;
   background: var(--jet);
-  margin: 16px 0;
   justify-content: center;
 }
 
@@ -117,9 +117,8 @@ button[data-sidebar-btn] {
 .info-content .title {
   color: var(--white-1);
   background: var(--onyx);
-  font-size: var(--fs-8);
+  font-size: var(--fs-7);
   font-weight: var(--fw-300);
-  letter-spacing: 1px;
   width: max-content;
   padding: 6px 12px;
   margin-bottom: 10px;
@@ -128,7 +127,7 @@ button[data-sidebar-btn] {
 
 .contactinfo {
   display: grid;
-  gap: 20px;
+  gap: 25px;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
@@ -137,9 +136,13 @@ button[data-sidebar-btn] {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  padding: 20px 0px 0px 30px;
+  padding: 0px 0px 0px 30px;
+  margin-top: -10px;
 }
-
+.contacts-list {
+  display: grid;
+  gap: 15px;
+}
 .contact-item {
   display: flex;
   gap: 20px;
@@ -197,11 +200,10 @@ button[data-sidebar-btn] {
   place-items: center;
   gap: 15px;
   font-size: 18px;
-  /* padding-top: 20px; */
 }
 .social-list {
   display: flex;
-  gap: 10px;
+  gap: 17px;
 }
 .social-link i {
   color: var(--light-gray-70);
@@ -241,13 +243,18 @@ button[data-sidebar-btn] {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    text-align: center;
     gap: 25px;
     padding-top: 0px;
     height: auto;
   }
-  .separator:last-of-type {
+  /* .separator:last-of-type {
     margin: 15px 0;
     opacity: 0;
+  } */
+
+  .info-content {
+    padding-top: 0px;
   }
 
   .contacts-list {
@@ -262,19 +269,29 @@ button[data-sidebar-btn] {
     box-sizing: border-box;
   }
 
-  .contactinfo,
+  /* .contactinfo,
   .social-link,
   .separator {
     display: none;
     transition: max-height 0.3s ease-in;
+  } */
+
+  .contact-more-info {
+    display: none;
+    transition: max-height 0.3s ease-in;
   }
 
-  .contactinfo.expanded,
+  .contact-more-info.expanded {
+    display: grid;
+    height: 300px;
+  }
+
+  /* .contactinfo.expanded,
   .social-link.expanded,
   .separator.expanded {
     display: grid;
     max-height: 500px;
-  }
+  } */
 
   .profile .box {
     background-color: #3d3d3d;
