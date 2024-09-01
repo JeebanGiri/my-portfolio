@@ -150,29 +150,23 @@ button[data-sidebar-btn] {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.email-content {
+.contact-info {
   text-overflow: ellipsis;
   white-space: nowrap;
   box-sizing: border-box;
   overflow-x: hidden;
 }
 
-.email-content .contact-link,
-.phone-content .contact-link,
-.calender-content time,
-.address-content address {
-  color: var(--white-2);
+.contact-info :is(.contact-link, time, address) {
   font-size: var(--fs-7);
+  color: var(--white-2);
 }
 
-.address-content address {
+.contact-info address {
   font-style: normal;
 }
 
-.contact-item .email-content > p:first-child,
-.contact-item .phone-content > p:first-child,
-.contact-item .calender-content > p:first-child,
-.contact-item .address-content > p:first-child {
+.contact-item .contact-info > p:first-child {
   color: var(--light-gray-70);
   font-size: var(--fs-7);
   text-transform: uppercase;
@@ -324,14 +318,16 @@ button[data-sidebar-btn] {
     align-items: center;
     box-sizing: border-box;
   }
+
+  .contactinfo.expanded {
+    display: grid;
+    max-height: 300px;
+  }
+
   .contactinfo,
   .social-link {
     display: none;
     transition: max-height 0.3s ease;
-  }
-  .contactinfo.expanded {
-    display: grid;
-    max-height: 300px;
   }
 
   .profile .box {
@@ -350,9 +346,6 @@ button[data-sidebar-btn] {
   .info_more-btn {
     display: block;
   }
-  .info_more-btn span {
-    display: block;
-  }
 
   .info-content .name {
     white-space: nowrap;
@@ -363,7 +356,7 @@ button[data-sidebar-btn] {
     margin: auto;
   }
 
-  .sidebar-info_more {
+  .contactinfo {
     opacity: 1;
     visibility: visible;
   }
@@ -388,7 +381,7 @@ button[data-sidebar-btn] {
     opacity: 0;
   }
 
-  .social-list {
+  .social-link {
     justify-content: center;
   }
 }
