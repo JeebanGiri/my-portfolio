@@ -15,9 +15,9 @@
       </button>
     </div>
     <!-- <ion-icon name="chevron-down"></ion-icon> -->
+    <div class="separator" [class.expanded]="isExpanded"></div>
     <div class="contactinfo" [class.expanded]="isExpanded">
       <!-- <hr class="line-hr" /> -->
-      <div class="separator"></div>
       <ul class="contacts-list">
         <li class="contact-item">
           <div class="icon-box">
@@ -64,25 +64,28 @@
         </div>
       </ul>
     </div>
+    <div class="separator" [class.expanded]="isExpanded"></div>
     <div class="social-link" [class.expanded]="isExpanded">
-      <div class="github">
-        <a href="https://github.com/JeebanGiri" target="'_blank">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-      <div class="linkedin">
-        <a
-          href="https://www.linkedin.com/in/jeeban-giri-1b7a98251/"
-          target="_blank"
-        >
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-      <div class="twitter">
-        <a href="https://www.instagram.com/giri_jeeban/" target="_blank"
-          ><i class="fab fa-instagram"></i>
-        </a>
-      </div>
+      <ul class="social-list">
+        <li class="github">
+          <a href="https://github.com/JeebanGiri" target="'_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="linkedin">
+          <a
+            href="https://www.linkedin.com/in/jeeban-giri-1b7a98251/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="twitter">
+          <a href="https://www.instagram.com/giri_jeeban/" target="_blank"
+            ><i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>

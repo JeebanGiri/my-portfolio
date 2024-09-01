@@ -10,6 +10,11 @@ a {
 .profile {
   position: relative;
 }
+.sidebar-container {
+  display: grid;
+  gap: 20px;
+  padding: 0px 20px 0 20px;
+}
 .sidebar-info {
   display: grid;
   justify-content: center;
@@ -99,11 +104,11 @@ button[data-sidebar-btn] {
   height: 1px;
   background: var(--jet);
   margin: 16px 0;
+  justify-content: center;
 }
 
 .info-content .name {
   color: var(--white-2);
-  /* font-size: 26px; */
   font-size: var(--fs-1);
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
@@ -121,26 +126,18 @@ button[data-sidebar-btn] {
   border-radius: 8px;
 }
 
-/* .line-hr {
-  border: 0;
-  width: 12rem;
-  height: 1px;
-  margin-top: 20px;
-  background-color: #3d3d3d;
-} */
-
 .contactinfo {
   display: grid;
   gap: 20px;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
-  max-width: calc(100% - 41px);
-  width: calc(100% - 41px);
+  max-width: calc(100% - 10px);
+  /* width: calc(100% - 30px); */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin: 20px 0px 0px 20px;
+  padding: 20px 0px 0px 30px;
 }
 
 .contact-item {
@@ -177,7 +174,7 @@ button[data-sidebar-btn] {
   background: var(--border-gradient-onyx);
   width: 48px;
   height: 48px;
-  border-radius: 8px;
+  border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,12 +193,15 @@ button[data-sidebar-btn] {
   z-index: -1;
 }
 .social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   gap: 15px;
   font-size: 18px;
-  padding-top: 20px;
+  /* padding-top: 20px; */
+}
+.social-list {
+  display: flex;
+  gap: 10px;
 }
 .social-link i {
   color: var(--light-gray-70);
@@ -210,65 +210,9 @@ button[data-sidebar-btn] {
   color: hsl(0, 0%, 84%);
 }
 
-/* code from chatgpt */
-
-/* .sidebar-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: height 0.3s ease;
-  overflow: hidden;
-}
-
-.profile {
-  padding: 30px;
-}
-
-.sidebar-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 25px;
-  height: auto;
-}
-
-.contactinfo {
-  display: none;
-  transition: max-height 0.3s ease;
-}
-
-.contactinfo.expanded {
-  display: grid;
-  max-height: 300px;
-}
-
-.info_more-btn {
-  display: block;
-}
-
-@media (min-width: 1240px) {
-  .sidebar-container {
-    flex-direction: column;
-  }
-
-  .profile .box {
-    height: 80px;
-    width: 80px;
-  }
-
-  .profile .box img {
-    height: 80px;
-    width: 80px;
-  }
-
-  .contactinfo {
-    max-height: 0;
-  }
-
-  .contactinfo.expanded {
-    max-height: 300px;
-  }
+/* .separator:first-of-type {
+  margin: 15px 0;
+  opacity: 0;
 } */
 
 /* 
@@ -319,13 +263,15 @@ button[data-sidebar-btn] {
   }
 
   .contactinfo,
-  .social-link {
+  .social-link,
+  .separator {
     display: none;
     transition: max-height 0.3s ease-in;
   }
 
   .contactinfo.expanded,
-  .social-link.expanded {
+  .social-link.expanded,
+  .separator.expanded {
     display: grid;
     max-height: 500px;
   }
@@ -342,7 +288,6 @@ button[data-sidebar-btn] {
     width: 120px;
     border-radius: 10px;
   }
-
   .info_more-btn {
     display: block;
   }
