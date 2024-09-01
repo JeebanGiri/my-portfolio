@@ -9,7 +9,6 @@ a {
 }
 .profile {
   position: relative;
-  height: auto;
 }
 .sidebar-container {
   display: grid;
@@ -105,6 +104,7 @@ button[data-sidebar-btn] {
   height: 1px;
   background: var(--jet);
   justify-content: center;
+  margin: 10px 0 0 0;
 }
 
 .info-content .name {
@@ -123,6 +123,21 @@ button[data-sidebar-btn] {
   padding: 6px 12px;
   margin-bottom: 10px;
   border-radius: 8px;
+}
+
+.contact-more-info {
+  display: grid;
+  gap: 25px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  max-width: calc(100% - 10px);
+  /* width: calc(100% - 30px); */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* padding: 0px 0px 0px 20px; */
+  margin-top: -10px;
 }
 
 .contactinfo {
@@ -238,7 +253,6 @@ button[data-sidebar-btn] {
     transition: height 0.3s ease;
     overflow: hidden;
   } */
-
   .sidebar-info {
     display: flex;
     justify-content: flex-start;
@@ -246,8 +260,8 @@ button[data-sidebar-btn] {
     text-align: center;
     gap: 25px;
     padding-top: 0px;
-    height: auto;
   }
+
   /* .separator:last-of-type {
     margin: 15px 0;
     opacity: 0;
