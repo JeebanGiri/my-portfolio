@@ -11,8 +11,8 @@ a {
   position: relative;
 }
 .sidebar-container {
-  display: grid;
-  gap: 20px;
+  /* display: grid;
+  gap: 20px; */
   padding: 0px 20px 0 20px;
 }
 
@@ -105,7 +105,7 @@ button[data-sidebar-btn] {
   height: 1px;
   background: var(--jet);
   justify-content: center;
-  margin: 5px 0 0 0;
+  margin: 15px 0 0 0;
 }
 
 .info-content .name {
@@ -231,37 +231,14 @@ button[data-sidebar-btn] {
   display: none;
 }
 
-/* .second-separator:last-of-type {
-  margin: 15px 0;
-  opacity: 0;
-} */
-
-/* 
-.sidebar-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 25px;
-  height: auto;
-} */
-
 @media (min-width: 1240px) and (max-width: 1250px) {
   .profile {
-    height: max-content;
+    height: auto;
   }
   .sidebar-container {
-    padding: 30px 30px 12px 30px;
+    padding: 30px 30px 10px 30px;
+    gap: 0px;
   }
-
-  /* .sidebar-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    transition: height 0.3s ease;
-    overflow: hidden;
-  } */
-
   .sidebar-info {
     display: flex;
     justify-content: flex-start;
@@ -269,9 +246,9 @@ button[data-sidebar-btn] {
     text-align: center;
     gap: 25px;
     padding-top: 0px;
-  }
-  .separator {
-    margin-top: 8px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
   }
 
   .info-content {
@@ -296,15 +273,20 @@ button[data-sidebar-btn] {
     padding-left: 0px;
   }
 
+  .separator:first-of-type {
+    margin-top: 30px;
+  }
+
   .contact-more-info {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
     transition: max-height 0.3s ease-in;
   }
 
   .contact-more-info.expanded {
-    display: grid;
-    height: auto;
+    max-height: 300px;
   }
+
   .profile .box {
     background-color: #3d3d3d;
     height: 120px;
