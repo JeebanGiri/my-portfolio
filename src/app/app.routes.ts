@@ -4,8 +4,8 @@ import { NgModule } from '@angular/core';
 
 export const appRoutes: Routes = [...routes];
 
-// @NgModule({
-//   imports: [RouterModule.forRoot(appRoutes)],
-//   exports: [RouterModule],
-// })
-// export class AppRoutingModule {}
+@NgModule({
+  imports: [RouterModule.forRoot(appRoutes)],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}

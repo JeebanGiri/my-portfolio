@@ -70,8 +70,9 @@
   }
 
   .profileside {
-    min-width: 75%;
-    width: 75%;
+    /* min-width: 75%;
+    width: 75%; */
+    min-width: 940px;
     z-index: 1;
     position: relative;
     top: 0px;
@@ -80,8 +81,9 @@
   }
 
   .infoside {
-    min-width: 75%;
-    width: 75%;
+    /* min-width: 75%;
+    width: 75%; */
+    min-width: 940px;
     margin: 0;
     z-index: 1;
   }

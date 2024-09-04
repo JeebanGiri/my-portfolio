@@ -156,3 +156,5 @@ ul li.active {
 .project-item-icon-box ion-icon {
   --ionicon-stroke-width: 50px;
 }
+/* @media (min-width: 1240px) and (max-width: 1250px) {
+} */
