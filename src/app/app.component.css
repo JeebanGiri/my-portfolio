@@ -31,11 +31,15 @@
   z-index: 1;
   background-color: #1e1e1e;
   width: 17rem;
-  /* min-height: 75h; */
   color: white;
   border-radius: 20px;
   align-self: flex-start;
+  transition: var(--transition-2);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-2);
   padding-bottom: 20px;
+  border: 0.5px solid #302f2f;
 }
 
 .infoside {
@@ -45,6 +49,9 @@
   width: 48%;
   border-radius: 20px;
   align-self: flex-start;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-2);
 }
 
 @media (min-width: 1240px) and (max-width: 1250px) {
