@@ -24,6 +24,10 @@
      * colors
      */
 
+  --clr-success: green;
+  --clr-error: red;
+  --clr-warning: yellow;
+
   /* gradient */
   --bg-gradient-onyx: linear-gradient(
     to bottom right,
