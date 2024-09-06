@@ -88,3 +88,38 @@
     z-index: 1;
   }
 }
+
+@media (min-width: 1024px) and (max-width: 1239px) {
+  main {
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .content {
+    display: grid;
+    place-items: center;
+  }
+
+  .profileside {
+    /* min-width: 75%;
+    width: 75%; */
+    min-width: 940px;
+    z-index: 1;
+    position: relative;
+    top: 0px;
+    box-shadow: var(--shadow-5);
+    height: auto;
+  }
+
+  .infoside {
+    /* min-width: 75%;
+    width: 75%; */
+    min-width: 940px;
+    margin: 0;
+    z-index: 1;
+  }
+}
