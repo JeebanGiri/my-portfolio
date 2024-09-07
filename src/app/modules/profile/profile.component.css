@@ -310,12 +310,6 @@ button[data-sidebar-btn] {
     margin: auto;
   }
 
-  /* .contactinfo,
-  .social-link {
-    opacity: 1;
-    visibility: visible;
-  } */
-
   .contacts-list {
     grid-template-columns: 1fr;
   }
