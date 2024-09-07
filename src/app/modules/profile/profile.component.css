@@ -342,7 +342,7 @@ button[data-sidebar-btn] {
   }
 }
 
-@media (min-width: 1024) and (max-width: 1239px) {
+@media (min-width: 1024px) and (max-width: 1239px) {
   .profile {
     height: auto;
   }
@@ -356,6 +356,7 @@ button[data-sidebar-btn] {
     align-items: center;
     text-align: center;
     gap: 25px;
+    padding: 0px;
   }
 
   .info-content {
