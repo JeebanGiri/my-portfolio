@@ -234,7 +234,7 @@ button[data-sidebar-btn] {
     height: auto;
   }
   .sidebar-container {
-    padding: 30px 30px 10px 30px;
+    /* padding: 30px 30px 10px 30px; */
     gap: 0px;
   }
   .sidebar-info {
@@ -243,10 +243,8 @@ button[data-sidebar-btn] {
     align-items: center;
     text-align: center;
     gap: 25px;
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    padding-right: 0px;
+    padding: 0px;
+    padding: 30px 30px 10px 10px;
   }
 
   .info-content {
@@ -278,6 +276,7 @@ button[data-sidebar-btn] {
   .contact-more-info {
     max-height: 0;
     overflow: hidden;
+    padding-left: 0px;
     transition: max-height 0.3s ease-in;
   }
 
@@ -341,7 +340,7 @@ button[data-sidebar-btn] {
     height: auto;
   }
   .sidebar-container {
-    padding: 30px 30px 10px 30px;
+    /* padding: 30px 30px 10px 30px; */
     gap: 0px;
   }
   .sidebar-info {
@@ -350,7 +349,7 @@ button[data-sidebar-btn] {
     align-items: center;
     text-align: center;
     gap: 25px;
-    padding: 0px;
+    padding: 30px 30px 10px 10px;
   }
 
   .info-content {
