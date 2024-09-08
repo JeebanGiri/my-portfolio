@@ -234,7 +234,7 @@ button[data-sidebar-btn] {
     height: auto;
   }
   .sidebar-container {
-    /* padding: 30px 30px 10px 30px; */
+    padding: 30px 30px 10px 30px;
     gap: 0px;
   }
   .sidebar-info {
@@ -244,11 +244,10 @@ button[data-sidebar-btn] {
     text-align: center;
     gap: 25px;
     padding: 0px;
-    padding: 30px 30px 10px 10px;
   }
 
   .info-content {
-    padding-top: 0px;
+    padding: 0px;
   }
 
   .contacts-list {
@@ -256,17 +255,18 @@ button[data-sidebar-btn] {
     flex-wrap: wrap;
     gap: 15px;
     justify-content: flex-start;
+    padding: 0px;
   }
   .contact-item {
     flex: 0 0 calc(50% - 10px);
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    padding-left: 0px;
+    padding: 0px;
   }
 
   .contactinfo {
-    padding-left: 0px;
+    padding: 0px;
   }
 
   .separator:first-of-type {
@@ -278,6 +278,7 @@ button[data-sidebar-btn] {
     overflow: hidden;
     padding-left: 0px;
     transition: max-height 0.3s ease-in;
+    padding: 0px;
   }
 
   .contact-more-info.expanded {
@@ -340,7 +341,7 @@ button[data-sidebar-btn] {
     height: auto;
   }
   .sidebar-container {
-    /* padding: 30px 30px 10px 30px; */
+    padding: 30px 30px 10px 30px;
     gap: 0px;
   }
   .sidebar-info {
@@ -349,11 +350,12 @@ button[data-sidebar-btn] {
     align-items: center;
     text-align: center;
     gap: 25px;
-    padding: 30px 30px 10px 10px;
+    padding: 0px;
+    /* padding: 30px 30px 10px 10px; */
   }
 
   .info-content {
-    padding-top: 0px;
+    padding: 0px;
   }
 
   .contacts-list {
@@ -361,6 +363,7 @@ button[data-sidebar-btn] {
     flex-wrap: wrap;
     gap: 15px;
     justify-content: flex-start;
+    padding: 0px;
   }
 
   .contact-item {
@@ -368,11 +371,11 @@ button[data-sidebar-btn] {
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    padding-left: 0px;
+    padding: 0px;
   }
 
   .contactinfo {
-    padding-left: 0px;
+    padding: 0px;
   }
 
   .separator:first-of-type {
@@ -383,6 +386,7 @@ button[data-sidebar-btn] {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in;
+    padding: 0px;
   }
 
   .contact-more-info.expanded {
