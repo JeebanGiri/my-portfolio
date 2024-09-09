@@ -92,3 +92,35 @@
   padding-top: 20px;
   font-size: 19px;
 }
+
+@media (min-width: 768px) {
+  .task1,
+  .task2,
+  .task3,
+  .task4 {
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #222224;
+    padding: 30px;
+    display: flex;
+    gap: 15px;
+    z-index: 20;
+  }
+  .task1,
+  .task2,
+  .task3,
+  .task4,
+  .contents > b {
+    font-size: var(--fs-3);
+  }
+  .task1,
+  .task2,
+  .task3,
+  .task4,
+  .contents > p {
+    margin-top: 5px;
+    font-size: var(--fs-6);
+    color: var(--light-gray);
+  }
+}
