@@ -52,8 +52,11 @@
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   box-shadow: var(--shadow-2);
+  position: relative;
 }
-
+.navbar {
+  position: relative;
+}
 @media (min-width: 1240px) and (max-width: 1250px) {
   main {
     max-width: 1200px;
@@ -140,5 +143,9 @@
     min-width: 700px;
     margin: 0;
     z-index: 1;
+  }
+  .navbar {
+    margin-top: 200px;
+    background-color: #fff;
   }
 }

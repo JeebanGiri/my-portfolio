@@ -1,5 +1,6 @@
 .navbar {
   backdrop-filter: blur(10px);
+  position: relative;
 }
 nav {
   background-color: #282828;
@@ -40,3 +41,4 @@ nav li a {
   color: white;
   text-decoration: none;
 }
+
