@@ -145,7 +145,7 @@
   }
 }
 
-@media (min-width: 580px) {
+@media (min-width: 580px) and (max-width: 767px) {
   .content {
     flex-direction: column;
     align-items: center;
