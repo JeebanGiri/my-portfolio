@@ -177,10 +177,25 @@
     position: relative;
   }
 
-  .navbar {
+  /* .navbar {
     position: absolute;
-    bottom: 0;
+    display: flex;
+    bottom: -100px;
     width: 100%;
     z-index: 10;
+  } */
+  .infoside app-navbar {
+    width: auto;
+    position: absolute;
+    display: flex;
+    bottom: -100px;
+    width: 100%;
+    z-index: 10;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
