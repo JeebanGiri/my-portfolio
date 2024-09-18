@@ -7,7 +7,7 @@
 }
 .resume-page {
   padding: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 .resume-page > .title {
   padding-top: 5px;
@@ -146,7 +146,7 @@
 }
 .skills {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .skills-header {
   letter-spacing: 1px;
