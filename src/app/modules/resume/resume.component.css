@@ -211,8 +211,38 @@
   border-radius: 5px;
   background-color: #d6bd62;
 }
-@media (min-width: 580px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .resume-page {
     padding-right: 20px;
+  }
+
+  .progress__item {
+    position: relative;
+    max-height: 11rem;
+    padding-left: 0.3rem;
+    margin-top: -10px;
+    &:before {
+      content: "";
+      position: absolute;
+      min-height: 11rem;
+      width: 3px;
+      border-right: 2px solid #282828;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 1.2rem;
+      width: 7px;
+      height: 7px;
+      left: 4px;
+      border-radius: 7px;
+      background: var(--vegas-gold);
+      color: #fff;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 2rem;
+      text-align: center;
+      box-shadow: var(--shadow-2);
+    }
   }
 }
