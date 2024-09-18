@@ -143,9 +143,31 @@
     z-index: 1;
     position: relative;
   }
+  .navbar {
+    position: absolute;
+    display: flex;
+    bottom: 0px;
+    width: 100%;
+    z-index: 10;
+  }
+  .infoside app-navbar {
+    width: auto;
+    position: absolute;
+    display: flex;
+    bottom: -100px;
+    width: 100%;
+    z-index: 10;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 
-@media (min-width: 580px) and (max-width: 767px) {
+/* @media (min-width: 580px) and (max-width: 767px) { */
+@media (max-width: 767px) {
   main {
     max-width: 500px;
     margin-inline: auto;

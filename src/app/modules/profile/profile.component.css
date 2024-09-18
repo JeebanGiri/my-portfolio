@@ -545,7 +545,8 @@ button[data-sidebar-btn] {
     display: flex;
   }
 }
-@media (min-width: 580px) and (max-width: 767px) {
+/* @media (min-width: 580px) and (max-width: 767px) { */
+@media (max-width: 580px) {
   .profile {
     height: auto;
   }
@@ -638,7 +639,6 @@ button[data-sidebar-btn] {
   .second-separator {
     display: block;
   }
-
   .social-link {
     justify-content: flex-start;
   }
