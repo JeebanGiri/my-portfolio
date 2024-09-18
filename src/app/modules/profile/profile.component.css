@@ -130,8 +130,8 @@ button[data-sidebar-btn] {
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
-  max-width: calc(100% - 10px);
-  /* width: calc(100% - 30px); */
+  max-width: calc(100% - 5px);
+  /* width: calc(100% - 41px); */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -145,7 +145,6 @@ button[data-sidebar-btn] {
   justify-content: center;
   align-items: center;
   max-width: calc(100% - 10px);
-  /* width: calc(100% - 30px); */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
