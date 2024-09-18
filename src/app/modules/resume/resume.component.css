@@ -245,4 +245,13 @@
       box-shadow: var(--shadow-2);
     }
   }
+  .bar > .html,
+  .bar > .css,
+  .bar > .javascript,
+  .bar > .react,
+  .bar > .node {
+    height: 8px;
+    border-radius: 5px;
+    background-color: #d6bd62;
+  }
 }
