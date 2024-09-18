@@ -546,7 +546,7 @@ button[data-sidebar-btn] {
   }
 }
 /* @media (min-width: 580px) and (max-width: 767px) { */
-@media (max-width: 580px) {
+@media (max-width: 767px) {
   .profile {
     height: auto;
   }
@@ -598,7 +598,7 @@ button[data-sidebar-btn] {
   }
 
   .contact-more-info.expanded {
-    max-height: 300px;
+    max-height: 450px;
   }
 
   .profile .box {
