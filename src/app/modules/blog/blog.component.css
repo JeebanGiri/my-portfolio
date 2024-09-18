@@ -28,6 +28,10 @@
   display: flex;
   gap: 30px;
 }
+.blog-post-item {
+  background-color: #202022;
+  border-radius: 15px;
+}
 
 .blog-post-item > a {
   position: relative;
@@ -103,4 +107,13 @@
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
+}
+@media (min-width: 580px) and (max-width: 767px) {
+  .blog-post-list {
+    display: grid;
+  }
+  .blog-post-item {
+    width: 100%;
+    height: auto;
+  }
 }
