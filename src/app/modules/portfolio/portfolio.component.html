@@ -7,8 +7,8 @@
     <ul>
       <li
         class="project-item"
-        (click)="selectItem('ai')"
-        [class.active]="selectedItem === 'ai'"
+        (click)="selectItem('all')"
+        [class.active]="selectedItem === 'all'"
       >
         All
       </li>
@@ -35,12 +35,12 @@
       </li>
     </ul>
   </div>
-  <div *ngIf="selectedItem === 'ai'">
+  <div *ngIf="selectedItem === 'all'">
     <div class="ai-projects">
       <div
         class="project-box"
         *ngFor="let project of aiProject"
-        [ngClass]="{ active: selectedItem === 'ai' }"
+        [ngClass]="{ active: selectedItem === 'all' }"
       >
         <a href="#" (click)="$event.preventDefault()">
           <figure class="project-img">

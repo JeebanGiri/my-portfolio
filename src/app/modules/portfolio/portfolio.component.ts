@@ -15,7 +15,7 @@ export class PortfolioComponent {
   constructor() {
     addIcons({ 'eye-outline': eyeOutline });
   }
-  selectedItem: string | null = 'ai';
+  selectedItem: string | null = 'all';
 
   selectItem(item: string) {
     this.selectedItem = item;
