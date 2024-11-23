@@ -25,12 +25,12 @@ export class PortfolioComponent {
     {
       title: 'Project 1',
       description: 'Description 1',
-      image: '../../../assets/images/project/ai/project1.jpg',
+      image: '../../../assets/images/project/all/project1.jpg',
     },
     {
       title: 'Project 2',
       description: 'Description 2',
-      image: '../../../assets/images/project/ai/project1.jpg',
+      image: '../../../assets/images/project/all/project1.jpg',
     },
   ];
 }
