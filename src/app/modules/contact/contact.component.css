@@ -112,6 +112,7 @@ textarea:not(:placeholder-shown):invalid {
   z-index: 1;
   transition: var(--transition-1);
   float: right;
+  margin-bottom: 20px;
 }
 .form-btn::before {
   content: "";
