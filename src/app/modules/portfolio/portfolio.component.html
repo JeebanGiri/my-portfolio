@@ -39,7 +39,7 @@
     <div class="ai-projects">
       <div
         class="project-box"
-        *ngFor="let project of aiProject"
+        *ngFor="let project of allProject"
         [ngClass]="{ active: selectedItem === 'all' }"
       >
         <a href="#" (click)="$event.preventDefault()">
@@ -59,7 +59,7 @@
     <div class="web-projects">
       <div
         class="project-box"
-        *ngFor="let project of aiProject"
+        *ngFor="let project of webDesign"
         [ngClass]="{ active: selectedItem === 'web-design' }"
       >
         <a href="#" (click)="$event.preventDefault()">
@@ -79,7 +79,7 @@
     <div class="application-projects">
       <div
         class="project-box"
-        *ngFor="let project of aiProject"
+        *ngFor="let project of applications"
         [ngClass]="{ active: selectedItem === 'application' }"
       >
         <a href="#" (click)="$event.preventDefault()">
@@ -99,7 +99,7 @@
     <div class="dev-projects">
       <div
         class="project-box"
-        *ngFor="let project of aiProject"
+        *ngFor="let project of webDevelopment"
         [ngClass]="{ active: selectedItem === 'web-development' }"
       >
         <a href="#" (click)="$event.preventDefault()">

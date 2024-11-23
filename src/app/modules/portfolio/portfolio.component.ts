@@ -21,16 +21,54 @@ export class PortfolioComponent {
     this.selectedItem = item;
   }
 
-  aiProject = [
+  allProject = [
     {
       title: 'Project 1',
       description: 'Description 1',
-      image: '../../../assets/images/project/all/project1.jpg',
+      image: '../../../assets/images/project/all/ecommerce.png',
     },
     {
       title: 'Project 2',
       description: 'Description 2',
-      image: '../../../assets/images/project/all/project1.jpg',
+      image: '../../../assets/images/project/all/fyp.png',
+    },
+  ];
+
+  webDesign = [
+    {
+      title: 'Project 1',
+      description: 'Description 1',
+      image: '../../../assets/images/project/web-design/ecommerce.png',
+    },
+    {
+      title: 'Project 2',
+      description: 'Description 2',
+      image: '../../../assets/images/project/web-design/fyp.png',
+    },
+  ];
+  webDevelopment = [
+    {
+      title: 'Project 1',
+      description: 'Description 1',
+      image: '../../../assets/images/project/web-development/ecommerce.png',
+    },
+    // {
+    //   title: 'Project 2',
+    //   description: 'Description 2',
+    //   image: '../../../assets/images/project/web-development/fyp.png',
+    // },
+  ];
+
+  applications = [
+    {
+      title: 'Project 1',
+      description: 'Description 1',
+      image: '../../../assets/images/project/application/fyp.png',
+    },
+    {
+      title: 'Project 2',
+      description: 'Description 2',
+      image: '../../../assets/images/project/application/fyp.png',
     },
   ];
 }
