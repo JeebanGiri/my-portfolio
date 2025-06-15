@@ -12,7 +12,6 @@
 .resume-page > .title {
   padding-top: 5px;
 }
-
 .title .line {
   margin-top: 15px;
   width: 30px;
@@ -182,31 +181,31 @@
   padding-top: 10px;
 }
 .bar > .html {
-  width: 90%;
+  width: 85%;
   height: 10px;
   border-radius: 5px;
   background-color: #d6bd62;
 }
 .bar > .css {
-  width: 80%;
+  width: 70%;
   height: 10px;
   border-radius: 5px;
   background-color: #d6bd62;
 }
 .bar > .javascript {
-  width: 70%;
-  height: 10px;
-  border-radius: 5px;
-  background-color: #d6bd62;
-}
-.bar > .react {
   width: 60%;
   height: 10px;
   border-radius: 5px;
   background-color: #d6bd62;
 }
+.bar > .react {
+  width: 55%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #d6bd62;
+}
 .bar > .node {
-  width: 70%;
+  width: 50%;
   height: 10px;
   border-radius: 5px;
   background-color: #d6bd62;

@@ -6,7 +6,6 @@
 
 .main {
   max-width: 100%;
-  /* height: 100%; */
   min-height: 100dvh;
   position: relative;
   /* background-color: #111111; */
@@ -16,19 +15,15 @@
   display: flex;
   justify-content: center;
   padding: 4rem 0px;
-  /* width: 100%; */
-  /* max-width: 80%; */
-  /* 100% equals to 800px */
   gap: 25px;
-  align-items: flex-start;
-  align-items: center;
+  /* align-items: flex-start; */
+  /* align-items: center; */
   /* 80% equals to 640px */
 }
 
 .profileside {
   position: sticky;
   top: 60px;
-  /* overflow: visible;   change here */
   z-index: 1;
   background-color: #1e1e1e;
   width: 17rem;
@@ -58,6 +53,7 @@
 
 @media (min-width: 1240px) and (max-width: 1250px) {
   main {
+    width: 100%;
     max-width: 1200px;
     margin-inline: auto;
     display: flex;
@@ -74,7 +70,8 @@
   .profileside {
     /* min-width: 75%;
     width: 75%; */
-    min-width: 940px;
+    width: 100%;
+    max-width: 940px;
     z-index: 1;
     position: relative;
     top: 0px;

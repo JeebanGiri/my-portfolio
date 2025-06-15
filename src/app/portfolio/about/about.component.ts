@@ -1,11 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { SkillsComponent } from '../skills/skills.component';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, SkillsComponent],
   templateUrl: './about.component.html',
-  styleUrl: './about.component.css',
+  styleUrls: ['./about.component.css'],
 })
 export class AboutComponent {
   webpath: string = '../../../assets/images/web-design.png';
@@ -16,4 +18,10 @@ export class AboutComponent {
   appalt: string = 'Mobile App';
   camerapath: string = '../../../assets/images/camera.png';
   cameraalt: string = 'Camera';
+
+  completedActions = [
+    { title: '3', description: 'year of experience' },
+    { title: '10', description: 'completed projects' },
+    { title: '5', description: 'awards won' },
+  ];
 }

@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { AboutComponent } from '../../modules/about/about.component';
-import { ResumeComponent } from '../../modules/resume/resume.component';
-import { PortfolioComponent } from '../../modules/portfolio/portfolio.component';
-import { BlogComponent } from '../../modules/blog/blog.component';
-import { ContactComponent } from '../../modules/contact/contact.component';
+import { AboutComponent } from '../../portfolio/about/about.component';
+import { ResumeComponent } from '../../portfolio/resume/resume.component';
+import { PortfolioComponent } from '../../portfolio/portfolio/portfolio.component';
+import { BlogComponent } from '../../portfolio/blog/blog.component';
+import { ContactComponent } from '../../portfolio/contact/contact.component';
 
 export const routes: Routes = [
   { path: '', component: AboutComponent },

@@ -1,9 +1,9 @@
-<div class="about-page">
-  <div class="title">
+<main class="about-page">
+  <header class="title">
     <h2>About Me</h2>
     <hr class="line" />
-  </div>
-  <div class="content">
+  </header>
+  <article class="content">
     <p>
       I am a creative director and web application developer from Itahari,
       Nepal, with a passion for transforming complex problems into simple,
@@ -17,11 +17,11 @@
       users. My job is to build a scalable, maintainable, functional and
       user-friendly products.
     </p>
-  </div>
-  <div class="tasks">
+  </article>
+  <section class="tasks" role="region" aria-label="Personal Info">
     <h3>What I'm Doing</h3>
     <div class="task-box">
-      <div class="task1">
+      <div class="task">
         <div class="icon">
           <img [src]="webpath" [alt]="webalt" style="border-color: #d6bd62" />
         </div>
@@ -33,7 +33,7 @@
           </p>
         </div>
       </div>
-      <div class="task2">
+      <div class="task">
         <div class="icon">
           <img [src]="devpath" [alt]="devalt" />
         </div>
@@ -42,7 +42,7 @@
           <p>High quality development of sites made at a professional level.</p>
         </div>
       </div>
-      <div class="task3">
+      <div class="task">
         <div class="icon">
           <img [src]="apppath" [alt]="appalt" />
         </div>
@@ -51,7 +51,7 @@
           <p>Professional development of application for iOS and Android.</p>
         </div>
       </div>
-      <div class="task4">
+      <div class="task">
         <div class="icon">
           <!-- <i class="fa fa-camera"></i> -->
           <img [src]="camerapath" [alt]="cameraalt" />
@@ -64,8 +64,21 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  <section class="completed-action">
+    <h3>What I've Done</h3>
+    <div class="actions">
+      <div class="actions-box" *ngFor="let action of completedActions">
+        <h1 class="title">{{ action.title }}</h1>
+        <p class="desc">{{ action.description }}</p>
+      </div>
+    </div>
+  </section>
+  <div class="seperator"></div>
+
+  <!-- ✅ Skills rendered here -->
+  <app-skills></app-skills>
   <div class="testimonials">
     <h4>Testimonials</h4>
   </div>
-</div>
+</main>

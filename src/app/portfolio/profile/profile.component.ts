@@ -13,7 +13,8 @@ export class ProfileComponent {
   constructor() {
     addIcons({ 'chevron-down': chevronDown });
   }
-  profilepath: string = '../../../assets/images/my-avatar.png';
+  // profilepath: string = '../../../assets/images/my-avatar.png';
+  profilepath: string = '../../../assets/images/profile.jpeg';
   profilealt: string = 'Profile';
 
   isExpanded = false;
