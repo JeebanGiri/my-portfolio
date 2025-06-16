@@ -61,6 +61,11 @@
     hsl(45, 100%, 72%),
     hsl(35, 100%, 68%)
   );
+  --border-gradient-yellow1: linear-gradient(
+    360deg,
+    hsl(45, 100%, 72%),
+    hsl(35, 100%, 68%)
+  );
 
   /* solid */
 

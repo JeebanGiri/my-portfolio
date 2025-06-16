@@ -2,7 +2,13 @@
   <header class="hero-section">
     <p>My Skills</p>
   </header>
-  <article>
-    
+  <!-- Programming Languages & Web Technologies -->
+  <article class="skills-showcase">
+    <div class="skills" *ngFor="let skill of skills">
+      <div class="skill">
+        <p>{{ skill.percent }}</p>
+      </div>
+      <p class="title">{{ skill.name }}</p>
+    </div>
   </article>
 </section>
