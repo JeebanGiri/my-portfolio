@@ -45,7 +45,10 @@
         <a href="#" (click)="$event.preventDefault()">
           <figure class="project-img">
             <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
+              <ion-icon
+                *ngIf="browserService.isBrowser"
+                name="eye-outline"
+              ></ion-icon>
             </div>
             <img [src]="project.image" alt="{{ project.title }}" />
           </figure>
@@ -65,7 +68,10 @@
         <a href="#" (click)="$event.preventDefault()">
           <figure class="project-img">
             <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
+              <ion-icon
+                *ngIf="browserService.isBrowser"
+                name="eye-outline"
+              ></ion-icon>
             </div>
             <img [src]="project.image" alt="{{ project.title }}" />
           </figure>
@@ -85,7 +91,10 @@
         <a href="#" (click)="$event.preventDefault()">
           <figure class="project-img">
             <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
+              <ion-icon
+                *ngIf="browserService.isBrowser"
+                name="eye-outline"
+              ></ion-icon>
             </div>
             <img [src]="project.image" alt="{{ project.title }}" />
           </figure>
@@ -105,7 +114,10 @@
         <a href="#" (click)="$event.preventDefault()">
           <figure class="project-img">
             <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
+              <ion-icon
+                *ngIf="browserService.isBrowser"
+                name="eye-outline"
+              ></ion-icon>
             </div>
             <img [src]="project.image" alt="{{ project.title }}" />
           </figure>

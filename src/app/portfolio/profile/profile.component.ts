@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonIcon } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { chevronDown } from 'ionicons/icons';
+import { BrowserService } from '../../shared/browser.service';
 @Component({
   selector: 'app-profile',
   standalone: true,
@@ -17,7 +18,7 @@ export class ProfileComponent {
   profilepath: string = '../../../assets/images/profile.jpeg';
   profilealt: string = 'Profile';
 
-  isExpanded = false;
+  isExpanded: boolean = false;
 
   toggleInfo() {
     this.isExpanded = !this.isExpanded;

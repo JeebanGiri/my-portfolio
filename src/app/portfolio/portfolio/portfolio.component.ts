@@ -3,6 +3,7 @@ import { IonIcon } from '@ionic/angular/standalone';
 import { CommonModule } from '@angular/common';
 import { addIcons } from 'ionicons';
 import { eyeOutline } from 'ionicons/icons';
+import { BrowserService } from '../../shared/browser.service';
 @Component({
   selector: 'app-portfolio',
   standalone: true,
@@ -12,7 +13,7 @@ import { eyeOutline } from 'ionicons/icons';
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class PortfolioComponent {
-  constructor() {
+  constructor(public browserService: BrowserService) {
     addIcons({ 'eye-outline': eyeOutline });
   }
   selectedItem: string | null = 'all';

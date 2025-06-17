@@ -55,7 +55,10 @@
         data-form-input
       ></textarea>
       <button class="form-btn" type="submit" disabled data-form-input="">
-        <ion-icon name="paper-plane"></ion-icon>
+        <ion-icon
+          *ngIf="browserService.isBrowser"
+          name="paper-plane"
+        ></ion-icon>
         <span>Send Message</span>
       </button>
     </form>
