@@ -35,8 +35,9 @@
   justify-content: center;
   align-items: center;
   font-size: var(--fs-1);
-  /* border-color: blueviolet; */
+  border-color: blueviolet;
   font-weight: var(--fw-500);
+  transition: border-width 0.3s ease, border-color 0.3s ease;
 }
 .skills-showcase > .skills > .title {
   font-size: var(--fs-2);
@@ -80,3 +81,40 @@
   text-align: center;
   font-weight: bold;
 } */
+
+.progress-ring {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+svg {
+  transform: rotate(-90deg);
+}
+
+circle.bg {
+  fill: none;
+  stroke: #333;
+  stroke-width: 10;
+}
+
+circle.fg {
+  fill: none;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.percent-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  fill: white;
+  transform: rotate(90deg);
+}
+
+.label {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}

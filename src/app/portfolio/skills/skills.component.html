@@ -5,8 +5,31 @@
   <!-- Programming Languages & Web Technologies -->
   <article class="skills-showcase">
     <div class="skills" *ngFor="let skill of skills">
-      <div class="skill">
+      <!-- <div class="skill">
         <p>{{ skill.percent }}</p>
+      </div> -->
+      <div class="progress-ring">
+        <svg width="120" height="120">
+          <circle class="bg" r="54" cx="60" cy="60" />
+          <circle
+            class="fg"
+            [attr.stroke]="skill.color"
+            r="54"
+            cx="60"
+            cy="60"
+            [attr.stroke-dasharray]="circumference"
+            [attr.stroke-dashoffset]="getOffset(skill.percent)"
+          />
+          <text
+            x="50%"
+            y="50%"
+            text-anchor="middle"
+            dy=".3em"
+            class="percent-text"
+          >
+            {{ skill.percent }}%
+          </text>
+        </svg>
       </div>
       <p>{{ skill.name }}</p>
     </div>
