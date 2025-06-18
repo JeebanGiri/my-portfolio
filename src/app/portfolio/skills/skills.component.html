@@ -1,6 +1,6 @@
 <section class="skill-section">
   <header class="hero-section">
-    <p>My Skills</p>
+    <p class="title">My Skills</p>
   </header>
 
   <!-- Programming Languages & Web Technologies -->
@@ -11,12 +11,13 @@
           <circle class="bg" r="54" cx="60" cy="60" />
           <circle
             class="fg"
-            [attr.stroke]="skill.color"
+            [attr.stroke]="rowColors[Math.floor(i / 4) % rowColors.length]"
             r="54"
             cx="60"
             cy="60"
             [attr.stroke-dasharray]="circumference"
             [attr.stroke-dashoffset]="getOffset(skill.percent)"
+            [attr.transition]="'stroke-dashoffset 0.6s ease-out'"
           />
           <text
             x="50%"
@@ -25,15 +26,13 @@
             dy=".3em"
             class="percent-text"
           >
-            {{ skill.percent }}%
+            {{ skill.percent }}
           </text>
         </svg>
       </div>
-      <p>{{ skill.name }}</p>
+      <div class="skill-name">
+        <p>{{ skill.name }}</p>
+      </div>
     </div>
   </article>
 </section>
-
-<!-- <div class="skill">
-        <p>{{ skill.percent }}</p>
-      </div> -->

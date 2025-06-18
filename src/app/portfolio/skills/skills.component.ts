@@ -10,22 +10,26 @@ import { Component } from '@angular/core';
 export class SkillsComponent {
   readonly radius = 54;
   readonly circumference = 2 * Math.PI * this.radius;
+  readonly Math = Math;
+
+  // SET COLOR AS A ROW BASIS:
+  rowColors = ['red', 'orange', 'blue', 'green'];
 
   skills = [
-    { name: 'JavaScript', percent: '85%', color: 'blue' },
-    { name: 'TypeScript', percent: '85%', color: 'blue' },
-    { name: 'React JS', percent: '80%', color: 'red' },
-    { name: 'NestJS', percent: '70%', color: 'crimson' },
-    { name: 'Angular', percent: '75%', color: 'orange' },
-    { name: 'CSS', percent: '90%', color: 'purple' },
-    { name: 'Java', percent: '65%', color: 'darkblue' },
-    { name: 'Node.JS', percent: '78%', color: 'forestgreen' },
-    { name: 'AWS', percent: '50%', color: 'goldenrod' },
+    { name: 'JavaScript', percent: '85%' },
+    { name: 'TypeScript', percent: '85%' },
+    { name: 'React.JS', percent: '80%' },
+    { name: 'Nest.JS', percent: '70%' },
+    { name: 'Angular', percent: '75%' },
+    { name: 'CSS', percent: '90%' },
+    { name: 'Java', percent: '65%' },
+    { name: 'Node.JS', percent: '78%' },
+    { name: 'AWS', percent: '50%' },
+    { name: 'MySQL', percent: '70%' },
+    { name: 'PostgreSQL', percent: '75%' },
+    { name: 'Scrum / Agile', percent: '85%' },
     // { name: 'Docker', percent: '60%', color: 'deepskyblue' },
-    { name: 'MySQL', percent: '70%', color: 'mediumseagreen' },
-    { name: 'PostgreSQL', percent: '75%', color: 'teal' },
     // { name: 'Kubernetes', percent: '45%', color: 'steelblue' },
-    { name: 'Scrum / Agile', percent: '85%', color: 'darkgoldenrod' },
   ];
 
   getOffset(percent: string): number {
