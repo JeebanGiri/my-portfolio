@@ -23,7 +23,9 @@
   gap: 10px;
   width: fit-content;
   text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
+
 .skills-showcase > .skills > .skill {
   /* height: 130px;
   width: 130px; */
@@ -44,43 +46,6 @@
   text-transform: uppercase;
   font-weight: var(--fw-500);
 }
-
-/* .circle {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 10px solid conic-gradient;
-  background: conic-gradient(red 75%, #eee 0%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-  transition: background 0.3s ease;
-}
-
-.center {
-  font-size: 1.1rem;
-  font-weight: bold;
-} */
-
-/* .progress-border {
-  --percent: 75;
-  --color: red;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  padding: 1rem;
-  margin: 1rem 0;
-  border: 6px solid;
-  border-image: conic-gradient(
-      var(--color) calc(var(--percent) * 1%),
-      transparent 0
-    )
-    1;
-  border-radius: 12px;
-  text-align: center;
-  font-weight: bold;
-} */
 
 .progress-ring {
   position: relative;
@@ -103,6 +68,8 @@ circle.fg {
   stroke-width: 10;
   stroke-linecap: round;
   transition: stroke-dashoffset 0.5s ease;
+  transform: rotate(-90deg);
+  transform-origin: center;
 }
 
 .percent-text {

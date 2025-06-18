@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-skills',
   standalone: true,
@@ -11,7 +10,6 @@ import { Component } from '@angular/core';
 export class SkillsComponent {
   readonly radius = 54;
   readonly circumference = 2 * Math.PI * this.radius;
-  clrList = ['red', 'yellow', 'green', 'blue'];
 
   skills = [
     { name: 'JavaScript', percent: '85%', color: 'blue' },
@@ -30,24 +28,8 @@ export class SkillsComponent {
     { name: 'Scrum / Agile', percent: '85%', color: 'darkgoldenrod' },
   ];
 
-  // getBorderWidth(percent: string): string {
-  //   const numericPercent = parseFloat(percent);
-  //   // Scale 0–100% into 1px–20px border
-  //   const width = Math.max(1, Math.min(10, (numericPercent / 100) * 10));
-  //   return `${width}px`;
-  // }
-
-  // getBorderColor(percent: string): string {
-  //   const numericPercent = parseFloat(percent);
-  //   if (numericPercent >= 80) return 'limegreen';
-  //   if (numericPercent >= 60) return 'orange';
-  //   return '#FFB400';
-  //   // return 'crimson';
-  // }
-
   getOffset(percent: string): number {
     const numericPercent = parseFloat(percent);
-
     return this.circumference - (numericPercent / 100) * this.circumference;
   }
 }

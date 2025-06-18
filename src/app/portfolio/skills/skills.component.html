@@ -2,12 +2,10 @@
   <header class="hero-section">
     <p>My Skills</p>
   </header>
+
   <!-- Programming Languages & Web Technologies -->
   <article class="skills-showcase">
-    <div class="skills" *ngFor="let skill of skills">
-      <!-- <div class="skill">
-        <p>{{ skill.percent }}</p>
-      </div> -->
+    <div class="skills" *ngFor="let skill of skills; let i = index">
       <div class="progress-ring">
         <svg width="120" height="120">
           <circle class="bg" r="54" cx="60" cy="60" />
@@ -35,3 +33,7 @@
     </div>
   </article>
 </section>
+
+<!-- <div class="skill">
+        <p>{{ skill.percent }}</p>
+      </div> -->
