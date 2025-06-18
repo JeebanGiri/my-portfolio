@@ -1,11 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { SkillsComponent } from '../skills/skills.component';
+import { EducationExperienceTimelineComponent } from '../education-experience-timeline/education-experience-timeline.component';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CommonModule, SkillsComponent],
+  imports: [
+    CommonModule,
+    SkillsComponent,
+    EducationExperienceTimelineComponent,
+  ],
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css'],
 })

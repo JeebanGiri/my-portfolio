@@ -1,0 +1,181 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.resume-page > .top-content {
+  font-family: "Poppins", sans-serif;
+  font-size: var(--fs-1);
+  font-weight: var(--fw-600);
+  text-align: center;
+  text-transform: uppercase;
+}
+.education,
+.exprience {
+  display: flex;
+  padding-top: 20px;
+  padding-left: 10px;
+  place-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.education .book-box,
+.exprience .exprience-box {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 40px;
+  border-radius: 5px;
+  width: 40px;
+  margin-left: -10px;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+.education .book-box::before,
+.exprience .exprience-box::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.education > h3,
+.exprience > h3 {
+  letter-spacing: 1px;
+}
+.education img,
+.exprience img {
+  height: 18px;
+  width: 18px;
+}
+.progress-bar {
+  padding: 10px;
+  text-align: justify;
+}
+.progress {
+  position: relative;
+  margin: 1rem 0 0;
+  list-style: none;
+}
+
+.progress__item {
+  position: relative;
+  min-height: 7rem;
+  padding-left: 0.3rem;
+  margin-top: -10px;
+  &:before {
+    content: "";
+    position: absolute;
+    height: 8rem;
+    width: 3px;
+    border-right: 2px solid #282828;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    /* top: 0; */
+    top: 1.2rem;
+    width: 7px;
+    height: 7px;
+    left: 4px;
+    /* border-radius: 50%; */
+    border-radius: 7px;
+    background: var(--vegas-gold);
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-2);
+  }
+  /* Hide border for Last Step */
+  &:last-child {
+    &:before {
+      border: none;
+    }
+  }
+  &.progress__item {
+    &:after {
+      color: #392a60;
+      background: #d6bd62;
+    }
+  }
+}
+.progress__item .content {
+  padding-left: 30px;
+  padding-top: 10px;
+  display: grid;
+  gap: 3px;
+}
+
+.progress__item > .content p:first-child {
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+.progress__item > .content span {
+  padding-top: 5px;
+  font-size: var(--fs-6);
+  padding-bottom: 2px;
+  color: var(--orange-yellow-crayola);
+}
+.progress__item > .content .description {
+  opacity: 0.7;
+  font-weight: var(--fw-300);
+}
+
+.progress__info {
+  font-size: 13px;
+}
+
+@media (max-width: 767px) {
+  .resume-page {
+    padding-right: 20px;
+  }
+
+  .progress__item {
+    position: relative;
+    max-height: 11rem;
+    padding-left: 0.3rem;
+    margin-top: -10px;
+    &:before {
+      content: "";
+      position: absolute;
+      min-height: 11rem;
+      width: 3px;
+      border-right: 2px solid #282828;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 1.2rem;
+      width: 7px;
+      height: 7px;
+      left: 4px;
+      border-radius: 7px;
+      background: var(--vegas-gold);
+      color: #fff;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 2rem;
+      text-align: center;
+      box-shadow: var(--shadow-2);
+    }
+  }
+  .bar > .html,
+  .bar > .css,
+  .bar > .javascript,
+  .bar > .react,
+  .bar > .node {
+    height: 8px;
+    border-radius: 5px;
+    background-color: #d6bd62;
+  }
+}

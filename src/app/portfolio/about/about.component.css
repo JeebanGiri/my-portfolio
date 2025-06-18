@@ -134,14 +134,17 @@
   color: #fbbf24;
 }
 .actions-box > .desc {
-  font-size: var(--fs-5);
-  letter-spacing: 0.5px;
-  width: calc(100% - 100px);
   display: flex;
   gap: 10px;
   -ms-flex-align: baseline;
   align-items: baseline;
   flex-wrap: nowrap;
+  font-family: "Open sans", sans-serif;
+  font-size: var(--fs-5);
+  font-weight: var(--fw-500);
+  color: #fff;
+  line-height: 1.6;
+  width: calc(100% - 100px);
 }
 .actions-box > .desc::before {
   content: "";
