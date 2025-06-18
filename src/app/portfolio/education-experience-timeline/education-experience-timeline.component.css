@@ -74,7 +74,7 @@
     content: "";
     position: absolute;
     height: 8rem;
-    width: 3px;
+    width: 5px;
     border-right: 2px solid #282828;
   }
   &:after {
@@ -113,6 +113,24 @@
   padding-top: 10px;
   display: grid;
   gap: 3px;
+}
+.content > :is(.exp-info, .edu-info) {
+  display: flex;
+  gap: 10px;
+  font-family: "Poppins" sans-serif;
+}
+.exp-info > .institute-name,
+.edu-info > .institute-name {
+  font-size: var(--fs-2);
+  text-transform: uppercase;
+  font-weight: var(--fw-500);
+  color: #f5a512;
+}
+.edu-info > .progress__title,
+.exp-info > .progress__title {
+  text-transform: uppercase;
+  font-size: var(--fs-5);
+  font-weight: var(--fw-500);
 }
 
 .progress__item > .content p:first-child {
@@ -178,4 +196,65 @@
     border-radius: 5px;
     background-color: #d6bd62;
   }
+}
+
+.experience {
+  padding-left: 40px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  position: relative;
+}
+
+.timeline-header .duration {
+  background: #2e2e2e;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.timeline-header h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #f9a825;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 20px;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #444;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.timeline-item .dot {
+  position: absolute;
+  left: -14px;
+  top: 3px;
+  width: 10px;
+  height: 10px;
+  background-color: #f9a825;
+  border-radius: 50%;
+  border: 2px solid #222;
+}
+
+.timeline-item p {
+  margin: 0;
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }

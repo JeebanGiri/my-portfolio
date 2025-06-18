@@ -10,4 +10,7 @@ import { Component } from '@angular/core';
 export class EducationExperienceTimelineComponent {
   bookpath: string = '../../../assets/images/book.png';
   bookalt: string = 'Book';
+
+  experiencePath: string = '../../../assets/images/experience.png';
+  experiencealt: string = 'Experience';
 }
