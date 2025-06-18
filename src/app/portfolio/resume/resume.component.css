@@ -65,6 +65,7 @@
 }
 .progress-bar {
   padding: 10px;
+  text-align: justify;
 }
 .progress {
   position: relative;
@@ -143,73 +144,7 @@
 .progress__info {
   font-size: 13px;
 }
-.skills {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-.skills-header {
-  letter-spacing: 1px;
-}
 
-.skill-set h3 {
-  padding-top: 10px;
-}
-.skill-set .skill-status {
-  margin-top: 10px;
-  background-color: #222224;
-  padding: 20px;
-  display: grid;
-  font-size: 15px;
-  font-weight: 500;
-  border-radius: 10px;
-  gap: 15px;
-}
-.skills-container {
-  display: grid;
-  background-color: #222225;
-  padding: 25px 25px 30px 25px;
-  border-radius: 10px;
-  gap: 20px;
-  border: 1px solid var(--jet);
-  margin-top: 20px;
-}
-.skill-container > .content {
-  display: flex;
-  gap: 10px;
-}
-.bar {
-  padding-top: 10px;
-}
-.bar > .html {
-  width: 85%;
-  height: 10px;
-  border-radius: 5px;
-  background-color: #d6bd62;
-}
-.bar > .css {
-  width: 70%;
-  height: 10px;
-  border-radius: 5px;
-  background-color: #d6bd62;
-}
-.bar > .javascript {
-  width: 60%;
-  height: 10px;
-  border-radius: 5px;
-  background-color: #d6bd62;
-}
-.bar > .react {
-  width: 55%;
-  height: 10px;
-  border-radius: 5px;
-  background-color: #d6bd62;
-}
-.bar > .node {
-  width: 50%;
-  height: 10px;
-  border-radius: 5px;
-  background-color: #d6bd62;
-}
 @media (max-width: 767px) {
   .resume-page {
     padding-right: 20px;
