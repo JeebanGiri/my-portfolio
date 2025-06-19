@@ -65,8 +65,10 @@
   list-style: none;
 }
 
-.progress__item {
+/* .progress__item {
   position: relative;
+  display: flex;
+  align-items: flex-start;
   min-height: 7rem;
   padding-left: 0.3rem;
   margin-top: -10px;
@@ -80,12 +82,12 @@
   &:after {
     content: "";
     position: absolute;
-    /* top: 0; */
+    top: 0;
     top: 1.2rem;
     width: 7px;
     height: 7px;
     left: 4px;
-    /* border-radius: 50%; */
+    border-radius: 50%;
     border-radius: 7px;
     background: var(--vegas-gold);
     color: #fff;
@@ -95,7 +97,6 @@
     text-align: center;
     box-shadow: var(--shadow-2);
   }
-  /* Hide border for Last Step */
   &:last-child {
     &:before {
       border: none;
@@ -107,12 +108,48 @@
       background: #d6bd62;
     }
   }
+} */
+
+.progress__item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0px 20px 0px 60px;
+  margin: 0px 0px 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    /* start from dot center */
+    top: 1rem;
+    width: 2px;
+    height: calc(100% - 1.2rem);
+    background-color: #282828;
+    z-index: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    left: 1px;
+    width: 10px;
+    height: 10px;
+    background: var(--vegas-gold);
+    border-radius: 50%;
+    z-index: 1;
+  }
+  /* Hide line for the last item */
+  /* &:last-child::before {
+    display: none;
+  } */
 }
+
 .progress__item .content {
-  padding-left: 30px;
-  padding-top: 10px;
-  display: grid;
-  gap: 3px;
+  margin: 7px 0px 10px;
+  display: inline-block;
 }
 .content > :is(.exp-info, .edu-info) {
   display: flex;
@@ -130,30 +167,32 @@
 .exp-info > .progress__title {
   text-transform: uppercase;
   font-size: var(--fs-5);
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-600);
+  font-family: "Open Sans", sans-serif;
 }
 
-.progress__item > .content p:first-child {
-  font-weight: 600;
-  font-size: 15px;
-  letter-spacing: 0.5px;
-}
-.progress__item > .content span {
-  padding-top: 5px;
-  font-size: var(--fs-6);
-  padding-bottom: 2px;
-  color: var(--orange-yellow-crayola);
+.content > .duration {
+  background: #2e2e2e;
+  padding: 2px 12px;
+  border-radius: 20px;
+  font-size: var(--fs-7);
+  color: #ffffff;
+  width: fit-content;
+  text-transform: uppercase;
+  font-weight: var(--fw-500);
+  font-family: "Open Sans" sans-serif;
+  opacity: 0.8;
 }
 .progress__item > .content .description {
   opacity: 0.7;
   font-weight: var(--fw-300);
 }
 
-.progress__info {
+.duration {
   font-size: 13px;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .resume-page {
     padding-right: 20px;
   }
@@ -196,9 +235,9 @@
     border-radius: 5px;
     background-color: #d6bd62;
   }
-}
+} */
 
-.experience {
+/* .experience {
   padding-left: 40px;
   font-family: "Poppins", sans-serif;
   color: #fff;
@@ -257,4 +296,4 @@
   color: #ccc;
   font-size: 0.95rem;
   line-height: 1.5;
-}
+} */
