@@ -106,7 +106,17 @@
     </ul>
   </div>
   <div class="resume-button-wrapper">
-    <button on class="view-resume-button">Download Resume</button>
-    <button class="download-resume-button">Download Resume</button>
+    <button on class="view-resume-button" (click)="goToResume()">
+      <span class="btn-content"> View Resume </span>
+      <ion-icon
+        *ngIf="browserService.isBrowser"
+        name="document-outline"
+        class="view-resume"
+      ></ion-icon>
+    </button>
+    <button class="download-resume-button">
+      <span class="btn-content"> Download Resume </span>
+      <i class="fa-solid fa-download"></i>
+    </button>
   </div>
 </div>

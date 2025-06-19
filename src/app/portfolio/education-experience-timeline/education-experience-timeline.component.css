@@ -186,27 +186,67 @@
 .resume-button-wrapper {
   display: flex;
   text-align: center;
-  margin: 20px 0px;
+  margin: 60px 0px 0px;
   gap: 30px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .view-resume-button,
 .download-resume-button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-family: inherit;
-  /* background-color: #007bff; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  line-height: 46px;
+  padding: 0 40px;
   background-color: #f5a512;
-  color: white;
+  color: var(--white-1);
   border: none;
-  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: var(--fw-500);
+  font-size: var(--fs-5);
+  border-radius: 26px;
+  text-transform: uppercase;
   cursor: pointer;
+  overflow: hidden;
   transition: background-color 0.3s ease;
+  outline: none !important;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  border: 0;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
 }
 
-.download-resume-button:hover {
-  background-color: #0056b3;
+.btn-content {
+  transition: transform 0.4s ease;
+}
+
+.view-resume,
+.fa-solid {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%) translateX(0px);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+  font-size: 20px;
+  pointer-events: none;
+}
+
+.view-resume-button:hover .btn-content,
+.download-resume-button:hover .btn-content {
+  transform: translateX(-15px);
+}
+
+.view-resume-button:hover .view-resume,
+.download-resume-button:hover .fa-solid {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(15px);
 }
 
 /* @media (max-width: 767px) {
