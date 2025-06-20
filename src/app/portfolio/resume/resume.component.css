@@ -23,6 +23,8 @@
 .resume-container {
   width: 100%;
   /* background: #101c35; */
+  background: #202020;
+
   border-radius: 12px;
   /* padding: 40px 20px; */
   /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); */
@@ -38,9 +40,9 @@
   margin-bottom: 30px;
   /* background-color: #0e1629; */
   /* background-color: #f5a512; */
-  background: #202020;
+  /* background: #202020; */
   color: white;
-  padding: 40px 20px;
+  padding: 10px 20px;
 }
 .contact-location,
 .section {
@@ -60,20 +62,25 @@
 }
 
 .download-btn {
-  margin-top: 10px;
-  padding: 0px 20px;
+  margin-top: 40px;
+  padding: 15px 20px;
   border: none;
   /* background: #1a6fff; */
-  background-color: #0e1629;
+  /* background-color: #0e1629; */
+  /* background-color: #f5a512; */
   color: white;
   border-radius: 6px;
   cursor: pointer;
   font-weight: 600;
 }
+.profile-block {
+  display: grid;
+  place-items: center;
+}
 
 .profile-block img {
-  width: 80px;
-  height: 80px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
 }

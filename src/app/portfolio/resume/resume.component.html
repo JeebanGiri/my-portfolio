@@ -17,7 +17,21 @@
         <h1>Jeeban Giri</h1>
         <h2>Software Developer</h2>
         <p>Building robust and scalable software solutions.</p>
-        <button class="download-btn">📄 Download CV</button>
+        <!-- <button class="download-btn">📄 Download CV</button> -->
+        <div class="resume-button-wrapper">
+          <!-- <button on class="view-resume-button" (click)="goToResume()"> -->
+          <span class="btn-content"> View Resume </span>
+          <!-- <ion-icon
+              *ngIf="browserService.isBrowser"
+              name="document-outline"
+              class="view-resume"
+            ></ion-icon> -->
+          <!-- </button> -->
+          <button class="download-resume-button" (click)="downloadResume()">
+            <span class="btn-content"> Download Cv </span>
+            <i class="fa-solid fa-download"></i>
+          </button>
+        </div>
       </div>
       <div class="profile-block">
         <img src="https://i.ibb.co/5cZL3vM/avatar-demo.png" alt="Profile" />
