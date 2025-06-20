@@ -3,89 +3,87 @@
     <h2>Resume</h2>
     <hr class="line" />
   </div>
-  <div class="education">
-    <div class="book-box">
-      <img [src]="bookpath" [alt]="bookalt" />
+  <!-- <div class="page-content">
+    <header>
+      <div class="personal-info"></div>
+      <div class="profile-photo"></div>
+    </header>
+    <div class="about-me"></div>
+  </div> -->
+
+  <div class="resume-container">
+    <header class="resume-header">
+      <div class="info-block">
+        <h1>Jeeban Giri</h1>
+        <h2>Software Developer</h2>
+        <p>Building robust and scalable software solutions.</p>
+        <button class="download-btn">📄 Download CV</button>
+      </div>
+      <div class="profile-block">
+        <img src="https://i.ibb.co/5cZL3vM/avatar-demo.png" alt="Profile" />
+        <div class="social-icons">
+          <a href="#"><i>G</i></a>
+          <a href="#"><i>F</i></a>
+          <a href="#"><i>a</i></a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <h3>📘 About Me</h3>
+      <ul>
+        <li>
+          Experienced software developer with a background in creating efficient
+          and scalable applications
+        </li>
+        <li>Strong problem-solving skills and passion for coding</li>
+      </ul>
+    </section>
+
+    <section class="contact-location">
+      <p>📍 Itahari, Nepal</p>
+      <p>📞 +977 9812345678</p>
+      <p>📧 jeebangiriexample.com</p>
+    </section>
+
+    <section class="section">
+      <h3>🧠 Skills</h3>
+      <div class="skills">
+        <span>Python</span>
+        <span>Java</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>SQL</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>💼 Experience</h3>
+      <div class="job">
+        <h4>Virtuosway <span class="date">Apr 2021 – Present</span></h4>
+        <p class="role">Backend Developer</p>
+        <p>
+          Developing and maintaining backend services and APIs for various web
+          applications
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>🎓 Education</h3>
+      <p><strong>Tribhuvan University</strong></p>
+      <p>2017 – 2020</p>
+    </section>
+
+    <div class="timeline">
+      <div class="timeline-item" *ngFor="let event of timelineData">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>{{ event.title }}</h3>
+          <span>{{ event.date }}</span>
+          <p>{{ event.description }}</p>
+        </div>
+      </div>
     </div>
-    <h3>Education</h3>
-  </div>
-  <div class="progress-bar">
-    <ul class="progress">
-      <li class="progress__item">
-        <div class="content">
-          <p class="progress__title">Itahari International College</p>
-          <span class="progress__info">2021 &mdash; 2023</span>
-          <p class="description">
-            Studied advanced web development Courses, focusing on creating
-            responsive and maintainable application. Completed a capstone
-            project on hotel reservation application development.
-          </p>
-        </div>
-      </li>
-      <li class="progress__item">
-        <div class="content">
-          <p class="progress__title">Sukuna Secondary School</p>
-          <span class="progress__info">2019 &mdash; 2021</span>
-          <p class="description">
-            Built a foundation in computer science and mathematics, participated
-            in coding competitions, and developed problem-solving skills.
-          </p>
-        </div>
-      </li>
-      <li class="progress__item">
-        <div class="content">
-          <p class="progress__title">Kaseni Model English School</p>
-          <span class="progress__info">WithIn 2019</span>
-          <p class="description">
-            Within my School time period, I studied and explore in various
-            subjects. I made a strong foundation in mathematics and developed a
-            problems solving skills.
-          </p>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div class="exprience">
-    <div class="exprience-box">
-      <img [src]="bookpath" [alt]="bookalt" />
-    </div>
-    <h3>Experience</h3>
-  </div>
-  <div class="progress-bar">
-    <ul class="progress">
-      <li class="progress__item">
-        <div class="content">
-          <p class="progress__title">Web Developer</p>
-          <span class="progress__info">2024 &mdash; present</span>
-          <p class="description">
-            Responsible for designing and developing user-centric websites. I
-            ensure each project is functional, user-friendly, and visually
-            appealing.
-          </p>
-        </div>
-      </li>
-      <li class="progress__item">
-        <div class="content">
-          <p class="progress__title">Internship at Lancemeup Pvt. Ltd</p>
-          <span class="progress__info">July 10 &mdash; Nov 01</span>
-          <p class="description">
-            Worked on web application projects, focusing on Backend Development
-            and performance optimization. Gained practical industry experience.
-          </p>
-        </div>
-      </li>
-      <li class="progress__item">
-        <div class="content">
-          <p class="progress__title">
-            Internship at Itahari International College
-          </p>
-          <span class="progress__info">June 15 &mdash; Oct 20</span>
-          <p class="description">
-            Work and made strong foundation on Networking, enhancing teamwork
-            and time management skills in a professional setting.
-          </p>
-        </div>
-      </li>
-    </ul>
   </div>
 </div>
