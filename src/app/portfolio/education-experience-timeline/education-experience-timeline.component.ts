@@ -27,7 +27,10 @@ export class EducationExperienceTimelineComponent {
     this.router.navigate(['/resume']);
   }
 
-  downloadResume(){
-    
+  downloadResume() {
+    let link = document.createElement('a');
+    link.href = 'assets/resume/Jeeban-Giri-Resume.pdf';
+    link.download = 'Jeeban Giri Resume.pdf';
+    link.click();
   }
 }

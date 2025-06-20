@@ -163,7 +163,9 @@
   word-spacing: 5px;
   font-size: var(--fs-5);
   font-weight: var(--fw-600);
+  letter-spacing: 0.5px;
   font-family: "Open Sans", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 
 .content > .duration {
@@ -211,10 +213,7 @@
   overflow: hidden;
   transition: background-color 0.3s ease;
   outline: none !important;
-  position: relative;
-  font-family: "Poppins", sans-serif;
   letter-spacing: 0.5px;
-  border: 0;
   text-align: center;
   vertical-align: middle;
   position: relative;
