@@ -19,48 +19,46 @@
         <p>Building robust and scalable software solutions.</p>
         <!-- <button class="download-btn">📄 Download CV</button> -->
         <div class="resume-button-wrapper">
-          <!-- <button on class="view-resume-button" (click)="goToResume()"> -->
-          <span class="btn-content"> View Resume </span>
-          <!-- <ion-icon
-              *ngIf="browserService.isBrowser"
-              name="document-outline"
-              class="view-resume"
-            ></ion-icon> -->
-          <!-- </button> -->
-          <button class="download-resume-button" (click)="downloadResume()">
-            <span class="btn-content"> Download Cv </span>
+          <button class="download-button" (click)="downloadResume()">
             <i class="fa-solid fa-download"></i>
+            <span class="btn-content"> Download Cv </span>
+          </button>
+          <button class="contact-button">
+            <i class="fa-regular fa-envelope"></i>
+            <span class="btn-content"> Contact </span>
           </button>
         </div>
       </div>
       <div class="profile-block">
-        <img src="https://i.ibb.co/5cZL3vM/avatar-demo.png" alt="Profile" />
+        <img [src]="profilepath" [alt]="profilealt" />
         <div class="social-icons">
-          <a href="#"><i>G</i></a>
-          <a href="#"><i>F</i></a>
-          <a href="#"><i>a</i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
     </header>
 
-    <section class="section">
-      <h3>📘 About Me</h3>
-      <ul>
-        <li>
-          Experienced software developer with a background in creating efficient
-          and scalable applications
-        </li>
-        <li>Strong problem-solving skills and passion for coding</li>
-      </ul>
-    </section>
+    <div class="profile-desc-wrapper">
+      <section class="info-section">
+        <h3>📘 About Me</h3>
+        <ul>
+          <li>
+            Experienced software developer with a background in creating
+            efficient and scalable applications
+          </li>
+          <li>Strong problem-solving skills and passion for coding</li>
+        </ul>
+      </section>
 
-    <section class="contact-location">
-      <p>📍 Itahari, Nepal</p>
-      <p>📞 +977 9812345678</p>
-      <p>📧 jeebangiriexample.com</p>
-    </section>
+      <section class="contact-section">
+        <p>📍 Itahari, Nepal</p>
+        <p>📞 +977 9812345678</p>
+        <p>📧 jeebangiriexample.com</p>
+      </section>
+    </div>
 
-    <section class="section">
+    <section class="skill-section">
       <h3>🧠 Skills</h3>
       <div class="skills">
         <span>Python</span>
@@ -71,7 +69,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="exp-section">
       <h3>💼 Experience</h3>
       <div class="job">
         <h4>Virtuosway <span class="date">Apr 2021 – Present</span></h4>
@@ -83,7 +81,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="edu-section">
       <h3>🎓 Education</h3>
       <p><strong>Tribhuvan University</strong></p>
       <p>2017 – 2020</p>

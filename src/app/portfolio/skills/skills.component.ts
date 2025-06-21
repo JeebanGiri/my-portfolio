@@ -16,18 +16,18 @@ export class SkillsComponent {
   rowColors = ['red', 'orange', 'blue', 'green'];
 
   skills = [
-    { name: 'JavaScript', percent: '85%' },
-    { name: 'TypeScript', percent: '85%' },
-    { name: 'React.JS', percent: '80%' },
+    { name: 'JavaScript', percent: '80%' },
+    { name: 'TypeScript', percent: '70%' },
+    { name: 'React.JS', percent: '65%' },
     { name: 'Nest.JS', percent: '70%' },
-    { name: 'Angular', percent: '75%' },
-    { name: 'CSS', percent: '90%' },
+    { name: 'Angular', percent: '60%' },
+    { name: 'CSS', percent: '80%' },
     { name: 'Java', percent: '65%' },
     { name: 'Node.JS', percent: '78%' },
     { name: 'AWS', percent: '50%' },
     { name: 'MySQL', percent: '70%' },
     { name: 'PostgreSQL', percent: '75%' },
-    { name: 'Scrum / Agile', percent: '85%' },
+    { name: 'Scrum / Agile', percent: '70%' },
     // { name: 'Docker', percent: '60%', color: 'deepskyblue' },
     // { name: 'Kubernetes', percent: '45%', color: 'steelblue' },
   ];

@@ -12,6 +12,9 @@ export class ResumeComponent {
   bookpath: string = '../../../assets/images/book.png';
   bookalt: string = 'Book';
 
+  profilepath: string = '../../../assets/images/profile.jpeg';
+  profilealt: string = 'Profile';
+
   timelineData = [
     {
       title: 'Backend Developer at Virtuosway',
