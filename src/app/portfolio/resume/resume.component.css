@@ -251,15 +251,6 @@
   text-align: justify;
 }
 
-.skill-section .skills span {
-  display: inline-block;
-  background: #22395e;
-  color: #bfe1ff;
-  padding: 6px 14px;
-  border-radius: 20px;
-  margin: 4px 8px 4px 0;
-  font-size: 0.9rem;
-}
 .resume-content-wrapper {
   display: flex;
   justify-content: space-between;
@@ -317,7 +308,8 @@
   text-transform: uppercase;
 }
 
-:is(.exp-header, .edu-header, .lang-tech-header) > .fa-solid {
+:is(.exp-header, .edu-header, .lang-tech-header, .soft-skills-header)
+  > .fa-solid {
   color: #6daeff;
 }
 
@@ -388,6 +380,51 @@
 :is(.language-tech-section > .tech) ul li > p {
   font-size: var(--fs-5);
   text-align: justify;
+}
+
+/* .skill-section .skills span {
+  display: inline-block;
+  background: #22395e;
+  color: #bfe1ff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin: 4px 8px 4px 0;
+  font-size: 0.9rem;
+} */
+
+.skills ul li {
+  display: grid;
+}
+
+.skill-label {
+  display: flex;
+  justify-content: space-between;
+  font-weight: var(--fw-600);
+  font-size: var(--fs-4);
+  margin-top: 20px;
+}
+
+.percentage-line {
+  height: 7px;
+  margin-top: 5px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.communication-skill .percentage-line {
+  background: linear-gradient(to right, #6daeff 90%, #ccc 90%);
+}
+
+.leadership-skill .percentage-line {
+  background: linear-gradient(to right, #6daeff 85%, #ccc 85%);
+}
+
+.decision-making-skill .percentage-line {
+  background: linear-gradient(to right, #6daeff 80%, #ccc 80%);
+}
+
+.problem-solving-skill .percentage-line {
+  background: linear-gradient(to right, #6daeff 80%, #ccc 80%);
 }
 
 @media (max-width: 767px) {
