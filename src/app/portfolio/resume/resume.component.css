@@ -46,9 +46,6 @@
   color: white;
   padding: 20px 20px;
 }
-.resume-content-wrapper {
-  padding: 0px 20px;
-}
 
 .info-block h1 {
   font-size: 2rem;
@@ -206,6 +203,7 @@
 }
 .info-section ul li {
   list-style: disc;
+  cursor: text;
 }
 
 .contact-section {
@@ -225,6 +223,7 @@
 .contact-section ul li {
   display: flex;
   gap: 20px;
+  cursor: text;
 }
 
 .contact-section ul li strong {
@@ -264,10 +263,13 @@
 .resume-content-wrapper {
   display: flex;
   justify-content: space-between;
+  padding: 0px 20px;
+  gap: 20px;
 }
 
 .social-items-lang-skill {
   display: grid;
+  max-width: calc(100% - 20px - 60%);
 }
 .social-profile {
   margin-top: 20px;
@@ -288,6 +290,10 @@
   color: var(--white-2);
   font-size: 12px;
   letter-spacing: 0.4px;
+  cursor: pointer;
+}
+.social-profile ul li a:hover {
+  text-decoration: underline;
 }
 .experience-edu-hobby-section {
   margin-top: 50px;
@@ -301,32 +307,47 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid #f5a512;
+  padding-bottom: 8px;
   border-end-end-radius: 10px;
 }
 
 :is(.exp-header, .edu-header) > h2 {
-  font-size: var(--fs-1);
+  font-size: 26px;
+  letter-spacing: 0.8px;
 }
 
 .job {
-  margin-top: 10px;
+  display: grid;
+  gap: 10px;
 }
 
 .job h4 {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
   font-size: var(--fs-2);
-  color: #d0e3ff;
+  /* color: #d0e3ff; */
+  margin-top: 10px;
+  color: #efa71d;
+  font-weight: 600;
+  font-size: 18px;
 }
 .job .date {
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   font-weight: var(--fw-400);
 }
 
+/* .job-desc {
+  font-size: var(--fs-7);
+} */
+
 .job .role {
   font-weight: 600;
-  color: #7cb4ff;
-  margin: 5px 0;
+  /* color: #7cb4ff; */
+  color: #d0e3ff;
+}
+
+.job p:nth-of-type(2) {
+  font-size: var(--fs-5);
 }
 
 @media (max-width: 767px) {

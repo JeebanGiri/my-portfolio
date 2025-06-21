@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { addIcons } from 'ionicons';
 import { BrowserService } from '../../shared/browser.service';
-import { globeOutline, locationOutline, navigate } from 'ionicons/icons';
+import { globeOutline, locationOutline } from 'ionicons/icons';
 import { IonIcon } from '@ionic/angular/standalone';
 
 @Component({
@@ -17,7 +17,6 @@ export class ResumeComponent {
     addIcons({
       'location-outline': locationOutline,
       'globe-outline': globeOutline,
-      navigate: navigate,
     });
   }
 
