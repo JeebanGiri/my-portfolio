@@ -1,14 +1,26 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { addIcons } from 'ionicons';
+import { BrowserService } from '../../shared/browser.service';
+import { globeOutline, locationOutline, navigate } from 'ionicons/icons';
+import { IonIcon } from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-resume',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, IonIcon],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.css',
 })
 export class ResumeComponent {
+  constructor(public browserService: BrowserService) {
+    addIcons({
+      'location-outline': locationOutline,
+      'globe-outline': globeOutline,
+      navigate: navigate,
+    });
+  }
+
   bookpath: string = '../../../assets/images/book.png';
   bookalt: string = 'Book';
 

@@ -38,18 +38,16 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
-  background-color: #0e1629;
+  /* background-color: #0e1629; */
+  background-color: #182c4f;
+  /* background-color: #182c4f; */
   /* background-color: #f5a512; */
   /* background: #202020; */
   color: white;
   padding: 20px 20px;
 }
-.profile-desc-wrapper,
-.skill-section,
-.exp-section,
-.edu-section {
+.resume-content-wrapper {
   padding: 0px 20px;
-  margin-top: 30px;
 }
 
 .info-block h1 {
@@ -77,14 +75,15 @@
   padding: 15px 20px;
   border: none;
   /* background-color: #f5a512; */
-  background-color: #081a2b;
-  /* color: white; */
-  color: #f5a512;
+  /* background-color: #081a2b; */
+  /* background-color: #182c4f; */
+  background-color: #22395e;
+  color: var(--white-2);
+  /* color: #f5a512; */
   border-radius: 6px;
-  text-transform: uppercase;
   cursor: pointer;
   font-weight: 600;
-  font-size: var(--fs-5);
+  font-size: var(--fs-4);
   letter-spacing: 0.5px;
   text-align: center;
   vertical-align: middle;
@@ -183,27 +182,74 @@
 
 .profile-desc-wrapper {
   display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  position: relative;
 }
 
-:is(.info-section, .skill-section, .exp-section, .edu-section) > h3 {
+:is(.info-section, .skill-section) > h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
   color: #6daeff;
 }
+:is(.exp-section, .edu-section, .skill-section) {
+  margin-top: 30px;
+}
 
 :is(.info-section, .skill-section, .exp-section, .edu-section) > ul {
-  padding-left: 20px;
+  padding: 0px 20px;
+  margin-top: 30px;
 }
 
 :is(.info-section, .skill-section, .exp-section, .edu-section) > ul > li {
   margin-bottom: 8px;
 }
+.info-section ul li {
+  list-style: disc;
+}
 
 .contact-section {
-  margin-top: 20px;
-  font-size: 0.95rem;
+  position: absolute;
+  right: 20px;
+  font-size: var(--fs-5);
   color: #b0c4de;
+  background-color: #3d3d3d;
   line-height: 1.5;
+  padding: 20px;
+  border-radius: 10px;
+}
+.contact-section ul {
+  display: grid;
+  gap: 20px;
+}
+.contact-section ul li {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-section ul li strong {
+  color: var(--white-1);
+}
+.contact-section ul li span {
+  height: 20px;
+  width: 20px;
+  font-size: var(--fs-1);
+}
+
+.contact-section ul li .icons .fa-solid {
+  font-size: var(--fs-2);
+}
+.contact-section ul li span {
+  /* color: var(--orange-yellow-crayola); */
+  color: #f5a512;
+}
+.contact-section ul li p {
+  color: #aab8d1;
+}
+
+.info-section {
+  max-width: calc(100% - 20px - 300px);
+  text-align: justify;
 }
 
 .skill-section .skills span {
@@ -215,6 +261,52 @@
   margin: 4px 8px 4px 0;
   font-size: 0.9rem;
 }
+.resume-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-items-lang-skill {
+  display: grid;
+}
+.social-profile {
+  margin-top: 20px;
+}
+.social-profile .social-icon-list {
+  display: grid;
+  gap: 20px;
+}
+.social-profile ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.social-profile ul li span {
+  color: #f5a512;
+}
+.social-profile ul li a {
+  color: var(--white-2);
+  font-size: 12px;
+  letter-spacing: 0.4px;
+}
+.experience-edu-hobby-section {
+  margin-top: 50px;
+  display: grid;
+  height: fit-content;
+}
+
+.exp-section .exp-header,
+.edu-section .edu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #f5a512;
+  border-end-end-radius: 10px;
+}
+
+:is(.exp-header, .edu-header) > h2 {
+  font-size: var(--fs-1);
+}
 
 .job {
   margin-top: 10px;
@@ -223,8 +315,12 @@
 .job h4 {
   display: flex;
   justify-content: space-between;
-  font-size: 1rem;
+  font-size: var(--fs-2);
   color: #d0e3ff;
+}
+.job .date {
+  font-size: var(--fs-3);
+  font-weight: var(--fw-400);
 }
 
 .job .role {

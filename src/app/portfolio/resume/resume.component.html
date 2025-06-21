@@ -41,52 +41,179 @@
 
     <div class="profile-desc-wrapper">
       <section class="info-section">
-        <h3>📘 About Me</h3>
+        <h3>
+          <i class="fa-solid fa-address-card"></i>
+          About Me
+        </h3>
         <ul>
           <li>
             Experienced software developer with a background in creating
             efficient and scalable applications
           </li>
           <li>Strong problem-solving skills and passion for coding</li>
+          <li>
+            Committed to staying updated with industry trends and best products
+          </li>
         </ul>
       </section>
 
       <section class="contact-section">
-        <p>📍 Itahari, Nepal</p>
-        <p>📞 +977 9812345678</p>
-        <p>📧 jeebangiriexample.com</p>
+        <ul>
+          <li>
+            <span class="icons">
+              <ion-icon
+                name="location-outline"
+                *ngIf="browserService.isBrowser"
+              ></ion-icon>
+            </span>
+            <div class="infos">
+              <strong>Location</strong>
+              <p>Itahari, Nepal</p>
+            </div>
+          </li>
+          <li>
+            <span class="icons">
+              <i class="fa-solid fa-briefcase"></i>
+            </span>
+            <div class="infos">
+              <strong>Experience</strong>
+              <p>2+ years</p>
+            </div>
+          </li>
+          <li>
+            <span class="icons">
+              <ion-icon
+                name="language-outline"
+                *ngIf="browserService.isBrowser"
+              ></ion-icon>
+            </span>
+            <div class="infos">
+              <strong>Language</strong>
+              <p>English, Nepali, Hindi</p>
+            </div>
+          </li>
+        </ul>
       </section>
     </div>
-
-    <section class="skill-section">
-      <h3>🧠 Skills</h3>
-      <div class="skills">
-        <span>Python</span>
-        <span>Java</span>
-        <span>JavaScript</span>
-        <span>React</span>
-        <span>SQL</span>
+    <main class="resume-content-wrapper">
+      <div class="social-items-lang-skill">
+        <section class="social-profile">
+          <ul class="social-icon-list">
+            <li>
+              <span>
+                <i class="fa-brands fa-github"></i>
+              </span>
+              <a href="#">
+                <p>JeebanGiri</p>
+              </a>
+            </li>
+            <li>
+              <span>
+                <i class="fa-brands fa-square-facebook"></i>
+              </span>
+              <a href="#">
+                <p>jeeban.giri.058</p>
+              </a>
+            </li>
+            <li>
+              <span>
+                <i class="fa-brands fa-square-x-twitter"></i>
+              </span>
+              <a href="#">
+                <p>jeebang_01</p>
+              </a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-globe"></i></span>
+              <a href="#">
+                <p>jeebangiri.com.np</p>
+              </a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-phone"></i></span>
+              <a href="#">
+                <p>+977-9807099754</p>
+              </a>
+            </li>
+            <li>
+              <span>
+                <ion-icon
+                  *ngIf="browserService.isBrowser"
+                  name="navigate"
+                ></ion-icon>
+              </span>
+              <a href="#">
+                <p>Biratchwok, Morang, Nepal</p>
+              </a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <a href="#">
+                <p>jeeban.giri5995&#64;gmail.com</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="skill-section">
+          <h3>🧠 Skills</h3>
+          <div class="skills">
+            <span>Python</span>
+            <span>Java</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>SQL</span>
+          </div>
+        </section>
       </div>
-    </section>
 
-    <section class="exp-section">
-      <h3>💼 Experience</h3>
-      <div class="job">
-        <h4>Virtuosway <span class="date">Apr 2021 – Present</span></h4>
-        <p class="role">Backend Developer</p>
-        <p>
-          Developing and maintaining backend services and APIs for various web
-          applications
-        </p>
+      <div class="experience-edu-hobby-section">
+        <section class="exp-section">
+          <div class="exp-header">
+            <h2>Experience</h2>
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <div class="job">
+            <h4>
+              Itahari Internation College
+              <span class="date">Apr 2021 – Present / Kathmandu Nepal</span>
+            </h4>
+            <p class="role">Backend Developer</p>
+            <p>
+              Developing and maintaining backend services and APIs for various
+              web applications
+            </p>
+          </div>
+        </section>
+
+        <section class="edu-section">
+          <div class="edu-header">
+            <h2>Education</h2>
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <p><strong>Tribhuvan University</strong></p>
+          <p>2017 – 2020</p>
+        </section>
       </div>
-    </section>
+    </main>
+    <div class="experience-edu-hobby-section">
+      <section class="exp-section">
+        <h3>💼 Experience</h3>
+        <div class="job">
+          <h4>Virtuosway <span class="date">Apr 2021 – Present</span></h4>
+          <p class="role">Backend Developer</p>
+          <p>
+            Developing and maintaining backend services and APIs for various web
+            applications
+          </p>
+        </div>
+      </section>
 
-    <section class="edu-section">
-      <h3>🎓 Education</h3>
-      <p><strong>Tribhuvan University</strong></p>
-      <p>2017 – 2020</p>
-    </section>
-
+      <section class="edu-section">
+        <h3>🎓 Education</h3>
+        <p><strong>Tribhuvan University</strong></p>
+        <p>2017 – 2020</p>
+      </section>
+    </div>
     <div class="timeline">
       <div class="timeline-item" *ngFor="let event of timelineData">
         <div class="timeline-dot"></div>
