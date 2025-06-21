@@ -262,15 +262,16 @@
 }
 .resume-content-wrapper {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 0px 20px;
-  gap: 20px;
+  gap: 70px;
 }
 
 .social-items-lang-skill {
   display: grid;
-  max-width: calc(100% - 20px - 60%);
+  max-width: calc(100% - 65px - 60%);
 }
+
 .social-profile {
   margin-top: 20px;
 }
@@ -302,52 +303,77 @@
 }
 
 .exp-section .exp-header,
-.edu-section .edu-header {
+.edu-section .edu-header,
+.language-tech-section .lang-tech-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid #f5a512;
   padding-bottom: 8px;
   border-end-end-radius: 10px;
+  text-transform: uppercase;
+  /* gap: 20px; */
+  /* color: #6daeff; */
 }
+:is(.exp-header, .edu-header, .lang-tech-header) > .fa-solid {
+  color: #6daeff;
+}
+/* .language-tech-section .lang-tech-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #f5a512;
+  padding-bottom: 8px;
+  border-end-end-radius: 10px;
+  gap: 20px;
+} */
 
-:is(.exp-header, .edu-header) > h2 {
+:is(.exp-header, .edu-header, .lang-tech-header) > h2 {
   font-size: 26px;
+  font-weight: var(--fw-600);
+  margin-top: -8px;
   letter-spacing: 0.8px;
+  text-transform: uppercase;
 }
 
-.job {
+.job,
+.education {
   display: grid;
-  gap: 10px;
+  gap: 5px;
 }
 
-.job h4 {
+:is(.job, .education) > h4 {
   display: flex;
   gap: 10px;
   font-size: var(--fs-2);
   /* color: #d0e3ff; */
-  margin-top: 10px;
+  margin-top: 20px;
   color: #efa71d;
   font-weight: 600;
   font-size: 18px;
+  flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
 }
-.job .date {
-  font-size: var(--fs-4);
+:is(.job, .education) > .date {
+  font-size: var(--fs-5);
   font-weight: var(--fw-400);
 }
-
-/* .job-desc {
-  font-size: var(--fs-7);
-} */
-
-.job .role {
-  font-weight: 600;
+.job .role,
+.education .course {
+  font-weight: var(--fw-500);
   /* color: #7cb4ff; */
+  font-size: var(--fs-4);
   color: #d0e3ff;
 }
 
-.job p:nth-of-type(2) {
-  font-size: var(--fs-5);
+:is(.job, .education) ul li {
+  font-size: var(--fs-6);
+  margin-top: 20px;
+  list-style: disc;
+  margin-left: 30px;
+  text-align: justify;
+  font-weight: var(--fw-500);
+  line-height: 1.6;
 }
 
 @media (max-width: 767px) {
