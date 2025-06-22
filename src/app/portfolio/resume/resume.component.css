@@ -127,8 +127,9 @@
   margin-top: 30px;
 }
 
-:is(.info-section, .skill-section, .exp-section, .edu-section) > ul > li {
+:is(.info-section, .skill-section, .exp-section, .edu-section) ul > li {
   margin-bottom: 8px;
+  cursor: text;
 }
 .info-section ul li {
   list-style: disc;
@@ -329,6 +330,7 @@
 
 .skills ul li {
   display: grid;
+  cursor: auto;
 }
 
 .skill-label {
@@ -461,7 +463,8 @@
   border: none;
   background-color: #22395e;
   color: var(--white-1);
-  border-radius: 25px;
+  /* border-radius: 25px; */
+  border-radius: 8px;
   cursor: pointer;
   font-weight: var(--fw-500);
   font-size: var(--fs-4);
