@@ -296,7 +296,7 @@
   text-decoration: underline;
 }
 .experience-edu-hobby-section {
-  margin-top: 50px;
+  margin: 50px 0px;
   display: grid;
   height: fit-content;
 }
@@ -366,7 +366,7 @@
   color: #d0e3ff;
 }
 
-:is(.job, .education) ul li {
+:is(.job, .education, ) ul li {
   font-size: var(--fs-6);
   margin-top: 20px;
   list-style: disc;
@@ -438,6 +438,66 @@
 
 .problem-solving-skill .percentage-line {
   background: linear-gradient(to right, #6daeff 80%, #ccc 80%);
+}
+
+.hobby {
+  margin-top: 30px;
+}
+
+.hobby > .hobby-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.hobby-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #0f172a;
+  box-shadow: 0 0 10px rgba(109, 174, 255, 0.3);
+  transition: transform 0.2s;
+}
+
+.hobby-list li:hover {
+  transform: scale(1.05);
+  background-color: #efa71d;
+  display: flex;
+  gap: 5px;
+}
+
+.hobby-list li:hover .hobby-icon {
+  /* padding: 10px 20px; */
+  width: 94px;
+  height: 45px;
+  background: #202020;
+  align-items: center;
+  margin-top: -6px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px #efa71d;
+}
+.hobby-list li:hover span {
+  color: var(--white-1);
+}
+
+.hobby-list li:hover i {
+  color: var(--white-1);
+  margin-top: 5px;
+}
+
+.hobby-icon i {
+  font-size: 32px;
+  color: #6daeff;
+  margin-bottom: 8px;
+}
+
+.hobby-list span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6daeff;
 }
 
 @media (max-width: 767px) {
