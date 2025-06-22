@@ -2,6 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { SkillsComponent } from '../skills/skills.component';
 import { EducationExperienceTimelineComponent } from '../education-experience-timeline/education-experience-timeline.component';
+import { BrowserService } from '../../shared/browser.service';
+import { Router } from '@angular/router';
+import { addIcons } from 'ionicons';
+import { documentOutline, eyeOutline } from 'ionicons/icons';
+import { IonIcon } from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-about',
@@ -10,11 +15,17 @@ import { EducationExperienceTimelineComponent } from '../education-experience-ti
     CommonModule,
     SkillsComponent,
     EducationExperienceTimelineComponent,
+    IonIcon,
   ],
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css'],
 })
 export class AboutComponent {
+  constructor(public browserService: BrowserService, private router: Router) {
+    addIcons({
+      'document-outline': documentOutline,
+    });
+  }
   webpath: string = '../../../assets/images/web-design.png';
   webalt: string = 'Web Design';
   devpath: string = '../../../assets/images/web-develop.png';

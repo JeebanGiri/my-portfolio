@@ -50,22 +50,25 @@ a {
 .icon-box .icons {
   color: var(--vegas-gold);
 }
-.info_more-btn {
+
+.info_more-btn,
+.view-resume-button {
   position: absolute;
   top: 0px;
   right: 0px;
   border-radius: 0 15px;
   font-size: 13px;
   color: var(--orange-yellow-crayola);
-  /* background: var(--border-gradient-onyx); */
-  background: var(--bg-gradient-yellow-1);
+  background: var(--border-gradient-onyx);
+  /* background: var(--bg-gradient-yellow-1);  */
   padding: 10px;
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
   z-index: 1;
 }
 
-.info_more-btn::before {
+.info_more-btn::before,
+.view-resume-button::before {
   content: "";
   position: absolute;
   inset: 1px;
@@ -76,16 +79,21 @@ a {
 }
 
 .info_more-btn:hover,
-.info_more-btn:focus {
+.info_more-btn:focus,
+.view-resume-button:hover,
+.view-resume-button:focus {
   background: var(--bg-gradient-yellow-1);
 }
 
 .info_more-btn:hover::before,
-.info_more-btn:focus::before {
+.info_more-btn:focus::before,
+.view-resume-button:hover::before,
+.view-resume-button:focus::before {
   background: var(--bg-gradient-yellow-2);
 }
 
-button[data-sidebar-btn] {
+button[data-sidebar-btn],
+button[view-resume-button] {
   background: none;
   border: none;
   padding: 0;
@@ -106,12 +114,74 @@ button[data-sidebar-btn] {
   place-items: center;
   padding-top: 20px;
 }
+
+/* ------Button Styles------ */
+.resume-button-wrapper {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 20px 0px 0px;
+  gap: 30px;
+}
+
+.view-resume-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  line-height: 46px;
+  padding: 0 40px;
+  /* background-color: #f5a512; */
+  color: var(--white-1);
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: var(--fw-500);
+  font-size: var(--fs-5);
+  border-radius: 26px;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  outline: none !important;
+  letter-spacing: 0.5px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+
+.btn-content {
+  transition: transform 0.4s ease;
+}
+
+.fa-solid {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%) translateX(0px);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+  font-size: 20px;
+  pointer-events: none;
+}
+
+.view-resume-button:hover .btn-content,
+.download-resume-button:hover .btn-content {
+  transform: translateX(-15px);
+}
+.view-resume-button:hover .fa-solid {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(15px);
+  color: #fbbf24;
+}
+
 .separator {
   width: 100%;
   height: 1px;
   background: var(--jet);
   justify-content: center;
-  margin: 15px 0 0 0;
+  margin: 12px 0 0;
 }
 
 .info-content .name {

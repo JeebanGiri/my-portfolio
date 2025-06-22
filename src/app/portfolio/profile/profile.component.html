@@ -8,6 +8,17 @@
       </div>
       <div class="info-content">
         <h1 class="name" title=" Jeeban Giri">Jeeban Giri</h1>
+        <!-- <div class="resume-button-wrapper"> -->
+        <button on class="view-resume-button" (click)="goToResume()">
+          <span class="btn-content"> View Resume </span>
+          <!-- <i class="fa-solid fa-file-lines"></i> -->
+          <ion-icon
+            *ngIf="browserService.isBrowser"
+            name="eye-outline"
+            class="fa-solid"
+          ></ion-icon>
+        </button>
+        <!-- </div> -->
         <p class="title">Full Stack Developer</p>
       </div>
       <button data-sidebar-btn (click)="toggleInfo()">
