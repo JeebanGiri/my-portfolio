@@ -194,6 +194,7 @@
     .edu-section,
     .skill-section,
     .language-tech-section,
+    .interest-section,
     .hobby-section
   ) {
   margin-top: 30px;
@@ -267,13 +268,16 @@
 .social-items-lang-skill {
   display: grid;
   max-width: calc(100% - 65px - 60%);
-  /* height: fit-content; */
   height: 100%;
+  margin: 30px 0;
+}
+.social-profile {
+  position: relative;
+  padding-left: 18px;
+  border-left: 7px solid #f5a512;
+  margin-left: -20px;
 }
 
-.social-profile {
-  margin-top: 30px;
-}
 .social-profile .social-icon-list {
   display: grid;
   gap: 20px;
@@ -305,7 +309,8 @@
 .edu-section .edu-header,
 .language-tech-section .lang-tech-header,
 .skill-section .soft-skills-header,
-.hobby-section .hobby-header {
+.hobby-section .hobby-header,
+.interest-section .interest-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -320,7 +325,9 @@
     .edu-header,
     .lang-tech-header,
     .soft-skills-header,
-    .hobby-header
+    .interest-header,
+    .hobby-header,
+
   )
   > .fa-solid {
   color: #6daeff;
@@ -355,7 +362,7 @@
   font-size: var(--fs-5);
   font-weight: var(--fw-400);
 }
-:is(.skills) {
+:is(.skills, .interests) {
   margin-top: 20px;
 }
 .job .role,
@@ -395,16 +402,6 @@
   text-align: justify;
 }
 
-/* .skill-section .skills span {
-  display: inline-block;
-  background: #22395e;
-  color: #bfe1ff;
-  padding: 6px 14px;
-  border-radius: 20px;
-  margin: 4px 8px 4px 0;
-  font-size: 0.9rem;
-} */
-
 .skills ul li {
   display: grid;
 }
@@ -438,6 +435,22 @@
 
 .problem-solving-skill .percentage-line {
   background: linear-gradient(to right, #6daeff 80%, #ccc 80%);
+}
+
+.interest-section .interests span {
+  display: inline-block;
+  background: #22395e;
+  color: #bfe1ff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin: 4px 8px 4px 0;
+  font-size: 0.9rem;
+}
+.interest-section .interests p {
+  font-size: var(--fs-5);
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.3px;
+  font-weight: var(--fw-400);
 }
 
 .hobby {
