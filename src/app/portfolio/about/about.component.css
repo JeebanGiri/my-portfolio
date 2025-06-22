@@ -234,6 +234,11 @@
   padding-top: 20px;
   font-size: 19px;
 }
+.testimonials p {
+  font-size: var(--fs-1);
+  margin-top: 20px;
+  color: #fbbf24;
+}
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .task {
