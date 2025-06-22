@@ -40,13 +40,40 @@ ul li.active {
 .web-projects,
 .application-projects,
 .dev-projects {
-  display: flex;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 20px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: relative;
 }
+
+.few-projects {
+  display: flex !important;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 .project-box {
+  max-width: 280px;
+  width: 100%;
+  min-height: 280px;
+  max-height: 280px;
+  background: #1a1a1a;
+  border-radius: 16px;
+  padding: 20px 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+  position: relative;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+}
+.project-box-item {
   padding-top: 30px;
   position: relative;
-  flex: 1 1;
+  min-height: 280px;
 }
 
 .project-title,
@@ -100,10 +127,8 @@ ul li.active {
 
 .project-img {
   position: relative;
-  /* width: 90%; */
-  width: 70%;
-  height: 200px;
   border-radius: 16px;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   margin-bottom: 15px;
 }
@@ -123,8 +148,7 @@ ul li.active {
 .project-img img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
-  /* object-fit: cover; */
+  object-fit: cover;
   transition: var(--transition-1);
 }
 

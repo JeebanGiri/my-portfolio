@@ -39,22 +39,27 @@
     <div class="ai-projects">
       <div
         class="project-box"
-        *ngFor="let project of allProject"
+        *ngFor="let project of getActiveProjects()"
         [ngClass]="{ active: selectedItem === 'all' }"
       >
-        <a href="#" (click)="$event.preventDefault()">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon
-                *ngIf="browserService.isBrowser"
-                name="eye-outline"
-              ></ion-icon>
-            </div>
-            <img [src]="project.image" alt="{{ project.title }}" />
-          </figure>
-          <h4 class="project-title">{{ project.title }}</h4>
-          <p class="project-category">{{ project.description }}</p>
-        </a>
+        <div
+          class="project-box-item"
+          [ngClass]="{ 'few-projects': getActiveProjects().length <= 1 }"
+        >
+          <a href="#" (click)="$event.preventDefault()">
+            <figure class="project-img">
+              <div class="project-item-icon-box">
+                <ion-icon
+                  *ngIf="browserService.isBrowser"
+                  name="eye-outline"
+                ></ion-icon>
+              </div>
+              <img [src]="project.image" alt="{{ project.title }}" />
+            </figure>
+            <h4 class="project-title">{{ project.title }}</h4>
+            <p class="project-category">{{ project.description }}</p>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -62,22 +67,27 @@
     <div class="web-projects">
       <div
         class="project-box"
-        *ngFor="let project of webDesign"
+        *ngFor="let project of getActiveProjects()"
         [ngClass]="{ active: selectedItem === 'web-design' }"
       >
-        <a href="#" (click)="$event.preventDefault()">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon
-                *ngIf="browserService.isBrowser"
-                name="eye-outline"
-              ></ion-icon>
-            </div>
-            <img [src]="project.image" alt="{{ project.title }}" />
-          </figure>
-          <h4 class="project-title">{{ project.title }}</h4>
-          <p class="project-category">{{ project.description }}</p>
-        </a>
+        <div
+          class="project-box-item"
+          [ngClass]="{ 'few-projects': getActiveProjects().length <= 1 }"
+        >
+          <a href="#" (click)="$event.preventDefault()">
+            <figure class="project-img">
+              <div class="project-item-icon-box">
+                <ion-icon
+                  *ngIf="browserService.isBrowser"
+                  name="eye-outline"
+                ></ion-icon>
+              </div>
+              <img [src]="project.image" alt="{{ project.title }}" />
+            </figure>
+            <h4 class="project-title">{{ project.title }}</h4>
+            <p class="project-category">{{ project.description }}</p>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -85,22 +95,27 @@
     <div class="application-projects">
       <div
         class="project-box"
-        *ngFor="let project of applications"
+        *ngFor="let project of getActiveProjects()"
         [ngClass]="{ active: selectedItem === 'application' }"
       >
-        <a href="#" (click)="$event.preventDefault()">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon
-                *ngIf="browserService.isBrowser"
-                name="eye-outline"
-              ></ion-icon>
-            </div>
-            <img [src]="project.image" alt="{{ project.title }}" />
-          </figure>
-          <h4 class="project-title">{{ project.title }}</h4>
-          <p class="project-category">{{ project.description }}</p>
-        </a>
+        <div
+          class="project-box-item"
+          [ngClass]="{ 'few-projects': getActiveProjects().length <= 1 }"
+        >
+          <a href="#" (click)="$event.preventDefault()">
+            <figure class="project-img">
+              <div class="project-item-icon-box">
+                <ion-icon
+                  *ngIf="browserService.isBrowser"
+                  name="eye-outline"
+                ></ion-icon>
+              </div>
+              <img [src]="project.image" alt="{{ project.title }}" />
+            </figure>
+            <h4 class="project-title">{{ project.title }}</h4>
+            <p class="project-category">{{ project.description }}</p>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -108,22 +123,27 @@
     <div class="dev-projects">
       <div
         class="project-box"
-        *ngFor="let project of webDevelopment"
+        *ngFor="let project of getActiveProjects()"
         [ngClass]="{ active: selectedItem === 'web-development' }"
       >
-        <a href="#" (click)="$event.preventDefault()">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon
-                *ngIf="browserService.isBrowser"
-                name="eye-outline"
-              ></ion-icon>
-            </div>
-            <img [src]="project.image" alt="{{ project.title }}" />
-          </figure>
-          <h4 class="project-title">{{ project.title }}</h4>
-          <p class="project-category">{{ project.description }}</p>
-        </a>
+        <div
+          class="project-box-item"
+          [ngClass]="{ 'few-projects': getActiveProjects().length <= 1 }"
+        >
+          <a href="#" (click)="$event.preventDefault()">
+            <figure class="project-img">
+              <div class="project-item-icon-box">
+                <ion-icon
+                  *ngIf="browserService.isBrowser"
+                  name="eye-outline"
+                ></ion-icon>
+              </div>
+              <img [src]="project.image" alt="{{ project.title }}" />
+            </figure>
+            <h4 class="project-title">{{ project.title }}</h4>
+            <p class="project-category">{{ project.description }}</p>
+          </a>
+        </div>
       </div>
     </div>
   </div>

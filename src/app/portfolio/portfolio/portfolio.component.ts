@@ -33,6 +33,11 @@ export class PortfolioComponent {
       description: 'Description 2',
       image: '../../../assets/images/project/all/fyp.png',
     },
+    {
+      title: 'Project 1',
+      description: 'Description 1',
+      image: '../../../assets/images/project/all/ecommerce.png',
+    },
   ];
 
   webDesign = [
@@ -72,4 +77,22 @@ export class PortfolioComponent {
       image: '../../../assets/images/project/application/fyp.png',
     },
   ];
+
+  // isFewProjects(projects: any[]): boolean {
+  //   return projects?.length < 1;
+  // }
+
+  getActiveProjects() {
+    switch (this.selectedItem) {
+      case 'web-design':
+        return this.webDesign;
+      case 'application':
+        return this.applications;
+      case 'web-development':
+        return this.webDevelopment;
+      case 'all':
+      default:
+        return this.allProject;
+    }
+  }
 }
