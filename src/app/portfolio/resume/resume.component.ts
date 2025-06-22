@@ -43,6 +43,9 @@ export class ResumeComponent {
   goToResume() {
     this.router.navigate(['contact']);
   }
+  goToPortfolio() {
+    this.router.navigate(['portfolio']);
+  }
 
   downloadResume() {
     let link = document.createElement('a');

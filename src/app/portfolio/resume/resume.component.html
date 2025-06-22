@@ -20,12 +20,12 @@
         <!-- <button class="download-btn">📄 Download CV</button> -->
         <div class="resume-button-wrapper">
           <button class="download-button" (click)="downloadResume()">
-            <i class="fa-solid fa-download"></i>
             <span class="btn-content"> Download Cv </span>
+            <i class="fa-solid fa-download"></i>
           </button>
           <button class="contact-button" (click)="goToResume()">
-            <i class="fa-regular fa-envelope"></i>
-            <span class="btn-content"> Contact </span>
+            <span class="btn-content"> Contact Me </span>
+            <i class="fa-solid fa-envelope"></i>
           </button>
         </div>
       </div>
@@ -242,7 +242,7 @@
         <section class="interest-section">
           <div class="interest-header">
             <h2>Interests</h2>
-            <i class="fa-solid fa-brain"></i>
+            <i class="fa-solid fa-guitar"></i>
           </div>
           <div class="interests">
             <!-- <span>Web Application Development</span> -->
@@ -272,7 +272,7 @@
           <div class="job">
             <h4>
               Itahari Internation College
-              <span class="role">&mdash;Full-Stack Developer</span>
+              <span class="role">&mdash; Full-Stack Developer</span>
             </h4>
             <p class="date">Apr 2021 – Present / Sundar-Dulari, Morang Nepal</p>
             <ul>
@@ -343,7 +343,7 @@
           <div class="education">
             <h4>
               Sukuna Seconday School
-              <span class="course">&mdash;Computer Science</span>
+              <span class="course">&mdash; Computer Science</span>
             </h4>
             <p class="date">
               June 16, 2022 &mdash; Nov 14, 2022 / Sundar-Dulari, Morang, Nepal
@@ -415,17 +415,13 @@
             </ul>
           </div>
         </div>
+        <section class="navigate-section">
+          <button class="navigate-button" (click)="goToPortfolio()">
+            <span class="btn-content"> My Work </span>
+            <i class="fa-solid fa-folder-open"></i>
+          </button>
+        </section>
       </div>
     </main>
-    <div class="timeline">
-      <div class="timeline-item" *ngFor="let event of timelineData">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h3>{{ event.title }}</h3>
-          <span>{{ event.date }}</span>
-          <p>{{ event.description }}</p>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
