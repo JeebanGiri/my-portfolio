@@ -189,7 +189,13 @@
   margin-bottom: 10px;
   color: #6daeff;
 }
-:is(.exp-section, .edu-section, .skill-section, .language-tech-section) {
+:is(
+    .exp-section,
+    .edu-section,
+    .skill-section,
+    .language-tech-section,
+    .hobby-section
+  ) {
   margin-top: 30px;
 }
 
@@ -298,7 +304,8 @@
 .exp-section .exp-header,
 .edu-section .edu-header,
 .language-tech-section .lang-tech-header,
-.skill-section .soft-skills-header {
+.skill-section .soft-skills-header,
+.hobby-section .hobby-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -308,7 +315,13 @@
   text-transform: uppercase;
 }
 
-:is(.exp-header, .edu-header, .lang-tech-header, .soft-skills-header)
+:is(
+    .exp-header,
+    .edu-header,
+    .lang-tech-header,
+    .soft-skills-header,
+    .hobby-header
+  )
   > .fa-solid {
   color: #6daeff;
 }

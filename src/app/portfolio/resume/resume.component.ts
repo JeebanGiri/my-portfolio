@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 // import { addIcons } from 'ionicons';
 import { BrowserService } from '../../shared/browser.service';
+import { Router } from '@angular/router';
 // import { globeOutline, locationOutline } from 'ionicons/icons';
 
 @Component({
@@ -12,7 +13,7 @@ import { BrowserService } from '../../shared/browser.service';
   styleUrl: './resume.component.css',
 })
 export class ResumeComponent {
-  constructor(public browserService: BrowserService) {
+  constructor(public browserService: BrowserService, private router: Router) {
     // addIcons({
     //   'location-outline': locationOutline,
     //   'globe-outline': globeOutline,
@@ -38,6 +39,10 @@ export class ResumeComponent {
     },
     // Add more items...
   ];
+
+  goToResume() {
+    this.router.navigate(['contact']);
+  }
 
   downloadResume() {
     let link = document.createElement('a');
