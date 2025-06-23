@@ -169,6 +169,7 @@ button[view-resume-button] {
 .view-resume-button:hover .btn-content,
 .download-resume-button:hover .btn-content {
   transform: translateX(-15px);
+  color: #fbbf24;
 }
 .view-resume-button:hover .fa-solid {
   opacity: 1;

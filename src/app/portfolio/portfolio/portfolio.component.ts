@@ -78,10 +78,6 @@ export class PortfolioComponent {
     },
   ];
 
-  // isFewProjects(projects: any[]): boolean {
-  //   return projects?.length < 1;
-  // }
-
   getActiveProjects() {
     switch (this.selectedItem) {
       case 'web-design':

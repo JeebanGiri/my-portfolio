@@ -35,116 +35,26 @@
       </li>
     </ul>
   </div>
-  <div *ngIf="selectedItem === 'all'">
-    <div class="ai-projects">
-      <div
-        class="project-box"
-        *ngFor="let project of getActiveProjects()"
-        [ngClass]="{ active: selectedItem === 'all' }"
-      >
-        <div
-          class="project-box-item"
-          [ngClass]="{ 'few-projects': getActiveProjects().length <= 1 }"
-        >
-          <a href="#" (click)="$event.preventDefault()">
-            <figure class="project-img">
-              <div class="project-item-icon-box">
-                <ion-icon
-                  *ngIf="browserService.isBrowser"
-                  name="eye-outline"
-                ></ion-icon>
-              </div>
-              <img [src]="project.image" alt="{{ project.title }}" />
-            </figure>
-            <h4 class="project-title">{{ project.title }}</h4>
-            <p class="project-category">{{ project.description }}</p>
-          </a>
-        </div>
+  <ng-container *ngIf="getActiveProjects() as projects">
+    <div
+      class="project-grid"
+      [ngClass]="{ 'few-projects': projects.length <= 2 }"
+    >
+      <div class="project-box" *ngFor="let project of projects">
+        <a href="#" (click)="$event.preventDefault()">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon
+                *ngIf="browserService.isBrowser"
+                name="eye-outline"
+              ></ion-icon>
+            </div>
+            <img [src]="project.image" alt="{{ project.title }}" />
+          </figure>
+          <h4 class="project-title">{{ project.title }}</h4>
+          <p class="project-category">{{ project.description }}</p>
+        </a>
       </div>
     </div>
-  </div>
-  <div *ngIf="selectedItem === 'web-design'">
-    <div class="web-projects">
-      <div
-        class="project-box"
-        *ngFor="let project of getActiveProjects()"
-        [ngClass]="{ active: selectedItem === 'web-design' }"
-      >
-        <div
-          class="project-box-item"
-          [ngClass]="{ 'few-projects': getActiveProjects().length <= 1 }"
-        >
-          <a href="#" (click)="$event.preventDefault()">
-            <figure class="project-img">
-              <div class="project-item-icon-box">
-                <ion-icon
-                  *ngIf="browserService.isBrowser"
-                  name="eye-outline"
-                ></ion-icon>
-              </div>
-              <img [src]="project.image" alt="{{ project.title }}" />
-            </figure>
-            <h4 class="project-title">{{ project.title }}</h4>
-            <p class="project-category">{{ project.description }}</p>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div *ngIf="selectedItem === 'application'">
-    <div class="application-projects">
-      <div
-        class="project-box"
-        *ngFor="let project of getActiveProjects()"
-        [ngClass]="{ active: selectedItem === 'application' }"
-      >
-        <div
-          class="project-box-item"
-          [ngClass]="{ 'few-projects': getActiveProjects().length <= 1 }"
-        >
-          <a href="#" (click)="$event.preventDefault()">
-            <figure class="project-img">
-              <div class="project-item-icon-box">
-                <ion-icon
-                  *ngIf="browserService.isBrowser"
-                  name="eye-outline"
-                ></ion-icon>
-              </div>
-              <img [src]="project.image" alt="{{ project.title }}" />
-            </figure>
-            <h4 class="project-title">{{ project.title }}</h4>
-            <p class="project-category">{{ project.description }}</p>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div *ngIf="selectedItem === 'web-development'">
-    <div class="dev-projects">
-      <div
-        class="project-box"
-        *ngFor="let project of getActiveProjects()"
-        [ngClass]="{ active: selectedItem === 'web-development' }"
-      >
-        <div
-          class="project-box-item"
-          [ngClass]="{ 'few-projects': getActiveProjects().length <= 1 }"
-        >
-          <a href="#" (click)="$event.preventDefault()">
-            <figure class="project-img">
-              <div class="project-item-icon-box">
-                <ion-icon
-                  *ngIf="browserService.isBrowser"
-                  name="eye-outline"
-                ></ion-icon>
-              </div>
-              <img [src]="project.image" alt="{{ project.title }}" />
-            </figure>
-            <h4 class="project-title">{{ project.title }}</h4>
-            <p class="project-category">{{ project.description }}</p>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+  </ng-container>
 </div>

@@ -1,21 +1,21 @@
 import { Component } from '@angular/core';
-import { addIcons } from 'ionicons';
-import { documentOutline } from 'ionicons/icons';
 import { BrowserService } from '../../shared/browser.service';
-import { IonIcon } from '@ionic/angular/standalone';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+// import { addIcons } from 'ionicons';
+// import { documentOutline } from 'ionicons/icons';
+// import { IonIcon } from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-education-experience-timeline',
   standalone: true,
-  imports: [IonIcon, CommonModule],
+  imports: [CommonModule],
   templateUrl: './education-experience-timeline.component.html',
   styleUrl: './education-experience-timeline.component.css',
 })
 export class EducationExperienceTimelineComponent {
   constructor(public browserService: BrowserService, private router: Router) {
-    addIcons({ 'document-outline': documentOutline });
+    // addIcons({ 'document-outline': documentOutline });
   }
   bookpath: string = '../../../assets/images/book.png';
   bookalt: string = 'Book';
