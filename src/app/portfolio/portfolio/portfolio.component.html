@@ -41,7 +41,12 @@
       [ngClass]="{ 'few-projects': projects.length <= 2 }"
     >
       <div class="project-box" *ngFor="let project of projects">
-        <a href="#" (click)="$event.preventDefault()">
+        <a
+          href="#"
+          (click)="openProject($event, project.link)"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <figure class="project-img">
             <div class="project-item-icon-box">
               <ion-icon

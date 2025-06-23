@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { addIcons } from 'ionicons';
 import { eyeOutline } from 'ionicons/icons';
 import { BrowserService } from '../../shared/browser.service';
+import { link } from 'fs';
 @Component({
   selector: 'app-portfolio',
   standalone: true,
@@ -27,16 +28,19 @@ export class PortfolioComponent {
       title: 'Horizon Residence',
       description: 'Web Development',
       image: '../../../assets/images/project/all/fyp.png',
+      link: 'https://fyp-frontend-mu.vercel.app/',
     },
     {
       title: 'E-Book Store',
       description: 'Web Design',
       image: '../../../assets/images/project/all/ecommerce.png',
+      link: '',
     },
     {
       title: 'E-Book Store',
       description: 'Web Design',
       image: '../../../assets/images/project/all/ecommerce.png',
+      link: '',
     },
   ];
 
@@ -45,11 +49,13 @@ export class PortfolioComponent {
       title: 'Project 1',
       description: 'Description 1',
       image: '../../../assets/images/project/web-design/ecommerce.png',
+      link: '',
     },
     {
       title: 'Project 2',
       description: 'Description 2',
       image: '../../../assets/images/project/web-design/fyp.png',
+      link: '',
     },
   ];
 
@@ -58,6 +64,7 @@ export class PortfolioComponent {
       title: 'Horizon Residence',
       description: 'Web Development',
       image: '../../../assets/images/project/all/fyp.png',
+      link: '',
     },
   ];
 
@@ -66,6 +73,7 @@ export class PortfolioComponent {
       title: 'Horizon Residence',
       description: 'Web Development',
       image: '../../../assets/images/project/all/fyp.png',
+      link: '',
     },
   ];
 
@@ -81,5 +89,9 @@ export class PortfolioComponent {
       default:
         return this.allProject;
     }
+  }
+  openProject(e: Event, url: string) {
+    e.preventDefault();
+    window.open(url, '_blank');
   }
 }
