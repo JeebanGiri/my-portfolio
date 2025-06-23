@@ -6,7 +6,12 @@
   <section class="blog-posts">
     <ul class="blog-post-list">
       <li class="blog-post-item" *ngFor="let blog of blogs">
-        <a href="#" (click)="$event.preventDefault()">
+        <a
+          href="'https://' + blog.blogLink"
+          (click)="$event.preventDefault()"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <figure class="blog-banner-box">
             <img [src]="blog.image" alt="{{ blog.title }}" />
           </figure>

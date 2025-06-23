@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-blog',
@@ -9,6 +10,7 @@ import { Component } from '@angular/core';
   styleUrl: './blog.component.css',
 })
 export class BlogComponent {
+  constructor(public router: Router) {}
   blogs = [
     {
       blog_category: 'Design',
@@ -17,6 +19,7 @@ export class BlogComponent {
       description:
         'Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.',
       image: '../../../assets/images/blogs.jpeg',
+      blogLink: 'blog-best-font-for-designer.vercel.app',
     },
     {
       blog_category: 'Design',
@@ -25,6 +28,12 @@ export class BlogComponent {
       description:
         'Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.',
       image: '../../../assets/images/blogs.jpeg',
+      blogLink: 'blog-best-font-for-designer.vercel.app',
     },
   ];
+
+  // seeBlog(e: Event) {
+  //   e.preventDefault();
+  //   window.open('https://blog-best-font-for-designer.vercel.app', '_blank');
+  // }
 }
