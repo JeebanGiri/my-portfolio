@@ -7,8 +7,8 @@
     <ul class="blog-post-list">
       <li class="blog-post-item" *ngFor="let blog of blogs">
         <a
-          href="'https://' + blog.blogLink"
-          (click)="$event.preventDefault()"
+          href="#"
+          (click)="openLink($event, blog.blogLink)"
           target="_blank"
           rel="noopener noreferrer"
         >

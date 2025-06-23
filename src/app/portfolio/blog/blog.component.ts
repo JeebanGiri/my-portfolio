@@ -14,26 +14,26 @@ export class BlogComponent {
   blogs = [
     {
       blog_category: 'Design',
-      date: 'July 23, 2024',
-      title: ' Design conferences in 2022',
-      description:
-        'Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.',
-      image: '../../../assets/images/blogs.jpeg',
-      blogLink: 'blog-best-font-for-designer.vercel.app',
-    },
-    {
-      blog_category: 'Design',
       date: 'July 28, 2024',
       title: 'Best Font for Design',
       description:
         'Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.',
       image: '../../../assets/images/blogs.jpeg',
-      blogLink: 'blog-best-font-for-designer.vercel.app',
+      blogLink: 'https://blog-best-font-for-designer.vercel.app',
+    },
+    {
+      blog_category: 'Design',
+      date: 'July 23, 2024',
+      title: ' Design conferences in 2022',
+      description:
+        'Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.',
+      image: '../../../assets/images/blogs.jpeg',
+      blogLink: '',
     },
   ];
 
-  // seeBlog(e: Event) {
-  //   e.preventDefault();
-  //   window.open('https://blog-best-font-for-designer.vercel.app', '_blank');
-  // }
+  openLink(e: Event, url: string) {
+    e.preventDefault();
+    window.open(url, '_blank');
+  }
 }
