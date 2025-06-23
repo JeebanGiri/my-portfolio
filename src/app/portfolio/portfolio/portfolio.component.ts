@@ -24,18 +24,18 @@ export class PortfolioComponent {
 
   allProject = [
     {
-      title: 'Project 1',
-      description: 'Description 1',
-      image: '../../../assets/images/project/all/ecommerce.png',
-    },
-    {
-      title: 'Project 2',
-      description: 'Description 2',
+      title: 'Horizon Residence',
+      description: 'Web Development',
       image: '../../../assets/images/project/all/fyp.png',
     },
     {
-      title: 'Project 1',
-      description: 'Description 1',
+      title: 'E-Book Store',
+      description: 'Web Design',
+      image: '../../../assets/images/project/all/ecommerce.png',
+    },
+    {
+      title: 'E-Book Store',
+      description: 'Web Design',
       image: '../../../assets/images/project/all/ecommerce.png',
     },
   ];
@@ -52,29 +52,20 @@ export class PortfolioComponent {
       image: '../../../assets/images/project/web-design/fyp.png',
     },
   ];
-  webDevelopment = [
-    {
-      title: 'Project 1',
-      description: 'Description 1',
-      image: '../../../assets/images/project/web-development/ecommerce.png',
-    },
-    // {
-    //   title: 'Project 2',
-    //   description: 'Description 2',
-    //   image: '../../../assets/images/project/web-development/fyp.png',
-    // },
-  ];
 
   applications = [
     {
-      title: 'Project 1',
-      description: 'Description 1',
-      image: '../../../assets/images/project/application/fyp.png',
+      title: 'Horizon Residence',
+      description: 'Web Development',
+      image: '../../../assets/images/project/all/fyp.png',
     },
+  ];
+
+  webDevelopment = [
     {
-      title: 'Project 2',
-      description: 'Description 2',
-      image: '../../../assets/images/project/application/fyp.png',
+      title: 'Horizon Residence',
+      description: 'Web Development',
+      image: '../../../assets/images/project/all/fyp.png',
     },
   ];
 
