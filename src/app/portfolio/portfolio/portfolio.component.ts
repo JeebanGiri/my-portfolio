@@ -44,27 +44,30 @@ export class PortfolioComponent {
     },
   ];
 
-  webDesign = [
-    {
-      title: 'Project 1',
-      description: 'Description 1',
-      image: '../../../assets/images/project/web-design/ecommerce.png',
-      link: '',
-    },
-    {
-      title: 'Project 2',
-      description: 'Description 2',
-      image: '../../../assets/images/project/web-design/fyp.png',
-      link: '',
-    },
-  ];
+  webDesign = null;
+
+  // webDesign = [
+  //   {
+  //     title: 'Project 1',
+  //     description: 'Description 1',
+  //     image: 'Web Design will be uploaded Soon',
+  //     link: '',
+  //   },
+  //   {
+  //     title: 'Project 2',
+  //     description: 'Description 2',
+  //     image: 'Web Design will be uploaded Soon',
+  //     link: '',
+  //   },
+  // ];
 
   applications = [
     {
       title: 'Horizon Residence',
       description: 'Web Development',
-      image: '../../../assets/images/project/all/fyp.png',
-      link: '',
+      image:
+        '../../../assets/images/project/application/application-ecommerce.png',
+      link: 'https://seven-klothes.vercel.app/',
     },
   ];
 
@@ -80,7 +83,7 @@ export class PortfolioComponent {
   getActiveProjects() {
     switch (this.selectedItem) {
       case 'web-design':
-        return this.webDesign;
+        return [];
       case 'application':
         return this.applications;
       case 'web-development':

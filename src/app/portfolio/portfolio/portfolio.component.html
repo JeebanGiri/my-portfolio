@@ -36,30 +36,37 @@
     </ul>
   </div>
   <ng-container *ngIf="getActiveProjects() as projects">
-    <div
-      class="project-grid"
-      [ngClass]="{ 'few-projects': projects.length <= 2 }"
-    >
-      <div class="project-box" *ngFor="let project of projects">
-        <a
-          href="#"
-          (click)="openProject($event, project.link)"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon
-                *ngIf="browserService.isBrowser"
-                name="eye-outline"
-              ></ion-icon>
-            </div>
-            <img [src]="project.image" alt="{{ project.title }}" />
-          </figure>
-          <h4 class="project-title">{{ project.title }}</h4>
-          <p class="project-category">{{ project.description }}</p>
-        </a>
+    <ng-container *ngIf="projects.length > 0; else comingSoon">
+      <div
+        class="project-grid"
+        [ngClass]="{ 'few-projects': projects.length <= 2 }"
+      >
+        <div class="project-box" *ngFor="let project of projects">
+          <a
+            href="#"
+            (click)="openProject($event, project.link)"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure class="project-img">
+              <div class="project-item-icon-box">
+                <ion-icon
+                  *ngIf="browserService.isBrowser"
+                  name="eye-outline"
+                ></ion-icon>
+              </div>
+              <img [src]="project.image" alt="{{ project.title }}" />
+            </figure>
+            <h4 class="project-title">{{ project.title }}</h4>
+            <p class="project-category">{{ project.description }}</p>
+          </a>
+        </div>
       </div>
-    </div>
+    </ng-container>
   </ng-container>
+  <ng-template #comingSoon>
+    <div class="coming-soon-message">
+      <p>🚧 Web Design content will be uploaded soon. Stay tuned!</p>
+    </div>
+  </ng-template>
 </div>

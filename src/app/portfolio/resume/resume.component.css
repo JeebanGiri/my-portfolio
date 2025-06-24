@@ -252,8 +252,7 @@
     .lang-tech-header,
     .soft-skills-header,
     .interest-header,
-    .hobby-header,
-
+    .hobby-header
   )
   > .fa-solid {
   color: #6daeff;

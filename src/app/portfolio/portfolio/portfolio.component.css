@@ -148,6 +148,14 @@ ul li.active {
   --ionicon-stroke-width: 50px;
 }
 
+.coming-soon-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #0077cc;
+  margin: 10rem auto;
+  font-weight: 500;
+}
+
 /* === Animation === */
 @keyframes scaleUp {
   0% {
