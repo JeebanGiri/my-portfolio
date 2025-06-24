@@ -299,7 +299,7 @@
   color: #d0e3ff;
 }
 
-:is(.job, .education, ) ul li {
+:is(.job, .education) > ul > li {
   font-size: var(--fs-6);
   margin-top: 20px;
   list-style: disc;
