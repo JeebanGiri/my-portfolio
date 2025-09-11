@@ -15,7 +15,6 @@ import { IonIcon } from '@ionic/angular/standalone';
     CommonModule,
     SkillsComponent,
     EducationExperienceTimelineComponent,
-    IonIcon,
   ],
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css'],

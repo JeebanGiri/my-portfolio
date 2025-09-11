@@ -46,21 +46,6 @@ export class PortfolioComponent {
 
   webDesign = null;
 
-  // webDesign = [
-  //   {
-  //     title: 'Project 1',
-  //     description: 'Description 1',
-  //     image: 'Web Design will be uploaded Soon',
-  //     link: '',
-  //   },
-  //   {
-  //     title: 'Project 2',
-  //     description: 'Description 2',
-  //     image: 'Web Design will be uploaded Soon',
-  //     link: '',
-  //   },
-  // ];
-
   applications = [
     {
       title: 'Horizon Residence',
