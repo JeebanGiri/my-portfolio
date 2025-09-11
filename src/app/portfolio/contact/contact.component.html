@@ -23,15 +23,26 @@
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
+
+      <!-- <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25333.105629345966!2d87.37433606987267!3d26.672365199423687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1757602939409!5m2!1sen!2snp"
+        width="400"
+        height="350"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe> -->
     </figure>
   </section>
   <section class="contact-form">
     <h3 class="h3 form-title">Contact Me</h3>
-    <form action="#">
+    <form action="#" (ngSubmit)="sendEmail()" #contactForm="ngForm">
       <div class="input-wrapper">
         <input
           type="text"
           name="fullname"
+          [(ngModel)]="form.name"
           class="form-input"
           placeholder="Full Name"
           required
@@ -40,6 +51,7 @@
         <input
           type="email"
           name="email"
+          [(ngModel)]="form.email"
           class="form-input"
           placeholder="email@address.com"
           required
@@ -48,13 +60,19 @@
       </div>
       <textarea
         name="message"
+        [(ngModel)]="form.message"
         class="form-input"
         placeholder="Your Message"
         required
         minlength="10"
         data-form-input
       ></textarea>
-      <button class="form-btn" type="submit" disabled data-form-input="">
+      <button
+        class="form-btn"
+        type="submit"
+        [disabled]="!contactForm.form.valid"
+        data-form-input=""
+      >
         <ion-icon
           *ngIf="browserService.isBrowser"
           name="paper-plane"
