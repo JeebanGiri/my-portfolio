@@ -22,7 +22,15 @@
         <p class="title">Full Stack Developer</p>
       </div>
       <button data-sidebar-btn (click)="toggleInfo()">
-        <span class="info_more-btn">Show Contacts</span>
+        <span class="info_more-btn">
+          <!-- Show Contacts -->
+          <ng-container *ngIf="!isMobile; else mobileIcon"
+            >Show Contacts</ng-container
+          >
+          <ng-template #mobileIcon>
+            <ion-icon name="chevron-down-outline"></ion-icon>
+          </ng-template>
+        </span>
       </button>
     </div>
     <div class="contact-more-info" [class.expanded]="isExpanded">

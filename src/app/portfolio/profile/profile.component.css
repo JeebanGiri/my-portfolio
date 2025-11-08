@@ -20,7 +20,7 @@ a {
   place-items: center;
   padding-top: 50px;
 }
-.profile .profile-box {
+.profile-box {
   background-color: #3d3d3d;
   height: 140px;
   width: 150px;
@@ -371,7 +371,9 @@ button[view-resume-button] {
     max-height: 300px;
   }
 
-  .profile .box {
+  /* Further updatable css after updating class name*/
+
+  /* .profile .box {
     background-color: #3d3d3d;
     height: 120px;
     width: 120px;
@@ -382,7 +384,8 @@ button[view-resume-button] {
     height: 120px;
     width: 120px;
     border-radius: 10px;
-  }
+  } */
+
   .info_more-btn {
     display: block;
   }
@@ -478,8 +481,9 @@ button[view-resume-button] {
   .contact-more-info.expanded {
     max-height: 300px;
   }
+  /* Further updatable css after updating class name*/
 
-  .profile .box {
+  /* .profile .box {
     background-color: #3d3d3d;
     height: 120px;
     width: 120px;
@@ -490,7 +494,7 @@ button[view-resume-button] {
     height: 120px;
     width: 120px;
     border-radius: 10px;
-  }
+  } */
   .info_more-btn {
     display: block;
   }
@@ -585,7 +589,9 @@ button[view-resume-button] {
     max-height: 300px;
   }
 
-  .profile .box {
+  /* Further updatable css after updating class name*/
+
+  /* .profile .box {
     background-color: #3d3d3d;
     height: 120px;
     width: 120px;
@@ -596,7 +602,7 @@ button[view-resume-button] {
     height: 120px;
     width: 120px;
     border-radius: 10px;
-  }
+  } */
   .info_more-btn {
     display: block;
   }
@@ -636,9 +642,30 @@ button[view-resume-button] {
   .profile {
     height: auto;
   }
-  .sidebar-container {
+  /* .sidebar-container {
     padding: 30px 30px 10px 30px;
     gap: 0px;
+  } */
+  .view-resume-button {
+    display: none;
+  }
+  .profile-box {
+    background-color: #3d3d3d;
+    height: 100px;
+    width: 100px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .image:hover img {
+    transform: none !important;
+    border-radius: 0 !important;
+  }
+  .image {
+    pointer-events: none;
   }
   .sidebar-info {
     display: flex;
@@ -646,7 +673,7 @@ button[view-resume-button] {
     align-items: center;
     text-align: center;
     gap: 25px;
-    padding: 0px;
+    padding: 10px 10px;
   }
 
   .info-content {
@@ -686,22 +713,66 @@ button[view-resume-button] {
   .contact-more-info.expanded {
     max-height: 450px;
   }
+  /* 
+  .profile .profile-box {
+    background-color: #3d3d3d;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
 
-  .profile .box {
+  /* .image:hover img {
+    transform: scale(0);
+  } */
+
+  /* Further updatable css after updating class name*/
+
+  /* .profile .box {
     background-color: #3d3d3d;
     height: 120px;
     width: 120px;
     border-radius: 25px;
     position: relative;
-  }
-  .profile .box img {
-    height: 120px;
-    width: 120px;
+  } */
+
+  /* .profile .box img {
+    height: 50px;
+    width: 50px;
     border-radius: 10px;
-  }
+  } */
+
   .info_more-btn {
     display: block;
+    width: 40px;
+    height: 40px;
+    background: var(--border-gradient-onyx);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* position: relative; */
   }
+
+  /* .info_more-btn::after {
+    content: "";
+    font-size: 18px;
+    color: var(--orange-yellow-crayola);
+  } */
+
+  /* .info_more-btn:hover::after {
+    color: #fbbf24;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
+  .info_more-btn::after {
+    transition: transform 0.3s ease;
+  }
+
+  .contact-more-info.expanded ~ button .info_more-btn::after {
+    transform: rotate(180deg);
+  } */
 
   .info-content .name {
     white-space: nowrap;
