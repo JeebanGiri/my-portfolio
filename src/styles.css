@@ -34,7 +34,8 @@
     hsl(240, 1%, 25%) 3%,
     hsl(0, 0%, 19%) 97%
   );
-  --bg-gradient-jet: linear-gradient(
+  --bg-gradient-jet:
+    linear-gradient(
       to bottom right,
       hsla(240, 1%, 18%, 0.251) 0%,
       hsla(240, 2%, 11%, 0) 100%
@@ -45,7 +46,8 @@
     hsl(45, 100%, 71%) 0%,
     hsla(36, 100%, 69%, 0) 50%
   );
-  --bg-gradient-yellow-2: linear-gradient(
+  --bg-gradient-yellow-2:
+    linear-gradient(
       135deg,
       hsla(45, 100%, 71%, 0.251) 0%,
       hsla(35, 100%, 68%, 0) 59.86%
@@ -159,3 +161,19 @@ li {
 \*-----------------------------------*/
 
 /* Responsive larger than 580px */
+
+@media (max-width: 580px) {
+  :root {
+    /**
+     * typography
+     */
+
+    --fs-1: 32px;
+    --fs-2: 24px;
+    --fs-3: 26px;
+    --fs-4: 18px;
+    --fs-6: 15px;
+    --fs-7: 15px;
+    --fs-8: 12px;
+  }
+}

@@ -144,3 +144,16 @@ textarea:not(:placeholder-shown):invalid {
 .form-btn:disabled:hover::before {
   background: var(--bg-gradient-jet);
 }
+@media (max-width: 580px) {
+  .contact-form .form-title {
+    font-size: var(--fs-7);
+  }
+  .input-wrapper > .form-input,
+  .form-input,
+  .form-btn {
+    font-size: var(--fs-7);
+  }
+  .title {
+    font-size: var(--fs-6);
+  }
+}

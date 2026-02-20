@@ -161,7 +161,10 @@ button[view-resume-button] {
   transform: translateY(-50%) translateX(0px);
   opacity: 0;
   visibility: hidden;
-  transition: transform 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease,
+    visibility 0.4s ease;
   font-size: 20px;
   pointer-events: none;
 }
@@ -801,5 +804,10 @@ button[view-resume-button] {
   }
   .social-link.expanded {
     display: flex;
+  }
+  @media (max-width: 580px) {
+    .title {
+      font-size: var(--fs-6);
+    }
   }
 }

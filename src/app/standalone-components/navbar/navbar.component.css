@@ -99,3 +99,23 @@ nav li a {
     font-size: var(--fs-4);
   }
 }
+
+@media (max-width: 580px) {
+  :root {
+    /**
+     * typography
+     */
+
+    --fs-1: 32px;
+    --fs-2: 24px;
+    --fs-3: 26px;
+    --fs-4: 18px;
+    --fs-6: 15px;
+    --fs-7: 15px;
+    --fs-8: 12px;
+  }
+
+  nav li a {
+    font-size: var(--fs-8);
+  }
+}

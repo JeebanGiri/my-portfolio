@@ -283,3 +283,8 @@
     color: var(--light-gray);
   }
 }
+@media (max-width: 580px) {
+  .title {
+    font-size: var(--fs-6);
+  }
+}

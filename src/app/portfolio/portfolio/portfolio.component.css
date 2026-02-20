@@ -184,3 +184,11 @@ ul li.active {
     border-radius: 30px;
   }
 }
+@media (max-width: 580px) {
+  .content ul .project-item {
+    font-size: var(--fs-8);
+  }
+  .title {
+    font-size: var(--fs-6);
+  }
+}
