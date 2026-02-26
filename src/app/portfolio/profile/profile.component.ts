@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
 import { IonIcon } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { chevronDownOutline, documentOutline, eyeOutline } from 'ionicons/icons';
+import {
+  chevronDownOutline,
+  documentOutline,
+  eyeOutline,
+} from 'ionicons/icons';
 import { BrowserService } from '../../shared/browser.service';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
@@ -25,12 +29,12 @@ export class ProfileComponent implements OnInit {
   constructor(
     public browserService: BrowserService,
     private router: Router,
-    @Inject(PLATFORM_ID) private platformId: Object
+    @Inject(PLATFORM_ID) private platformId: Object,
   ) {
     addIcons({
       'document-outline': documentOutline,
       'eye-outline': eyeOutline,
-      'chevron-down-outline': chevronDownOutline
+      'chevron-down-outline': chevronDownOutline,
     });
   }
 
@@ -42,7 +46,7 @@ export class ProfileComponent implements OnInit {
   }
 
   updateScreenSize() {
-    this.isMobile = window.innerWidth <= 767;
+    this.isMobile = window.innerWidth <= 580;
   }
 
   toggleInfo() {

@@ -10,45 +10,22 @@ a {
 .profile {
   position: relative;
 }
+
 .sidebar-container {
-  padding: 0px 20px 0 20px;
+  padding: 15px;
+  margin-inline: auto;
+}
+
+.sidebar-container > .sidebar-info {
+  max-height: 120px;
+  /* overflow: hidden; */
+  transition: var(--transition-2);
 }
 
 .sidebar-info {
-  display: grid;
-  justify-content: center;
-  place-items: center;
-  padding-top: 50px;
-}
-.profile-box {
-  background-color: #3d3d3d;
-  height: 140px;
-  width: 150px;
-  border-radius: 25px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.profile-box > .image {
-  height: 80px;
-  width: 80px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-.image > img {
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.image:hover img {
-  transform: scale(1.4);
-  border-radius: 10px;
-}
-
-.icon-box .icons {
-  color: var(--vegas-gold);
+  gap: 20px;
+  place-items: center;
 }
 
 .info_more-btn,
@@ -60,7 +37,6 @@ a {
   font-size: 13px;
   color: var(--orange-yellow-crayola);
   background: var(--border-gradient-onyx);
-  /* background: var(--bg-gradient-yellow-1);  */
   padding: 10px;
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
@@ -78,15 +54,11 @@ a {
   z-index: -1;
 }
 
-.info_more-btn:hover,
-.info_more-btn:focus,
 .view-resume-button:hover,
 .view-resume-button:focus {
   background: var(--bg-gradient-yellow-1);
 }
 
-.info_more-btn:hover::before,
-.info_more-btn:focus::before,
 .view-resume-button:hover::before,
 .view-resume-button:focus::before {
   background: var(--bg-gradient-yellow-2);
@@ -104,25 +76,61 @@ button[view-resume-button] {
   outline: none;
 }
 
-.info_more-btn {
-  display: none;
+.profile-box {
+  background-color: #3d3d3d;
+  height: 80px;
+  width: 80px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.profile-box > .image {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.image > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* .image:hover img {
+  transform: scale(1.4);
+  border-radius: 10px;
+} */
+
+.icon-box .icons {
+  color: var(--vegas-gold);
+}
+
+/* .info_more-btn {
+  display: block;
+} */
 
 .info-content {
   display: grid;
-  gap: 20px;
+  gap: 10px;
   place-items: center;
-  padding-top: 20px;
+}
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px 0px 0px 0px;
 }
 
 /* ------Button Styles------ */
-.resume-button-wrapper {
+/* .resume-button-wrapper {
   display: flex;
   text-align: center;
   align-items: center;
   margin: 20px 0px 0px;
   gap: 30px;
-}
+} */
 
 .view-resume-button {
   display: flex;
@@ -131,13 +139,11 @@ button[view-resume-button] {
   height: 46px;
   line-height: 46px;
   padding: 0 40px;
-  /* background-color: #f5a512; */
   color: var(--white-1);
   border: none;
   font-family: "Poppins", sans-serif;
   font-weight: var(--fw-500);
   font-size: var(--fs-5);
-  /* border-radius: 26px; */
   border-radius: 12px;
   text-transform: uppercase;
   cursor: pointer;
@@ -148,6 +154,7 @@ button[view-resume-button] {
   text-align: center;
   vertical-align: middle;
   position: relative;
+  display: none;
 }
 
 .btn-content {
@@ -225,29 +232,38 @@ button[view-resume-button] {
   text-overflow: ellipsis;
   white-space: nowrap;
   padding-left: 10px;
+  display: none;
+}
+.contact-more-info {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in;
+  padding: 0px;
+  display: block;
+}
+
+.contact-more-info.expanded {
+  max-height: 450px;
+  transition: var(--transition-2);
 }
 
 .contactinfo {
   display: grid;
   gap: 25px;
-  box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
   max-width: calc(100% - 10px);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  padding: 0px 0px 0px 30px;
-  margin-top: -10px;
 }
 .contacts-list {
   display: grid;
   gap: 15px;
+  margin-top: 10px;
 }
 .contact-item {
   display: flex;
   gap: 20px;
-  padding: 20px 0px 0px 20px;
+  padding-top: 5px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -299,9 +315,9 @@ button[view-resume-button] {
 }
 .social-link {
   display: grid;
-  place-items: center;
   gap: 15px;
   font-size: 18px;
+  margin: 10px 0px;
 }
 .social-list {
   display: flex;
@@ -314,11 +330,325 @@ button[view-resume-button] {
   color: hsl(0, 0%, 84%);
 }
 
-.second-separator {
-  display: none;
+@media (min-width: 580px) {
+  .title {
+    font-size: var(--fs-6);
+  }
+
+  .info_more-btn {
+    top: -15px;
+    right: -15px;
+    background: var(--border-gradient-onyx);
+  }
+
+  .profile-box {
+    height: 115px;
+    width: 115px;
+  }
+  .profile-box > .image {
+    height: 70px;
+    width: 70px;
+  }
+
+  .info-content .name {
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .info-content .title {
+    margin: auto;
+  }
+
+  .contact-info :is(.contact-link) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .contact-info :is(.contact-link, time, address) {
+    --fs-7: 14px;
+    font-weight: var(--fw-300);
+  }
+  .second-separator {
+    display: block;
+  }
+  .social-link {
+    justify-content: flex-start;
+  }
+  .social-link.expanded {
+    display: flex;
+  }
+  .separator:first-of-type {
+    margin-top: 30px;
+  }
 }
 
-@media (min-width: 1240px) and (max-width: 1250px) {
+@media (min-width: 768px) {
+  .image:hover img {
+    transform: none !important;
+    border-radius: 0 !important;
+  }
+
+  .image {
+    pointer-events: none;
+  }
+
+  .contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 0px 0px 0px;
+  }
+
+  .contact-item {
+    display: flex;
+    flex: 0 0 calc(50% - 10px);
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+  }
+
+  .contactinfo {
+    padding: 0px;
+  }
+
+  .view-resume-button {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 10px;
+    line-height: 40px;
+    padding: 0 35px;
+  }
+
+  .info_more-btn {
+    display: block;
+    background: var(--border-gradient-onyx);
+    display: flex;
+    justify-content: center;
+  }
+
+  .info-content .name {
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .info-content .title {
+    margin: auto;
+  }
+
+  .contact-info :is(.contact-link) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .contact-info :is(.contact-link, time, address) {
+    --fs-7: 14px;
+    font-weight: var(--fw-300);
+  }
+  .second-separator {
+    display: block;
+  }
+  .social-link {
+    justify-content: flex-start;
+  }
+  .social-link.expanded {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .profile {
+    height: auto;
+  }
+  /* .sidebar-container {
+    padding: 30px 30px 10px 30px;
+    gap: 0px;
+  } */
+
+  .sidebar-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    padding: 0px;
+  }
+
+  /* .info-content {
+    padding: 0px;
+  } */
+
+  .contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 0px 0px 0px;
+  }
+
+  .contact-item {
+    display: flex;
+    flex: 0 0 calc(50% - 10px);
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+  }
+
+  .contactinfo {
+    padding: 0px;
+  }
+
+  .separator:first-of-type {
+    margin-top: 30px;
+  }
+
+  .contact-more-info {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in;
+    padding: 0px;
+  }
+
+  .contact-more-info.expanded {
+    max-height: 300px;
+  }
+
+  .info_more-btn {
+    display: block;
+  }
+
+  .info-content .name {
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .info-content .title {
+    margin: auto;
+  }
+
+  .contact-info :is(.contact-link) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .contact-info :is(.contact-link, time, address) {
+    --fs-7: 14px;
+    font-weight: var(--fw-300);
+  }
+  .second-separator {
+    display: block;
+  }
+
+  .social-link {
+    justify-content: flex-start;
+  }
+  .social-link.expanded {
+    display: flex;
+  }
+}
+
+/*
+
+@media (min-width: 1250px) {
+  .profile {
+    height: auto;
+  }
+  .sidebar-container {
+    padding: 30px 30px 10px 30px;
+    gap: 0px;
+  }
+  .sidebar-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    padding: 0px;
+    padding: 30px 30px 10px 10px;
+  }
+
+  .info-content {
+    padding: 0px;
+  }
+
+  .contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+    padding: 0px;
+  }
+
+  .contact-item {
+    flex: 0 0 calc(50% - 10px);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px;
+  }
+
+  .contactinfo {
+    padding: 0px;
+  }
+
+  .separator:first-of-type {
+    margin-top: 30px;
+  }
+
+  .contact-more-info {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in;
+    padding: 0px;
+  }
+
+  .contact-more-info.expanded {
+    max-height: 300px;
+  }
+  .info_more-btn {
+    display: block;
+  }
+
+  .info-content .name {
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .info-content .title {
+    margin: auto;
+  }
+
+  .contacts-list {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info :is(.contact-link) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .contact-info :is(.contact-link, time, address) {
+    --fs-7: 14px;
+    font-weight: var(--fw-300);
+  }
+  .second-separator {
+    display: block;
+  }
+
+  .social-link {
+    justify-content: flex-start;
+  }
+  .social-link.expanded {
+    display: flex;
+  }
+} */
+
+/* @media (min-width: 1240px) and (max-width: 1250px) {
   .profile {
     height: auto;
   }
@@ -374,20 +704,6 @@ button[view-resume-button] {
     max-height: 300px;
   }
 
-  /* Further updatable css after updating class name*/
-
-  /* .profile .box {
-    background-color: #3d3d3d;
-    height: 120px;
-    width: 120px;
-    border-radius: 25px;
-    position: relative;
-  }
-  .profile .box img {
-    height: 120px;
-    width: 120px;
-    border-radius: 10px;
-  } */
 
   .info_more-btn {
     display: block;
@@ -426,67 +742,11 @@ button[view-resume-button] {
   .social-link.expanded {
     display: flex;
   }
-}
+} */
 
-@media (min-width: 1024px) and (max-width: 1239px) {
-  .profile {
-    height: auto;
-  }
-  .sidebar-container {
-    padding: 30px 30px 10px 30px;
-    gap: 0px;
-  }
-  .sidebar-info {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    gap: 25px;
-    padding: 0px;
-    /* padding: 30px 30px 10px 10px; */
-  }
+/* Further updatable css after updating class name*/
 
-  .info-content {
-    padding: 0px;
-  }
-
-  .contacts-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: flex-start;
-    padding: 0px;
-  }
-
-  .contact-item {
-    flex: 0 0 calc(50% - 10px);
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 0px;
-  }
-
-  .contactinfo {
-    padding: 0px;
-  }
-
-  .separator:first-of-type {
-    margin-top: 30px;
-  }
-
-  .contact-more-info {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in;
-    padding: 0px;
-  }
-
-  .contact-more-info.expanded {
-    max-height: 300px;
-  }
-  /* Further updatable css after updating class name*/
-
-  /* .profile .box {
+/* .profile .box {
     background-color: #3d3d3d;
     height: 120px;
     width: 120px;
@@ -498,273 +758,14 @@ button[view-resume-button] {
     width: 120px;
     border-radius: 10px;
   } */
-  .info_more-btn {
-    display: block;
-  }
 
-  .info-content .name {
-    white-space: nowrap;
-    text-align: center;
-  }
-
-  .info-content .title {
-    margin: auto;
-  }
-
-  .contacts-list {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-info :is(.contact-link) {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .contact-info :is(.contact-link, time, address) {
-    --fs-7: 14px;
-    font-weight: var(--fw-300);
-  }
-  .second-separator {
-    display: block;
-  }
-
-  .social-link {
-    justify-content: flex-start;
-  }
-  .social-link.expanded {
-    display: flex;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .profile {
-    height: auto;
-  }
-  .sidebar-container {
-    padding: 30px 30px 10px 30px;
-    gap: 0px;
-  }
-  .sidebar-info {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    gap: 25px;
-    padding: 0px;
-  }
-
-  .info-content {
-    padding: 0px;
-  }
-
-  .contacts-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 10px 0px 0px 0px;
-  }
-
-  .contact-item {
-    display: flex;
-    flex: 0 0 calc(50% - 10px);
-    align-items: center;
-    box-sizing: border-box;
-    padding-top: 10px;
-  }
-
-  .contactinfo {
-    padding: 0px;
-  }
-
-  .separator:first-of-type {
-    margin-top: 30px;
-  }
-
-  .contact-more-info {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in;
-    padding: 0px;
-  }
-
-  .contact-more-info.expanded {
-    max-height: 300px;
-  }
-
-  /* Further updatable css after updating class name*/
-
-  /* .profile .box {
-    background-color: #3d3d3d;
-    height: 120px;
-    width: 120px;
-    border-radius: 25px;
-    position: relative;
-  }
-  .profile .box img {
-    height: 120px;
-    width: 120px;
-    border-radius: 10px;
-  } */
-  .info_more-btn {
-    display: block;
-  }
-
-  .info-content .name {
-    white-space: nowrap;
-    text-align: center;
-  }
-
-  .info-content .title {
-    margin: auto;
-  }
-
-  .contact-info :is(.contact-link) {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .contact-info :is(.contact-link, time, address) {
-    --fs-7: 14px;
-    font-weight: var(--fw-300);
-  }
-  .second-separator {
-    display: block;
-  }
-
-  .social-link {
-    justify-content: flex-start;
-  }
-  .social-link.expanded {
-    display: flex;
-  }
-}
-/* @media (min-width: 580px) and (max-width: 767px) { */
-@media (max-width: 767px) {
-  .profile {
-    height: auto;
-  }
-  /* .sidebar-container {
-    padding: 30px 30px 10px 30px;
-    gap: 0px;
-  } */
-  .view-resume-button {
-    display: none;
-  }
-  .profile-box {
-    background-color: #3d3d3d;
-    height: 100px;
-    width: 100px;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-
-  .image:hover img {
-    transform: none !important;
-    border-radius: 0 !important;
-  }
-  .image {
-    pointer-events: none;
-  }
-  .sidebar-info {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    gap: 25px;
-    padding: 10px 10px;
-  }
-
-  .info-content {
-    padding: 0px;
-  }
-
-  .contacts-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 10px 0px 0px 0px;
-  }
-
-  .contact-item {
-    display: flex;
-    flex: 0 0 calc(50% - 10px);
-    align-items: center;
-    box-sizing: border-box;
-    padding-top: 10px;
-  }
-
-  .contactinfo {
-    padding: 0px;
-  }
-
-  .separator:first-of-type {
-    margin-top: 30px;
-  }
-
-  .contact-more-info {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in;
-    padding: 0px;
-  }
-
-  .contact-more-info.expanded {
-    max-height: 450px;
-  }
-  /* 
-  .profile .profile-box {
-    background-color: #3d3d3d;
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
-
-  /* .image:hover img {
-    transform: scale(0);
-  } */
-
-  /* Further updatable css after updating class name*/
-
-  /* .profile .box {
-    background-color: #3d3d3d;
-    height: 120px;
-    width: 120px;
-    border-radius: 25px;
-    position: relative;
-  } */
-
-  /* .profile .box img {
-    height: 50px;
-    width: 50px;
-    border-radius: 10px;
-  } */
-
-  .info_more-btn {
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: var(--border-gradient-onyx);
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    /* position: relative; */
-  }
-
-  /* .info_more-btn::after {
+/* .info_more-btn::after {
     content: "";
     font-size: 18px;
     color: var(--orange-yellow-crayola);
   } */
 
-  /* .info_more-btn:hover::after {
+/* .info_more-btn:hover::after {
     color: #fbbf24;
     transform: scale(1.1);
     transition: all 0.3s ease;
@@ -776,38 +777,3 @@ button[view-resume-button] {
   .contact-more-info.expanded ~ button .info_more-btn::after {
     transform: rotate(180deg);
   } */
-
-  .info-content .name {
-    white-space: nowrap;
-    text-align: center;
-  }
-
-  .info-content .title {
-    margin: auto;
-  }
-
-  .contact-info :is(.contact-link) {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .contact-info :is(.contact-link, time, address) {
-    --fs-7: 14px;
-    font-weight: var(--fw-300);
-  }
-  .second-separator {
-    display: block;
-  }
-  .social-link {
-    justify-content: flex-start;
-  }
-  .social-link.expanded {
-    display: flex;
-  }
-  @media (max-width: 580px) {
-    .title {
-      font-size: var(--fs-6);
-    }
-  }
-}
