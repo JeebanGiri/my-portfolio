@@ -17,7 +17,7 @@ a {
 }
 
 .sidebar-container > .sidebar-info {
-  max-height: 120px;
+  /* max-height: 120px; */
   /* overflow: hidden; */
   transition: var(--transition-2);
 }
@@ -429,45 +429,12 @@ button[view-resume-button] {
     display: flex;
     justify-content: center;
   }
-
-  .info-content .name {
-    white-space: nowrap;
-    text-align: center;
-  }
-
-  .info-content .title {
-    margin: auto;
-  }
-
-  .contact-info :is(.contact-link) {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .contact-info :is(.contact-link, time, address) {
-    --fs-7: 14px;
-    font-weight: var(--fw-300);
-  }
-  .second-separator {
-    display: block;
-  }
-  .social-link {
-    justify-content: flex-start;
-  }
-  .social-link.expanded {
-    display: flex;
-  }
 }
 
 @media (min-width: 1024px) {
   .profile {
     height: auto;
   }
-  /* .sidebar-container {
-    padding: 30px 30px 10px 30px;
-    gap: 0px;
-  } */
 
   .sidebar-info {
     display: flex;
@@ -477,11 +444,6 @@ button[view-resume-button] {
     gap: 25px;
     padding: 0px;
   }
-
-  /* .info-content {
-    padding: 0px;
-  } */
-
   .contacts-list {
     display: flex;
     flex-wrap: wrap;
@@ -491,289 +453,66 @@ button[view-resume-button] {
 
   .contact-item {
     display: flex;
-    flex: 0 0 calc(50% - 10px);
+    flex: 0 0 calc(100% - 10px);
     align-items: center;
     box-sizing: border-box;
     padding-top: 10px;
   }
 
-  .contactinfo {
-    padding: 0px;
-  }
-
-  .separator:first-of-type {
-    margin-top: 30px;
-  }
-
-  .contact-more-info {
+  /* .contact-more-info {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in;
     padding: 0px;
-  }
+  } */
 
-  .contact-more-info.expanded {
+  /* .contact-more-info.expanded {
     max-height: 300px;
-  }
+  } */
 
   .info_more-btn {
     display: block;
   }
-
-  .info-content .name {
-    white-space: nowrap;
-    text-align: center;
-  }
-
-  .info-content .title {
-    margin: auto;
-  }
-
-  .contact-info :is(.contact-link) {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .contact-info :is(.contact-link, time, address) {
-    --fs-7: 14px;
-    font-weight: var(--fw-300);
-  }
-  .second-separator {
-    display: block;
-  }
-
-  .social-link {
-    justify-content: flex-start;
-  }
-  .social-link.expanded {
-    display: flex;
-  }
 }
-
-/*
 
 @media (min-width: 1250px) {
   .profile {
     height: auto;
+    max-height: max-content;
   }
+
   .sidebar-container {
-    padding: 30px 30px 10px 30px;
-    gap: 0px;
-  }
-  .sidebar-info {
+    padding: 0px;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    gap: 25px;
-    padding: 0px;
-    padding: 30px 30px 10px 10px;
   }
-
-  .info-content {
-    padding: 0px;
+  .profile-box {
+    height: 150px;
+    width: 150px;
   }
-
-  .contacts-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: flex-start;
-    padding: 0px;
-  }
-
-  .contact-item {
-    flex: 0 0 calc(50% - 10px);
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 0px;
-  }
-
-  .contactinfo {
-    padding: 0px;
-  }
-
-  .separator:first-of-type {
-    margin-top: 30px;
+  .profile-box > .image {
+    height: 80px;
+    width: 80px;
   }
 
   .contact-more-info {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in;
-    padding: 0px;
+    max-height: none;
+    overflow: visible;
+    display: block;
   }
 
-  .contact-more-info.expanded {
-    max-height: 300px;
-  }
   .info_more-btn {
-    display: block;
+    display: none;
   }
 
-  .info-content .name {
-    white-space: nowrap;
-    text-align: center;
-  }
-
-  .info-content .title {
-    margin: auto;
-  }
-
-  .contacts-list {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-info :is(.contact-link) {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .contact-info :is(.contact-link, time, address) {
-    --fs-7: 14px;
-    font-weight: var(--fw-300);
-  }
-  .second-separator {
-    display: block;
-  }
-
-  .social-link {
-    justify-content: flex-start;
-  }
-  .social-link.expanded {
-    display: flex;
-  }
-} */
-
-/* @media (min-width: 1240px) and (max-width: 1250px) {
-  .profile {
-    height: auto;
-  }
-  .sidebar-container {
-    padding: 30px 30px 10px 30px;
-    gap: 0px;
-  }
   .sidebar-info {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    gap: 25px;
-    padding: 0px;
+    flex-direction: column;
+    margin-top: 20px;
   }
-
-  .info-content {
-    padding: 0px;
-  }
-
-  .contacts-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: flex-start;
-    padding: 0px;
-  }
-  .contact-item {
-    flex: 0 0 calc(50% - 10px);
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 0px;
-  }
-
-  .contactinfo {
-    padding: 0px;
-  }
-
   .separator:first-of-type {
-    margin-top: 30px;
+    margin: 0;
   }
-
-  .contact-more-info {
-    max-height: 0;
-    overflow: hidden;
-    padding-left: 0px;
-    transition: max-height 0.3s ease-in;
-    padding: 0px;
-  }
-
-  .contact-more-info.expanded {
-    max-height: 300px;
-  }
-
-
-  .info_more-btn {
-    display: block;
-  }
-
-  .info-content .name {
-    white-space: nowrap;
-    text-align: center;
-  }
-
-  .info-content .title {
-    margin: auto;
-  }
-
-  .contacts-list {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-info :is(.contact-link) {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .contact-info :is(.contact-link, time, address) {
-    --fs-7: 14px;
-    font-weight: var(--fw-300);
-  }
-  .second-separator {
-    display: block;
-  }
-
-  .social-link {
-    justify-content: flex-start;
-  }
-  .social-link.expanded {
-    display: flex;
-  }
-} */
-
-/* Further updatable css after updating class name*/
-
-/* .profile .box {
-    background-color: #3d3d3d;
-    height: 120px;
-    width: 120px;
-    border-radius: 25px;
-    position: relative;
-  }
-  .profile .box img {
-    height: 120px;
-    width: 120px;
-    border-radius: 10px;
-  } */
-
-/* .info_more-btn::after {
-    content: "";
-    font-size: 18px;
-    color: var(--orange-yellow-crayola);
-  } */
-
-/* .info_more-btn:hover::after {
-    color: #fbbf24;
-    transform: scale(1.1);
-    transition: all 0.3s ease;
-  }
-  .info_more-btn::after {
-    transition: transform 0.3s ease;
-  }
-
-  .contact-more-info.expanded ~ button .info_more-btn::after {
-    transform: rotate(180deg);
-  } */
+}
