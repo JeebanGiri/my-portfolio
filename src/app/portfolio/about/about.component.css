@@ -10,7 +10,7 @@
   margin-bottom: 10px;
 }
 .about-page > .title {
-  padding-top: 2px;
+  padding-top: 5px;
 }
 
 .title .line {
@@ -117,24 +117,28 @@
 
 .task {
   display: flex;
-  gap: 15px;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   min-height: 120px;
-  max-width: 400px;
   flex: 1 1 350px;
   border-radius: 20px;
   background-color: #222224;
   padding: 20px;
   z-index: 20;
 }
+.task .contents {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
 .task .contents > b {
   font-size: var(--fs-3);
+  text-align: center;
 }
 
 .task .contents > p {
-  margin-top: 5px;
+  padding-top: 5px;
   font-size: var(--fs-6);
   color: var(--light-gray);
 }
@@ -178,7 +182,7 @@
   text-transform: uppercase;
   padding: 1.5rem 1.2rem;
   color: white;
-  max-width: 400px;
+  /* max-width: 400px; */
   flex: 1 1 230px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 5px;
@@ -240,51 +244,49 @@
   color: #fbbf24;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .task {
-    height: auto;
-    width: 100%;
-    border-radius: 20px;
-    background-color: #222224;
-    padding: 30px;
-    display: flex;
-    gap: 15px;
-    z-index: 20;
-  }
-  .task,
-  .contents > b {
-    font-size: var(--fs-3);
-  }
-  .task,
-  .contents > p {
-    margin-top: 5px;
+@media (min-width: 580px) {
+  .title {
     font-size: var(--fs-6);
-    color: var(--light-gray);
   }
-}
-@media (min-width: 580px) and (max-width: 767px) {
+
   .task {
-    height: auto;
-    width: 100%;
-    border-radius: 20px;
-    background-color: #222224;
-    padding: 30px;
     display: flex;
-    gap: 15px;
-    z-index: 10;
+    flex-direction: row;
+    gap: 20px;
   }
+  .task .contents {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+  }
+
   .task .contents > b {
     font-size: var(--fs-3);
   }
-  .task,
-  .contents > p {
-    margin-top: 5px;
-    font-size: var(--fs-6);
-    color: var(--light-gray);
+}
+
+@media (min-width: 768px) {
+  .task-box {
+    grid-template-columns: 1fr;
   }
 }
-@media (max-width: 580px) {
-  .title {
-    font-size: var(--fs-6);
+@media (min-width: 1024px) {
+  .about-page > .title {
+    font-size: var(--fs-2);
+  }
+  .title .line {
+    margin-top: 15px;
+    width: 40px;
+    height: 5px;
+    border: none;
+    border-radius: 3px;
+  }
+  .task-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .task {
+    padding: 30px;
   }
 }

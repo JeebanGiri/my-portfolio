@@ -106,11 +106,6 @@ button[view-resume-button] {
 .icon-box .icons {
   color: var(--vegas-gold);
 }
-
-/* .info_more-btn {
-  display: block;
-} */
-
 .info-content {
   display: grid;
   gap: 10px;
@@ -124,13 +119,6 @@ button[view-resume-button] {
 }
 
 /* ------Button Styles------ */
-/* .resume-button-wrapper {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  margin: 20px 0px 0px;
-  gap: 30px;
-} */
 
 .view-resume-button {
   display: flex;
@@ -227,7 +215,7 @@ button[view-resume-button] {
   justify-content: center;
   align-items: center;
   max-width: calc(100% - 5px);
-  /* width: calc(100% - 41px); */
+  width: calc(100% - 41px);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -495,6 +483,10 @@ button[view-resume-button] {
   .profile-box > .image {
     height: 80px;
     width: 80px;
+  }
+  .image:hover img {
+    transform: scale(1.4);
+    border-radius: 10px;
   }
 
   .contact-more-info {

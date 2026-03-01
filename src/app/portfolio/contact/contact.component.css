@@ -6,20 +6,21 @@
   box-sizing: border-box;
 }
 .contact-page {
-  padding: 30px;
+  padding: 15px;
 }
 .contact-page > .title {
   padding-top: 5px;
 }
 
 .title .line {
-  margin-top: 15px;
+  margin-top: 8px;
   width: 30px;
-  height: 5px;
+  height: 3px;
   background-color: hsl(41, 96%, 70%);
   border: none;
   border-radius: 2px;
 }
+
 .map-box {
   margin: 20px 0px 20px 0px;
   position: relative;
@@ -155,5 +156,18 @@ textarea:not(:placeholder-shown):invalid {
   }
   .title {
     font-size: var(--fs-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-page > .title {
+    font-size: var(--fs-2);
+  }
+  .title .line {
+    margin-top: 15px;
+    width: 40px;
+    height: 5px;
+    border: none;
+    border-radius: 3px;
   }
 }

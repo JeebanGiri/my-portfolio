@@ -7,7 +7,7 @@
   width: 100%;
   max-width: 100%;
   border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
   float: right;
 }
 
@@ -90,6 +90,10 @@ nav li a {
 } */
 
 @media (min-width: 1023px) {
+  .nav-list {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 20px;
+  }
   .nav-list ul {
     display: flex;
     gap: 40px;
