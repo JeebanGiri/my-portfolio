@@ -47,36 +47,20 @@ export class SkillsComponent {
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   // ngOnInit() {
-  //   this.updateSvgSize(window.innerWidth);
-  // }
-
-  ngOnInit() {
-    if (isPlatformBrowser(this.platformId)) {
-      // Only runs in the browser
-      this.updateSvgSize(window.innerWidth);
-    }
-  }
-
-  // @HostListener('window:resize', ['$event'])
-  // onResize(event: any) {
-  //   if (typeof window !== 'undefined') {
+  //   if (isPlatformBrowser(this.platformId)) {
+  //     // Only runs in the browser
   //     this.updateSvgSize(window.innerWidth);
   //   }
   // }
-  ngAfterViewInit() {
-    if (typeof window !== 'undefined') {
-      this.updateSvgSize(window.innerWidth);
-    }
-  }
 
-  updateSvgSize(width: number) {
-    this.svgSize = width < 580 ? 100 : 120;
-  }
+  // updateSvgSize(width: number) {
+  //   this.svgSize = width < 580 ? 100 : 120;
+  // }
 
-  getRadius(svgSize: number): number {
-    const strokeWidth = 10;
-    return svgSize / 2 - strokeWidth; // keeps circle inside SVG
-  }
+  // getRadius(svgSize: number): number {
+  //   const strokeWidth = 10;
+  //   return svgSize / 2 - strokeWidth; // keeps circle inside SVG
+  // }
 
   getOffset(percent: string, radius: number): number {
     const numericPercent = parseFloat(percent);

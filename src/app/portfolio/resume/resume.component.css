@@ -206,11 +206,12 @@
 
 :is(.info-section, .skill-section, .exp-section, .edu-section) ul > li {
   margin-bottom: 8px;
-  cursor: text;
 }
 .info-section ul li {
   list-style: disc;
   cursor: text;
+  font-size: var(--fs-5);
+  line-height: 24px;
 }
 
 .contact-section {
@@ -265,7 +266,6 @@
 }
 
 .info-section {
-  /* max-width: calc(100% - 20px - 300px); */
   max-width: calc(100% - 20px);
   text-align: justify;
 }
@@ -715,6 +715,10 @@
   .contact-section ul li .infos p {
     font-size: var(--fs-7);
   }
+  .info-section ul li {
+    font-size: var(--fs-4);
+    line-height: 26px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -754,6 +758,9 @@
     max-width: calc(100% - 65px - 60%);
     height: 100%;
     margin-top: 30px;
+  }
+  .info-section ul li {
+    font-size: var(--fs-3);
   }
 }
 @media (min-width: 1250px) {
