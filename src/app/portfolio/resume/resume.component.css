@@ -111,6 +111,7 @@
   line-height: 46px;
   /* padding: 0 40px; */
   padding: 0 25px;
+  /* width: 100%; */
   border: none;
   background-color: #22395e;
   color: var(--white-1);
@@ -610,6 +611,17 @@
   }
 } */
 
+@media (min-width: 200px) {
+  .contact-section {
+    top: 280px;
+  }
+}
+@media (min-width: 498px) {
+  .contact-section {
+    top: 235px;
+  }
+}
+
 @media (min-width: 580px) {
   .resume-header {
     padding: 10px 10px;
@@ -787,8 +799,7 @@
     gap: 20px;
   }
 
-  .contact-section ul li .icons .fa-solid,
-  .fas {
+  .contact-section ul li .icons > .fa-solid + .fas {
     font-size: var(--fs-1);
   }
 

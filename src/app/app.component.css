@@ -40,7 +40,8 @@
   box-shadow: var(--shadow-2);
   position: relative;
   margin-bottom: 70px;
-}
+  /* min-height: 80dvh; */
+} 
 
 .page-navbar {
   display: none;
@@ -51,7 +52,6 @@
   bottom: 0;
   right: 0px;
   width: 100vw; /* full screen */
-  /* height: 64px; */
   z-index: 999;
 }
 
@@ -127,10 +127,7 @@
   .main {
     max-width: 1200px;
     margin-inline: auto;
-    /* display: flex;
-    justify-content: center;
     align-items: stretch;
-    gap: 25px; */
   }
   .content {
     display: flex;
@@ -147,9 +144,4 @@
     z-index: 1;
     flex: 0 0 260px;
   }
-
-  /* .infoside {
-    min-height: 100%;
-    min-width: 940px;
-  } */
 }

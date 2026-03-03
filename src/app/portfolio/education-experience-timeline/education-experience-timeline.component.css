@@ -96,13 +96,12 @@
     background-color: #f5a512;
   }
   /* Hide line for the last item */
-  /* &:last-child::before {
+  &:last-child::before {
     display: none;
-  } */
+  }
   &.progress__item {
     &:after {
       color: #392a60;
-      /* background: #d6bd62; */
     }
   }
 }
@@ -125,8 +124,8 @@
 }
 .mini__progress__item > .progress-description {
   text-align: justify;
-  opacity: 0.7;
   font-weight: var(--fw-400);
+  font-size: var(--fs-5);
 }
 
 .progress__item.experience-item::after {
@@ -149,14 +148,14 @@
   align-items: center;
   font-family: var(--ff-poppins);
 }
-
 .exp-info > .institute-name,
 .edu-info > .institute-name {
-  font-size: var(--fs-2);
+  font-size: var(--fs-3);
   text-transform: uppercase;
   font-weight: var(--fw-500);
   color: #f5a512;
 }
+
 .edu-info > .progress__title,
 .exp-info > .progress__title {
   text-transform: uppercase;
@@ -231,7 +230,10 @@
   transform: translateY(-50%) translateX(0px);
   opacity: 0;
   visibility: hidden;
-  transition: transform 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease,
+    visibility 0.4s ease;
   font-size: 20px;
   pointer-events: none;
 }
@@ -246,6 +248,18 @@
   opacity: 1;
   visibility: visible;
   transform: translateY(-50%) translateX(15px);
+}
+@media (min-width: 580px) {
+  .exp-info > .institute-name,
+  .edu-info > .institute-name {
+    font-size: var(--fs-2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .mini__progress__item > .progress-description {
+    font-size: var(--fs-4);
+  }
 }
 
 /* @media (max-width: 767px) {
