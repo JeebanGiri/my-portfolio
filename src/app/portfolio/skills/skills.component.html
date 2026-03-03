@@ -6,7 +6,7 @@
   <article class="skills-showcase">
     <div class="skills" *ngFor="let skill of skills; let i = index">
       <div class="progress-ring">
-        <svg width="120" height="120">
+        <!-- <svg>
           <circle class="bg" r="54" cx="60" cy="60" />
           <circle
             class="fg"
@@ -16,6 +16,28 @@
             cy="60"
             [attr.stroke-dasharray]="circumference"
             [attr.stroke-dashoffset]="getOffset(skill.percent)"
+            [attr.transition]="'stroke-dashoffset 0.6s ease-out'"
+          />
+          <text
+            x="50%"
+            y="50%"
+            text-anchor="middle"
+            dy=".3em"
+            class="percent-text"
+          >
+            {{ skill.percent }}
+          </text>
+        </svg> -->
+        <svg viewBox="0 0 120 120" [attr.width]="150" [attr.height]="150">
+          <circle class="bg" r="54" cx="60" cy="60" />
+          <circle
+            class="fg"
+            [attr.stroke]="rowColors[Math.floor(i / 4) % rowColors.length]"
+            r="54"
+            cx="60"
+            cy="60"
+            [attr.stroke-dasharray]="circumference"
+            [attr.stroke-dashoffset]="getOffset(skill.percent, 54)"
             [attr.transition]="'stroke-dashoffset 0.6s ease-out'"
           />
           <text

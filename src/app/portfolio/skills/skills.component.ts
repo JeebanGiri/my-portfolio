@@ -1,5 +1,8 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+
+import { Component, HostListener } from '@angular/core';
+import { Inject, PLATFORM_ID } from '@angular/core';
+
 @Component({
   selector: 'app-skills',
   standalone: true,
@@ -32,8 +35,52 @@ export class SkillsComponent {
     // { name: 'Kubernetes', percent: '45%', color: 'steelblue' },
   ];
 
-  getOffset(percent: string): number {
+  // getOffset(percent: string): number {
+  //   const numericPercent = parseFloat(percent);
+  //   return this.circumference - (numericPercent / 100) * this.circumference;
+  // }
+
+  // Updated Code
+
+  svgSize = 100; // default
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
+  // ngOnInit() {
+  //   this.updateSvgSize(window.innerWidth);
+  // }
+
+  ngOnInit() {
+    if (isPlatformBrowser(this.platformId)) {
+      // Only runs in the browser
+      this.updateSvgSize(window.innerWidth);
+    }
+  }
+
+  // @HostListener('window:resize', ['$event'])
+  // onResize(event: any) {
+  //   if (typeof window !== 'undefined') {
+  //     this.updateSvgSize(window.innerWidth);
+  //   }
+  // }
+  ngAfterViewInit() {
+    if (typeof window !== 'undefined') {
+      this.updateSvgSize(window.innerWidth);
+    }
+  }
+
+  updateSvgSize(width: number) {
+    this.svgSize = width < 580 ? 100 : 120;
+  }
+
+  getRadius(svgSize: number): number {
+    const strokeWidth = 10;
+    return svgSize / 2 - strokeWidth; // keeps circle inside SVG
+  }
+
+  getOffset(percent: string, radius: number): number {
     const numericPercent = parseFloat(percent);
-    return this.circumference - (numericPercent / 100) * this.circumference;
+    const circumference = 2 * Math.PI * radius;
+    return circumference - (numericPercent / 100) * circumference;
   }
 }
