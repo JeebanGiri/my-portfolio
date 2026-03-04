@@ -90,7 +90,6 @@
   align-items: center;
   height: 46px;
   line-height: 46px;
-  /* padding: 0 12px; */
   width: 100%;
   border: none;
   background-color: #22395e;
@@ -164,6 +163,12 @@
   margin-top: 30px;
   padding: 0px 20px;
   position: relative;
+}
+.info-section > h3 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
 }
 
 :is(.info-section, .skill-section) > h3 {
@@ -608,7 +613,6 @@
   }
   .download-button,
   .contact-button {
-    padding: 0 30px;
     font-size: var(--fs-6);
   }
   .profile-block {
@@ -690,7 +694,6 @@
   }
   .contact-button,
   .download-button {
-    padding: 0 40px;
     font-size: var(--fs-5);
   }
   .contact-section {
@@ -784,7 +787,6 @@
   }
   .contact-button,
   .download-button {
-    padding: 0 40px;
     font-size: var(--fs-4);
   }
   .contact-section {
