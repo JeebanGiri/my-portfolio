@@ -205,7 +205,6 @@
 .contact-section {
   position: absolute;
   top: 230px;
-  /* right: 20px; */
   right: 0px;
   font-size: var(--fs-5);
   color: #b0c4de;
@@ -589,6 +588,7 @@
 @media (min-width: 200px) {
   .contact-section {
     top: 280px;
+    /* right: 0px;   */
   }
 }
 @media (min-width: 498px) {
@@ -664,6 +664,9 @@
 
   :is(.download-button, .contact-button):hover .fa-solid {
     transform: translate(50px);
+  }
+  .contact-section {
+    right: 20px;
   }
 }
 @media (min-width: 768px) {
