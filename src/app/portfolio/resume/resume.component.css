@@ -205,7 +205,8 @@
 .contact-section {
   position: absolute;
   top: 230px;
-  right: 20px;
+  /* right: 20px; */
+  right: 0px;
   font-size: var(--fs-5);
   color: #b0c4de;
   background-color: #3d3d3d;
