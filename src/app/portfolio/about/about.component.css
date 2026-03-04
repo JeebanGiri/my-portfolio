@@ -234,6 +234,12 @@
   margin-top: 20px;
   color: #fbbf24;
 }
+@media (min-width: 320px) {
+  .actions {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
 
 @media (min-width: 580px) {
   .title {
