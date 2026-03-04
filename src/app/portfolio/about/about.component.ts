@@ -20,7 +20,10 @@ import { IonIcon } from '@ionic/angular/standalone';
   styleUrls: ['./about.component.css'],
 })
 export class AboutComponent {
-  constructor(public browserService: BrowserService, private router: Router) {
+  constructor(
+    public browserService: BrowserService,
+    private router: Router,
+  ) {
     addIcons({
       'document-outline': documentOutline,
     });
@@ -35,8 +38,8 @@ export class AboutComponent {
   cameraalt: string = 'Camera';
 
   completedActions = [
-    { title: '3', description: 'year of experience' },
-    { title: '10', description: 'completed projects' },
-    { title: '5', description: 'awards won' },
+    { title: '2', description: 'year of experience' },
+    { title: '5', description: 'completed projects' },
+    { title: '3', description: 'awards won' },
   ];
 }

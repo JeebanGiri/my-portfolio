@@ -449,6 +449,7 @@ button[view-resume-button] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* max-width: 260px; */
   }
   .profile-box {
     height: 150px;

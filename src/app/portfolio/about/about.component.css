@@ -121,7 +121,6 @@
   border: 1px solid #333;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  /* flex: 0 1 230px; */
 }
 .actions-box > .title {
   font-size: 2.7rem;
@@ -219,6 +218,9 @@
   .actions {
     grid-template-columns: repeat(3, 1fr);
   }
+  /* .task {
+    height: max-content;
+  } */
 }
 @media (min-width: 1024px) {
   .about-page > .title {
