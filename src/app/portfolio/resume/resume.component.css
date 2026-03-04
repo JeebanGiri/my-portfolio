@@ -608,9 +608,6 @@
     gap: 0px;
     position: relative;
   }
-  .resume-button-wrapper {
-    margin: 10px 0px;
-  }
   .download-button,
   .contact-button {
     font-size: var(--fs-6);
@@ -655,6 +652,7 @@
   .resume-button-wrapper {
     display: flex;
     gap: 20px;
+    margin: 10px 0px;
   }
 
   .profile-desc-wrapper {
@@ -729,6 +727,9 @@
   .info-section ul li {
     font-size: var(--fs-4);
     line-height: 26px;
+  }
+  .resume-button-wrapper {
+    margin: 20px 0px 15px 0px;
   }
 }
 
