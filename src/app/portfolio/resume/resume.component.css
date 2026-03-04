@@ -73,8 +73,8 @@
 }
 
 .profile-block img {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
   background-color: #182c4f;
@@ -137,8 +137,10 @@
 .social-icons {
   margin-top: 10px;
   display: flex;
-  gap: 15px;
+  gap: 12px;
+  /* gap: 15px; */
 }
+
 .fa-linkedin-in:hover {
   color: #0077b5;
 }
@@ -152,7 +154,7 @@
 .social-icons a {
   color: #fff;
   text-decoration: none;
-  font-size: var(--fs-4);
+  font-size: var(--fs-5);
 }
 
 .profile-desc-wrapper {
@@ -616,10 +618,14 @@
     object-fit: cover;
     background-color: #182c4f;
   }
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
   .social-icons a {
     color: #fff;
     text-decoration: none;
-    font-size: var(--fs-5);
+    font-size: var(--fs-4);
   }
   .info-block h1 {
     font-size: var(--fs-2);
