@@ -194,8 +194,12 @@
 .info-section ul li {
   list-style: disc;
   cursor: text;
-  font-size: var(--fs-5);
-  line-height: 24px;
+  /* font-size: var(--fs-5);
+  line-height: 24px; */
+  font-size: var(--fs-6);
+  line-height: 28px;
+  font-weight: var(--fw-300);
+  font-family: "Open Sans", sans-serif;
 }
 
 .contact-section {
