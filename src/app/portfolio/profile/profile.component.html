@@ -20,11 +20,9 @@
             class="fa-solid"
           ></ion-icon> -->
         </button>
-        <!-- </div> -->
       </div>
       <button data-sidebar-btn (click)="toggleInfo()">
         <span class="info_more-btn">
-          <!-- Show Contacts -->
           <ng-container *ngIf="!isMobile; else mobileIcon"
             >Show Contacts</ng-container
           >
@@ -35,8 +33,6 @@
       </button>
     </div>
     <div class="contact-more-info" [class.expanded]="isExpanded">
-      <!-- <div class="separator" [class.expanded]="isExpanded"></div> -->
-      <!-- <div class="contactinfo" [class.expanded]="isExpanded"> -->
       <div class="separator"></div>
       <div class="contactinfo">
         <ul class="contacts-list">
@@ -63,7 +59,6 @@
                 >
               </p>
             </div>
-            <!-- <p>+977-9807099754</p> -->
           </li>
           <li class="contact-item">
             <div class="icon-box">
@@ -85,8 +80,6 @@
           </li>
         </ul>
       </div>
-      <!-- <div class="separator" [class.expanded]="isExpanded"></div>
-      <div class="social-link" [class.expanded]="isExpanded"> -->
       <div class="separator second-separator"></div>
       <div class="social-link">
         <ul class="social-list">
