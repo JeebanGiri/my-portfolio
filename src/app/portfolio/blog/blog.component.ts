@@ -17,19 +17,22 @@ export class BlogComponent {
       date: 'July 28, 2024',
       title: 'Best Font for Design',
       description:
-        'Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.',
+        'This blog post is especially for designer and develper to use the best fonts on their project',
       image: '../../../assets/images/blogs.jpeg',
       blogLink: 'https://blog-best-font-for-designer.vercel.app',
     },
     {
       blog_category: 'Design',
       date: 'July 23, 2024',
-      title: ' Design conferences in 2022',
+      title: 'Fonts for Designer and Developer',
       description:
-        'Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.',
+        'This blog post is especially for designer and develper to use the best fonts on their project',
       image: '../../../assets/images/blogs.jpeg',
-      blogLink: '',
+      blogLink: 'https://blog-best-font-designer.vercel.app',
     },
+    // {
+
+    // }
   ];
 
   openLink(e: Event, url: string) {
